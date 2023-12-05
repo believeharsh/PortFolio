@@ -1,11 +1,12 @@
 
-import './App.css'
+import Maincontainer from "./Components/MainContainer/MainContainer"
 
 function App() {
 
   return (
     <>
-   <h1>This is working</h1>
+    <Maincontainer/>
+
     </>
   )
 }
