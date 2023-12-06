@@ -4,11 +4,16 @@ import { IoMenu } from "react-icons/io5";
 import { DiReact } from "react-icons/di";
 
 function Navigation() {
+  const DarkMode = () => {
+
+      document.documentElement.classList.add('dark')
+    
+  }
 
 
   return (
     <>
-      <header className="shadow sticky z-50 top-0 bg-slate-900 pt-[2.5px] pb-[10px]">
+      <header className="shadow sticky z-50 top-0 bg-slate-900 pt-[2.5px] pb-[10px] dark:bg-white">
         <nav className="pr-[10px] pl-[10px]">
           <div className="flex flex-warp justify-between items-center border-b-[1.7px] border-white w-[92vw] m-auto ">
             <div className="">
@@ -28,7 +33,7 @@ function Navigation() {
             <div className="">
               <ul className="text-white text-lg font-serif flex justify-between items-start " >
                 <li className="mx-1 pr-5 text-7xl">
-                  <MdDarkMode className="text-lg text-white" />
+                  <MdDarkMode  onClick={DarkMode} className="text-lg text-white" />
                 </li>
                
               </ul>
