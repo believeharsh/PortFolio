@@ -2,7 +2,8 @@
 
 function Home() {
     return (
-      <div className=" w-full bg-slate-900 p-10"> 
+      <>
+          <div className=" w-full bg-slate-900 p-10"> 
       <div className="w-[90vw]  m-auto">
         <div className="bg-slate-500 p-3 rounded-xl shadow-sm flex justify-center items-center">
           <div className=" flex flex-wrap space-between p-4">
@@ -30,6 +31,15 @@ function Home() {
         </div>
       </div>
       </div>
+
+
+
+      
+
+      
+      
+       </>
+  
     )
   }
   
