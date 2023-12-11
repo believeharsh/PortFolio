@@ -1,7 +1,6 @@
 // import React from 'react'
 import Navigation from "../Navigation/Navigation";
 import Home from "../Home/Home";
-import Practice from "../Practice";
 
 
 
@@ -12,7 +11,7 @@ function Maincontainer() {
 
    <Navigation/>
    <Home/>
-   <Practice/>
+
 
 
 
