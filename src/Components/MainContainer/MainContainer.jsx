@@ -1,6 +1,6 @@
 // import React from 'react'
 import Navigation from "../Navigation/Navigation";
-import Home from "../Home/Home";
+// import Home from "../Home/Home";
 
 
 
@@ -10,7 +10,7 @@ function Maincontainer() {
 
 
    <Navigation/>
-   <Home/>
+   {/* <Home/> */}
 
 
 
