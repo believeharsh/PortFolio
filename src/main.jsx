@@ -5,11 +5,6 @@ import { Route, createBrowserRouter, createRoutesFromElements, RouterProvider } 
 import Layout from './Components/Layout/Layout.jsx'
 import Home from './Components/Home/Home.jsx'
 import About from './Components/About/About.jsx'
-
-// import Fotter from './Components/Fotter.jsx'
-
-
-
 // eslint-disable-next-line react-refresh/only-export-components
 const Router = createBrowserRouter(
   createRoutesFromElements(
@@ -20,6 +15,7 @@ const Router = createBrowserRouter(
     </Route>
 
   )
+  
 )
 
 ReactDOM.createRoot(document.getElementById('root')).render(
