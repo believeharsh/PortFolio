@@ -4,6 +4,7 @@ import { IoMenu } from "react-icons/io5";
 import { DiReact } from "react-icons/di";
 import { CiLight } from "react-icons/ci";
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 function Navigation() {
   const [Theme, setTheme] = useState("dark");
@@ -35,6 +36,9 @@ function Navigation() {
                   <li className="mx-1 text-2xl font- "> Developer</li>
                 </div>
               </ul>
+            <Link className="text-white text-2xl font-serif" to="/" >
+              Home
+            </Link>
             </div>
 
             <div className="">
@@ -50,6 +54,10 @@ function Navigation() {
                     <CiLight className="text-lg  text-black dark:text-white w-[27px] h-[28px] " />
                   )}
                 </li>
+                <Link to="/about">
+                <p className="text-white text-2xl p-2">About</p>
+
+                </Link>
               </ul>
             </div>
           </div>
