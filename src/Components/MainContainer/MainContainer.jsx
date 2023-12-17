@@ -6,8 +6,8 @@ import MainRight from "../MainRight/MainRight";
 export default function MainContainer() {
   return (
     <>
-      <div className=" relative w-full max-w-screen-xl">
-        <div className="">
+      <div className=" relative w-full ">
+        <div className="mx-auto max-w-screen-xl">
           <div className="relative">
             <div className="h-2 bg-transparent relative flex">
               <Mainleft className=" w-[100px] p-1  " />
