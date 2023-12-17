@@ -23,7 +23,7 @@ function Navigation() {
     <>
       <header className="shadow sticky z-50 top-0 dark:bg-slate-900 pt-[2.5px] pb-[10px] bg-white">
         <nav className="pr-[10px] pl-[10px]">
-          <div className="flex flex-warp justify-between items-center border-b-[1.7px] dark:border-white w-[92vw] m-auto ">
+          <div className="flex flex-warp justify-between items-center border-b-[1.7px] dark:border-white mx-auto max-w-screen-xl ">
             <div className="">
               <ul className=" text-black dark:text-white text-lg font-serif flex justify-between items-center py-1 ">
                 <li className="pr-[15px]">
