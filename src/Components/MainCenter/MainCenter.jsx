@@ -3,59 +3,9 @@
 export default function MainCenter() {
   return (
     <>
-      <div className="p-2 bg-white dark:bg-slate-800 rounded-xl h-[100vh]">
-        {/* <div className="flex flex-wrap auto">
-          <div className="bg-slate-500 text-black dark:text-white rounded-xl p-2 m-2 border-black dark:border-white border-[1.2px] ">
-            Divs for Main-Center
-          </div>
-          <div className="bg-slate-500 text-black dark:text-white rounded-xl p-2 m-2 border-black dark:border-white border-[1.2px] ">
-            Divs for Main-Center
-          </div>
-          <div className="bg-slate-500 text-black dark:text-white rounded-xl p-2 m-2 border-black dark:border-white border-[1.2px] ">
-            Divs for Main-Center
-          </div>
-          <div className="bg-slate-500 text-black dark:text-white rounded-xl p-2 m-2 border-black dark:border-white border-[1.2px] ">
-            Divs for Main-Center
-          </div>
-          <div className="bg-slate-500 text-black dark:text-white rounded-xl p-2 m-2 border-black dark:border-white border-[1.2px] ">
-            Divs for Main-Center
-          </div>
-          <div className="bg-slate-500 text-black dark:text-white rounded-xl p-2 m-2 border-black dark:border-white border-[1.2px] ">
-            Divs for Main-Center
-          </div>
-          <div className="bg-slate-500 text-black dark:text-white rounded-xl p-2 m-2 border-black dark:border-white border-[1.2px] ">
-            Divs for Main-Center
-          </div>
-          <div className="bg-slate-500 text-black dark:text-white rounded-xl p-2 m-2 border-black dark:border-white border-[1.2px] ">
-            Divs for Main-Center
-          </div>
-          <div className="bg-slate-500 text-black dark:text-white rounded-xl p-2 m-2 border-black dark:border-white border-[1.2px] ">
-            Divs for Main-Center
-          </div>
-          <div className="bg-slate-500 text-black dark:text-white rounded-xl p-2 m-2 border-black dark:border-white border-[1.2px] ">
-            Divs for Main-Center
-          </div>
-          <div className="bg-slate-500 text-black dark:text-white rounded-xl p-2 m-2 border-black dark:border-white border-[1.2px] ">
-            Divs for Main-Center
-          </div>
-          <div className="bg-slate-500 text-black dark:text-white rounded-xl p-2 m-2 border-black dark:border-white border-[1.2px] ">
-            Divs for Main-Center
-          </div>
-          <div className="bg-slate-500 text-black dark:text-white rounded-xl p-2 m-2 border-black dark:border-white border-[1.2px] ">
-            Divs for Main-Center
-          </div>
-          <div className="bg-slate-500 text-black dark:text-white rounded-xl p-2 m-2 border-black dark:border-white border-[1.2px] ">
-            Divs for Main-Center
-          </div>
-          <div className="bg-slate-500 text-black dark:text-white rounded-xl p-2 m-2 border-black dark:border-white border-[1.2px] ">
-            Divs for Main-Center
-          </div>
-          <div className="bg-slate-500 text-black dark:text-white rounded-xl p-2 m-2 border-black dark:border-white border-[1.2px] ">
-            Divs for Main-Center
-          </div>
-        </div> */}
+      <div className="p-2 bg-white dark:bg-slate-800 rounded-xl h-full">
         <div className=" w-full   dark:bg-slate-900 p-10 bg-transparent">
-        <div className="w-[90vw]  m-auto">
+        <div className=" mx-auto">
           <div className=" bg-slate-400 dark:bg-slate-500 p-3 rounded-xl shadow-sm flex justify-center items-center">
             <div className=" flex flex-wrap space-between p-4">
               <div className="flex flex-wrap flex-col justify-center items-center mr-8">
