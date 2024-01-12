@@ -7,13 +7,13 @@ export default function MainContainer() {
   return (
     <>
     <div className="w-full dark:bg-slate-900 bg-white ">
-      <div className="mx-auto px-5">
+      {/* <div className="mx-auto px-5">
         <div className="flex">
           <Mainleft/>
           <MainCenter/>
           <MainRight/>
         </div>
-      </div>
+      </div> */}
     </div>
     </>
   );

@@ -21,7 +21,7 @@ function Navigation() {
 
   return (
     <>
-      <header className="shadow sticky z-50 top-0 dark:bg-slate-900 pt-[2.5px] pb-[10px] bg-white">
+      <header className="shadow fixed z-50 top-0 dark:bg-slate-900 pt-[2.5px] pb-[10px] bg-white w-[100%]">
         <nav className="pr-[10px] pl-[10px]">
           <div className="flex flex-warp justify-between items-center border-b-[1.7px] dark:border-white mx-auto max-w-screen-2xl ">
             <div className="">
