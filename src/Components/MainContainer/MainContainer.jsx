@@ -6,9 +6,9 @@ import MainRight from "../MainRight/MainRight";
 export default function MainContainer() {
   return (
     <>
-    <div className="w-full mx-auto dark:bg-slate-900 bg-white ">
-      <div className="mx-auto">
-        <div className="flex ">
+    <div className="w-full dark:bg-slate-900 bg-white ">
+      <div className="mx-auto px-5">
+        <div className="flex">
           <Mainleft/>
           <MainCenter/>
           <MainRight/>
