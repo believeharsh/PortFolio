@@ -1,10 +1,14 @@
-
+import { FaHome } from "react-icons/fa";
 export default function Mainleft() {
   return (
    <>
-    <div className="flex flex-col bg-white dark:bg-slate-900 text-white p-1 ">
-        <div className="text-white dark:bg-white dark:text-black">C</div>
-        <div className="text-white dark:bg-white dark:text-black">L</div>
+    <div className="flex flex-col">
+        <div className="text-black dark:text-white">
+             <FaHome/>
+        </div>
+        <div className="text-black dark:text-white">
+        <FaHome/>
+        </div>
     </div>
    </>
   )

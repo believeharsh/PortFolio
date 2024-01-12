@@ -50,6 +50,7 @@ export default function MainCenter() {
                   </div>
                 </div>
               </div>
+             
             </div>
           </div>
         </div>
