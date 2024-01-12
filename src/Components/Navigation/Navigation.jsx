@@ -1,7 +1,7 @@
 // import React from 'react'
 import { MdDarkMode } from "react-icons/md";
 import { IoMenu } from "react-icons/io5";
-import { DiReact } from "react-icons/di";
+import { FaHome } from "react-icons/fa";
 import { CiLight } from "react-icons/ci";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
@@ -22,48 +22,58 @@ function Navigation() {
   return (
     <>
       <header className="shadow fixed z-50 top-0 dark:bg-slate-900 pt-[2.5px] pb-[10px] bg-white w-[100%]">
-        <nav className="pr-[10px] pl-[10px]">
-          <div className="flex flex-warp justify-between items-center border-b-[1.7px] dark:border-white mx-auto max-w-screen-2xl ">
+        <nav className=" px-3 py-1 ">
+          <div className="flex flex-warp justify-between items-center mx-auto pb-3 max-w-screen-2xl border-b-[1.5px] border-black dark:border-white">
             <div className="">
-              <ul className=" text-black dark:text-white text-lg font-serif flex justify-between items-center py-1 ">
-                <li className="pr-[15px]">
-                  <IoMenu className=" text-3xl" />
-                </li>
-                <div className="flex justify-center items-center">
-                  <span className="text-2xl ">
-                    <DiReact />
-                  </span>
-                  <li className="mx-1 text-2xl font- "> Developer</li>
+              <div className="flex justify-center items-center ">
+                <div className="pr-[15px]">
+                  <IoMenu className=" text-4xl text-black dark:text-white  hover:bg-slate-700 hover:rounded-xl  " />
                 </div>
-              </ul>
-              <Link className="text-black dark:text-white text-2xl font-serif" to="/">
-                Home
-              </Link>
+                <div className="flex justify-center items-center">
+                  <Link
+                    className="text-black dark:text-white text-2xl font-serif mx-2 hover:bg-slate-700 px-1 py-1   hover:rounded-sm "
+                    to="/"
+                  >
+                    <FaHome />
+                  </Link>
+                  <div className="text-black mx-1 text-lg dark:text-white ">Harsh Dahiya </div>
+                </div>
+              </div>
             </div>
 
             <div className="">
-              <ul className=" text-black dark:text-white text-lg font-serif flex justify-between items-center ">
-                <li className="   border-black dark:border-white border-[1px] rounded-xl pr-2 pl-2 mr-2">
-                  <ul className="text-black dark:text-white text-lg font-serif ">
-                    Projects
-                  </ul>
-                </li>
-                <li className="mx-1 pr-5 " onClick={ToggleTheme}>
-                  {Theme === "dark" ? (
-                    <MdDarkMode className="text-lg  text-black dark:text-white w-[23px] h-[25px]" />
-                  ) : (
-                    <CiLight className="text-lg  text-black dark:text-white w-[27px] h-[28px] " />
-                  )}
-                </li>
-                <Link to="/about">
-                  <p className="text-black dark:text-white text-2xl p-2">
-                    About
-                  </p>
-                </Link>
-              </ul>
+              <div className=" text-black dark:text-white text-lg  flex justify-between items-center ">
+                <div className="flex justify-center items-center">
+                  <Link to="/Projects">
+                    <li className="   border-black dark:border-white border-[1px] rounded-xl pr-2 pl-2 mx-2  list-none">
+                      <p className="text-black dark:text-white text-lg ">
+                        Projects
+                      </p>
+                    </li>
+                  </Link>
+
+                  <Link to="/about">
+                    <li className=" border-black dark:border-white border-[1px] rounded-xl pr-2 pl-2 mx-2 list-none">
+                      <p className="text-black dark:text-white text-lg ">
+                        About
+                      </p>
+                    </li>
+                  </Link>
+                </div>
+                <div className="">
+                  <li className="mx-1 pr-5 list-none " onClick={ToggleTheme}>
+                    {Theme === "dark" ? (
+                      <MdDarkMode className="text-lg  text-black dark:text-white w-[23px] h-[25px]" />
+                    ) : (
+                      <CiLight className="text-lg  text-black dark:text-white w-[27px] h-[28px] " />
+                    )}
+                  </li>
+                </div>
+              </div>
             </div>
           </div>
         </nav>
+        {/* <div className="max-w-screen-2xl border-b-[1px] dark:border-white border-black  "></div> */}
       </header>
     </>
   );
