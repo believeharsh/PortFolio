@@ -21,9 +21,9 @@ function Navigation() {
 
   return (
     <>
-      <header className="shadow sticky z-50 top-0 dark:bg-slate-900 pt-[2.5px] pb-[10px] bg-white">
+      <header className="shadow fixed z-50 top-0 dark:bg-slate-900 pt-[2.5px] pb-[10px] bg-white w-[100%]">
         <nav className="pr-[10px] pl-[10px]">
-          <div className="flex flex-warp justify-between items-center border-b-[1.7px] dark:border-white mx-auto max-w-screen-xl ">
+          <div className="flex flex-warp justify-between items-center border-b-[1.7px] dark:border-white mx-auto max-w-screen-2xl ">
             <div className="">
               <ul className=" text-black dark:text-white text-lg font-serif flex justify-between items-center py-1 ">
                 <li className="pr-[15px]">
@@ -36,17 +36,18 @@ function Navigation() {
                   <li className="mx-1 text-2xl font- "> Developer</li>
                 </div>
               </ul>
-            <Link className="text-white text-2xl font-serif" to="/" >
-              Home
-            </Link>
+              <Link className="text-black dark:text-white text-2xl font-serif" to="/">
+                Home
+              </Link>
             </div>
 
             <div className="">
-            
               <ul className=" text-black dark:text-white text-lg font-serif flex justify-between items-center ">
-              <li className="   border-black dark:border-white border-[1px] rounded-xl pr-2 pl-2 mr-2">
-                <ul className="text-black dark:text-white text-lg font-serif ">Projects</ul>
-              </li>
+                <li className="   border-black dark:border-white border-[1px] rounded-xl pr-2 pl-2 mr-2">
+                  <ul className="text-black dark:text-white text-lg font-serif ">
+                    Projects
+                  </ul>
+                </li>
                 <li className="mx-1 pr-5 " onClick={ToggleTheme}>
                   {Theme === "dark" ? (
                     <MdDarkMode className="text-lg  text-black dark:text-white w-[23px] h-[25px]" />
@@ -55,8 +56,9 @@ function Navigation() {
                   )}
                 </li>
                 <Link to="/about">
-                <p className="text-white text-2xl p-2">About</p>
-
+                  <p className="text-black dark:text-white text-2xl p-2">
+                    About
+                  </p>
                 </Link>
               </ul>
             </div>
