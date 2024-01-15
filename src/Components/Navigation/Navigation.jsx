@@ -1,12 +1,14 @@
 // import React from 'react'
 import { MdDarkMode } from "react-icons/md";
-import { IoMenu } from "react-icons/io5";
+// import { IoMenu } from "react-icons/io5";
+import SideMenuButton from "../SideMenuButton";
 import { FaHome } from "react-icons/fa";
 import { CiLight } from "react-icons/ci";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
-function Navigation() {
+// eslint-disable-next-line react/prop-types
+function Navigation({toggleSideMenu}) {
   const [Theme, setTheme] = useState("dark");
 
   useEffect(() => {
@@ -18,23 +20,30 @@ function Navigation() {
   const ToggleTheme = () => {
     setTheme(Theme === "dark" ? "light" : "dark");
   };
+  
+  
+
+ 
+   
+
 
   return (
     <>
       <header className="shadow fixed z-50 top-0 dark:bg-slate-900 pt-[2.5px] pb-[10px] bg-white w-[100%]">
         <nav className=" px-3 py-1 ">
-          <div className="flex flex-warp justify-between items-center mx-auto pb-3 max-w-screen-2xl border-b-[1.5px] border-black dark:border-white">
+          <div className="flex flex-warp justify-between items-center mx-auto pb-3  border-b-[1.5px] border-black dark:border-white">
             <div className="">
               <div className="flex justify-center items-center ">
-                <div className="pr-[15px]">
-                  <IoMenu className=" text-4xl text-black dark:text-white  hover:bg-slate-700 hover:rounded-xl  " />
+                <div className="pr-[15px]" id="menuButton">
+                  {/* <IoMenu className=" text-4xl text-black dark:text-white  hover:bg-slate-700 hover:rounded-xl  " /> */}
+                  <SideMenuButton/>
                 </div>
                 <div className="flex justify-center items-center">
                   <Link
                     className="text-black dark:text-white text-2xl font-serif mx-2 hover:bg-slate-700 px-1 py-1   hover:rounded-sm "
-                    to="/"
+                    to="/" 
                   >
-                    <FaHome />
+                    <FaHome id="ToggleSideMenu" onClick={toggleSideMenu} />
                   </Link>
                   <div className="text-black mx-1 text-lg dark:text-white ">Harsh Dahiya </div>
                 </div>
@@ -65,7 +74,7 @@ function Navigation() {
                     {Theme === "dark" ? (
                       <MdDarkMode className="text-lg  text-black dark:text-white w-[23px] h-[25px]" />
                     ) : (
-                      <CiLight className="text-lg  text-black dark:text-white w-[27px] h-[28px] " />
+                      <CiLight className="text-lg  text-black dark:text-white w-[27px] h-[2r8px] " />
                     )}
                   </li>
                 </div>
