@@ -2,20 +2,46 @@
 import MainCenter from "../MainCenter/MainCenter";
 import Mainleft from "../Mainleft/Mainleft";
 import MainRight from "../MainRight/MainRight";
+import SideMenu from "../SideMenu";
+// import Navigation from "../Navigation/Navigation";
+// import { useState } from "react";
 
 export default function MainContainer() {
+  // const [isSideMenuOpen, setSideMenuOpen] = useState(false);
+
+  // const toggleSideMenu = () => {
+  //   setSideMenuOpen(!isSideMenuOpen);
+  // };
+
   return (
     <>
-      <div className=" relative w-full ">
-        <div className="mx-auto max-w-screen-xl">
-          <div className="relative">
-            <div className="h-2 bg-transparent relative flex">
-              <Mainleft className=" w-[100px] p-1  " />
-              <MainCenter className="" />
-              <MainRight className=" w-[46px] p-1 " />
+    
+
+      <div className="w-[100vw]  mx-auto fixed h-[100vh] overflow-auto bg-slate-900 ">
+        
+          <div className="flex ">
+            <div className=" h-[100vh] fixed z-13 ">
+              <SideMenu className="h-[100vh] w-14 " />
+            </div>
+
+            <div className="bg-slate-800   left-0 h-[100vh]  w-[44px] fixed z-10">
+              <Mainleft />
+            </div>
+            <div className="bg-slate-700 rounded-xl w-[calc(100%-100px)] relative mx-auto  top-[62px] px-2 py-2 mb-1">
+             <div className="">
+             <MainCenter/>
+
+             </div>
+            </div>
+          
+         
+          
+
+            <div className="bg-slate-800   right-0 fixed z-10 w-[44px] h-[100vh] ">
+              <MainRight />
             </div>
           </div>
-        </div>
+    
       </div>
     </>
   );

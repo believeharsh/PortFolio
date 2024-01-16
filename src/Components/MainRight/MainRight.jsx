@@ -2,7 +2,7 @@
 
 function MainRight() {
   return (
-    <div className="bg-white dark:bg-slate-900 h-[100vh] ">
+    <div className="bg-white dark:bg-slate-900 fixed w-[27px]">
     Harsh
       
     </div>

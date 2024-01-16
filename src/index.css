@@ -1,3 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.Skills{
+    @apply bg-white border-[1px] border-black rounded-xl py-1 px-3 active:bg-gray-500 active:border-white active:border-[0.7px] space-x-4
+}
