@@ -3,10 +3,10 @@
 export default function MainCenter() {
   return (
     <>
-      <div className="p-2 bg-white dark:bg-slate-800 rounded-xl h-full">
+      <div className="p-2 rounded-xl">
         <div className=" w-full   dark:bg-slate-900 p-10 bg-transparent">
         <div className=" mx-auto">
-          <div className=" bg-slate-400 dark:bg-slate-500 p-3 rounded-xl shadow-sm flex justify-center items-center">
+          <div className=" bg-slate-400 dark:bg-slate-700 p-3 rounded-xl  flex justify-center items-center">
             <div className=" flex flex-wrap space-between p-4">
               <div className="flex flex-wrap flex-col justify-center items-center mr-8">
                 <img
@@ -55,6 +55,45 @@ export default function MainCenter() {
           </div>
         </div>
       </div>
+      
+<div className="mt-10 w-[70vw] mx-auto overflow-auto h-full">
+  <div className="flex justify-center items-center flex-wrap space-x-2 space-y-1">
+    {/* <div className="bg-white border-[1px] border-black rounded-xl py-2 px-3 active:bg-gray-500 active:border-white active:border-[0.7px]">React</div>
+    <div className="bg-white border-[1px] border-black rounded-xl py-2 px-3 active:bg-gray-500 active:border-white active:border-[0.7px]">React</div>
+    <div className="bg-white border-[1px] border-black rounded-xl py-2 px-3 active:bg-gray-500 active:border-white active:border-[0.7px]">React</div>
+    <div className="bg-white border-[1px] border-black rounded-xl py-2 px-3 active:bg-gray-500 active:border-white active:border-[0.7px]">React</div>
+    <div className="bg-white border-[1px] border-black rounded-xl py-2 px-3 active:bg-gray-500 active:border-white active:border-[0.7px]">React</div>
+    <div className="bg-white border-[1px] border-black rounded-xl py-2 px-3 active:bg-gray-500 active:border-white active:border-[0.7px]">React</div>
+    <div className="bg-white border-[1px] border-black rounded-xl py-2 px-3 active:bg-gray-500 active:border-white active:border-[0.7px]">React</div>
+    <div className="bg-white border-[1px] border-black rounded-xl py-2 px-3 active:bg-gray-500 active:border-white active:border-[0.7px]">React</div>
+    <div className="bg-white border-[1px] border-black rounded-xl py-2 px-3 active:bg-gray-500 active:border-white active:border-[0.7px]">React</div>
+    <div className="bg-white border-[1px] border-black rounded-xl py-2 px-3 active:bg-gray-500 active:border-white active:border-[0.7px]">React</div>
+    <div className="bg-white border-[1px] border-black rounded-xl py-2 px-3 active:bg-gray-500 active:border-white active:border-[0.7px]">React</div>
+    <div className="bg-white border-[1px] border-black rounded-xl py-2 px-3 active:bg-gray-500 active:border-white active:border-[0.7px]">React</div>
+    <div className="bg-white border-[1px] border-black rounded-xl py-2 px-3 active:bg-gray-500 active:border-white active:border-[0.7px]">React</div>
+    <div className="bg-white border-[1px] border-black rounded-xl py-2 px-3 active:bg-gray-500 active:border-white active:border-[0.7px]">React</div>
+    <div className="bg-white border-[1px] border-black rounded-xl py-2 px-3 active:bg-gray-500 active:border-white active:border-[0.7px]">React</div> */}
+
+
+
+    <div className="Skills">React</div>
+    <div className="Skills">React</div>
+    <div className="Skills">React</div>
+    <div className="Skills">React</div>
+    <div className="Skills">React</div>
+    <div className="Skills">React</div>
+    <div className="Skills">React</div>
+    <div className="Skills">React</div>
+    <div className="Skills">React</div>
+    <div className="Skills">React</div>
+    <div className="Skills">React</div>
+    <div className="Skills">React</div>
+    <div className="Skills">React</div>
+    <div className="Skills">React</div>
+    <div className="Skills">React</div>
+  </div>
+</div>
+
       </div>
     </>
   );
