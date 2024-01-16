@@ -1,13 +1,18 @@
-// import React from 'react'
+import { GoProjectSymlink } from "react-icons/go";
 
 
 function SideMenu() {
   return (
     <>
-         <div className="bg-white border-black border-[1px] ">
-            <div className="text-black text-sm">harsh Dahiya </div>
-            <div className="text-black text-sm">LInkedin</div>
-            <div className="text-black text-sm">Learning </div>
+         <div className="bg-white border-black border-[1px] pt-12">
+       
+         <div className="flex justify-center items-center">
+         <div>
+        <GoProjectSymlink className="text-black dark:text-white "/>
+         </div>
+         <div></div>
+
+         </div>
          </div>
     </>
   )
