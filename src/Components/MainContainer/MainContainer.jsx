@@ -1,4 +1,5 @@
 
+import About from "../About/About";
 import MainCenter from "../MainCenter/MainCenter";
 import Mainleft from "../Mainleft/Mainleft";
 import MainRight from "../MainRight/MainRight";
@@ -32,7 +33,8 @@ export default function MainContainer() {
 
             <div className="bg-slate-700 rounded-xl w-[calc(100%-100px)] relative mx-auto  top-[62px] px-2 py-2 mb-1">
              
-             <MainCenter/>
+             {/* <MainCenter/> */}
+             <About/>
 
            
             </div>
