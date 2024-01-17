@@ -23,22 +23,20 @@ export default function MainContainer() {
           <div className="flex ">
             <div className=" h-[100vh] fixed z-13 ">
               {/* <SideMenu className={`h-[100vh] w-14 `${isSideMenuOpen:'hidden'? 'visible'}  } /> */}
-              <SideMenu className={`${isSideMenuOpen? 'hidden' : 'visible'}  `}/>
+              <SideMenu className={`${isSideMenuOpen? 'hidden' : 'visible'}`}/>
             </div>
 
             <div className="bg-slate-800 left-0 h-[100vh]  w-[44px] fixed z-10 ">
               <Mainleft />
             </div>
+
             <div className="bg-slate-700 rounded-xl w-[calc(100%-100px)] relative mx-auto  top-[62px] px-2 py-2 mb-1">
-             <div className="">
+             
              <MainCenter/>
 
-             </div>
+           
             </div>
           
-         
-          
-
             <div className="bg-slate-800   right-0 fixed z-10 w-[44px] h-[100vh] ">
               <MainRight />
             </div>
