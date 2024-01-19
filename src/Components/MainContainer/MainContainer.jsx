@@ -20,7 +20,7 @@ export default function MainContainer() {
           <div className="bg-slate-800   left-0 h-[100vh]  w-[44px] fixed z-10">
             <Mainleft />
           </div>
-          <div className="bg-slate-700 rounded-xl w-[calc(100%-49px-49px)] relative mx-auto top-[62px] px-2 py-2 mb-1">
+          <div className="bg-slate-700 rounded-xl w-[calc(100%-49px-49px)]  relative mx-auto top-[62px] px-2 py-2 mb-1">
             <div className="">
 
               <Outlet />
