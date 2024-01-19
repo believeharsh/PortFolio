@@ -58,21 +58,6 @@ export default function MainCenter() {
       
 <div className="mt-10 w-[70vw] mx-auto overflow-auto h-full">
   <div className="flex justify-center items-center flex-wrap space-x-2 space-y-1">
-    {/* <div className="bg-white border-[1px] border-black rounded-xl py-2 px-3 active:bg-gray-500 active:border-white active:border-[0.7px]">React</div>
-    <div className="bg-white border-[1px] border-black rounded-xl py-2 px-3 active:bg-gray-500 active:border-white active:border-[0.7px]">React</div>
-    <div className="bg-white border-[1px] border-black rounded-xl py-2 px-3 active:bg-gray-500 active:border-white active:border-[0.7px]">React</div>
-    <div className="bg-white border-[1px] border-black rounded-xl py-2 px-3 active:bg-gray-500 active:border-white active:border-[0.7px]">React</div>
-    <div className="bg-white border-[1px] border-black rounded-xl py-2 px-3 active:bg-gray-500 active:border-white active:border-[0.7px]">React</div>
-    <div className="bg-white border-[1px] border-black rounded-xl py-2 px-3 active:bg-gray-500 active:border-white active:border-[0.7px]">React</div>
-    <div className="bg-white border-[1px] border-black rounded-xl py-2 px-3 active:bg-gray-500 active:border-white active:border-[0.7px]">React</div>
-    <div className="bg-white border-[1px] border-black rounded-xl py-2 px-3 active:bg-gray-500 active:border-white active:border-[0.7px]">React</div>
-    <div className="bg-white border-[1px] border-black rounded-xl py-2 px-3 active:bg-gray-500 active:border-white active:border-[0.7px]">React</div>
-    <div className="bg-white border-[1px] border-black rounded-xl py-2 px-3 active:bg-gray-500 active:border-white active:border-[0.7px]">React</div>
-    <div className="bg-white border-[1px] border-black rounded-xl py-2 px-3 active:bg-gray-500 active:border-white active:border-[0.7px]">React</div>
-    <div className="bg-white border-[1px] border-black rounded-xl py-2 px-3 active:bg-gray-500 active:border-white active:border-[0.7px]">React</div>
-    <div className="bg-white border-[1px] border-black rounded-xl py-2 px-3 active:bg-gray-500 active:border-white active:border-[0.7px]">React</div>
-    <div className="bg-white border-[1px] border-black rounded-xl py-2 px-3 active:bg-gray-500 active:border-white active:border-[0.7px]">React</div>
-    <div className="bg-white border-[1px] border-black rounded-xl py-2 px-3 active:bg-gray-500 active:border-white active:border-[0.7px]">React</div> */}
 
 
 
