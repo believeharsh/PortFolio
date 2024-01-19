@@ -5,12 +5,7 @@ import SideMenu from "../SideMenu";
 
 
 export default function MainContainer() {
-  // const [isSideMenuOpen, setSideMenuOpen] = useState(false);
-
-  // const toggleSideMenu = () => {
-  //   setSideMenuOpen(!isSideMenuOpen);
-  // };
-
+ 
   return (
     <>
 
