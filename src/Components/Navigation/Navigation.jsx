@@ -1,7 +1,7 @@
 // import React from 'react'
 import { MdDarkMode } from "react-icons/md";
-// import { IoMenu } from "react-icons/io5";
-import SideMenuButton from "../SideMenuButton";
+import { IoMenu } from "react-icons/io5";
+// import SideMenuButton from "../SideMenuButton";
 import { FaHome } from "react-icons/fa";
 import { CiLight } from "react-icons/ci";
 import { useEffect, useState } from "react";
@@ -38,8 +38,10 @@ function Navigation({ toggleSideMenu }) {
             <div className="">
               <div className="flex justify-center items-center ">
                 <div className="pr-[15px]" id="menuButton">
-                  {/* <IoMenu className=" text-4xl text-black dark:text-white  hover:bg-slate-700 hover:rounded-xl  " /> */}
-                  <SideMenuButton />
+                  {/* <IoMenu " /> */}
+                  {/* <SideMenuButton /> */}
+                  <IoMenu className=" text-4xl text-black dark:text-white  hover:bg-slate-700 hover:rounded-xl   "/>
+                 
                 </div>
                 <div className="flex justify-center items-center">
                   <Link
