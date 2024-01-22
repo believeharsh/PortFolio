@@ -22,24 +22,18 @@ function Navigation({ toggleSideMenu }) {
 
 
   };
-
-
-
-
-
-
-
-
   return (
     <>
-      <header id="MYID" className=" backdrop-blur-md shadow fixed z-50 top-0 dark:bg-slate-900 pt-[2.5px] pb-[10px] bg-white w-[100%]">
+      <header id="MYID" className="shadow fixed z-50 top-0 dark:bg-slate-900/80 pt-[2.5px] pb-[10px] bg-white w-[100%] backdrop-blur-xl ">
         <nav className=" px-3 py-1 ">
           <div className="flex flex-warp justify-between items-center mx-auto pb-3  border-b-[1.5px] border-black dark:border-white">
             <div className="">
               <div className="flex justify-center items-center ">
                 <div className="pr-[15px]" id="menuButton">
-                  <IoMenu className=" text-4xl text-black dark:text-white  hover:bg-slate-700 hover:rounded-xl   " />
-
+                  {/* <IoMenu " /> */}
+                  {/* <SideMenuButton /> */}
+                  <IoMenu className=" text-4xl text-black dark:text-white  hover:bg-slate-700 hover:rounded-xl   "/>
+                 
                 </div>
                 <div className="flex justify-center items-center">
                   <Link
