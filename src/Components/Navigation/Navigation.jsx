@@ -7,7 +7,6 @@ import { CiLight } from "react-icons/ci";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
-// eslint-disable-next-line react/prop-types
 function Navigation({ toggleSideMenu }) {
   const [Theme, setTheme] = useState("dark");
 
