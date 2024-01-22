@@ -3,7 +3,7 @@
 export default function MainCenter() {
   return (
     <>
-      <div className="p-2 rounded-xl">
+      <div className="p-2 rounded-xl ">
         <div className=" w-full   dark:bg-slate-900 p-10 bg-transparent">
         <div className=" mx-auto">
           <div className=" bg-slate-400 dark:bg-slate-700 p-3 rounded-xl  flex justify-center items-center">
