@@ -22,17 +22,9 @@ function Navigation({ toggleSideMenu }) {
 
 
   };
-
-
-
-
-
-
-
-
   return (
     <>
-      <header id="MYID" className="shadow fixed z-50 top-0 dark:bg-slate-900 pt-[2.5px] pb-[10px] bg-white w-[100%]">
+      <header id="MYID" className="shadow fixed z-50 top-0 dark:bg-slate-900/80 pt-[2.5px] pb-[10px] bg-white w-[100%] backdrop-blur-xl">
         <nav className=" px-3 py-1 ">
           <div className="flex flex-warp justify-between items-center mx-auto pb-3  border-b-[1.5px] border-black dark:border-white">
             <div className="">
