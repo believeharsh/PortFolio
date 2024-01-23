@@ -7,7 +7,7 @@ function Projects() {
         <div className="flex flex-col ">
           <div className="flex flex-col mb-6">
             <div className="mb-2">
-              <p className="text-white font-mono text-4xl px-1 py-1">Latest Projects
+              <p className=" text-black dark:text-white font-mono text-4xl px-1 py-1">Latest Projects
                 <span className="border-b-[1px] border-black "></span>
               </p>
 
@@ -75,7 +75,7 @@ function Projects() {
 
           <div className="flex flex-col mb-6 ">
             <div className="mb-2">
-              <p className="text-white font-mono text-4xl px-1 py-1">Projects
+              <p className="text-black dark:text-white font-mono text-4xl px-1 py-1">Projects
                 <span className="border-b-[1px] border-black "></span>
               </p>
 
