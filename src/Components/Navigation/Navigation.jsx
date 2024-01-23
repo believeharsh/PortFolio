@@ -1,13 +1,14 @@
 // import React from 'react'
 import { MdDarkMode } from "react-icons/md";
 import { IoMenu } from "react-icons/io5";
-import SideMenu from "../SideMenu";
 import { FaHome } from "react-icons/fa";
 import { CiLight } from "react-icons/ci";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import MainContainer from "../MainContainer/MainContainer";
 
-function Navigation({}) {
+
+function Navigation({click}) {
   const [Theme, setTheme] = useState("dark");
 
   useEffect(() => {
@@ -21,14 +22,9 @@ function Navigation({}) {
 
 
   };
-  const[SideMenuOpne, setSideMenuOpne] = useState();
-  const toggleSideMenu = () => {
-     if(!SideMenuOpne){
-      return(
-        <SideMenu/>
-      )
-     }
-  }
+
+
+  
 
   return (
     <>
@@ -39,7 +35,7 @@ function Navigation({}) {
               <div className="flex justify-center items-center space-x-4">
                 <div className="dark:active:bg-blue-800 dark:hover:bg-slate-800 rounded-sm ml-3" id="menuButton ">
                 
-                  <IoMenu className=" text-4xl text-black dark:text-white  "/>
+                  <IoMenu className=" text-4xl text-black dark:text-white " onClick={click} />
                  
                 </div>
                 <div className="flex justify-center items-center">
@@ -47,7 +43,7 @@ function Navigation({}) {
                     className="text-black dark:text-white text-2xl font-serif mx-2  px-1 py-1 dark:active:bg-blue-800 dark:hover:bg-slate-800 rounded-xl   "
                     to="/"
                   >
-                    <FaHome id="ToggleSideMenu" onClick={toggleSideMenu} />
+                    <FaHome id="ToggleSideMenu" />
                   </Link>
                   <div className="text-black mx-1 text-lg dark:text-white dark:active:bg-blue-800 dark:hover:bg-slate-800 rounded-xl ">Harsh Dahiya </div>
                 </div>
