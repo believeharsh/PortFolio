@@ -1,13 +1,13 @@
 // import React from 'react'
 import { MdDarkMode } from "react-icons/md";
 import { IoMenu } from "react-icons/io5";
-// import SideMenuButton from "../SideMenuButton";
+import SideMenu from "../SideMenu";
 import { FaHome } from "react-icons/fa";
 import { CiLight } from "react-icons/ci";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
-function Navigation({ toggleSideMenu }) {
+function Navigation({}) {
   const [Theme, setTheme] = useState("dark");
 
   useEffect(() => {
@@ -21,6 +21,15 @@ function Navigation({ toggleSideMenu }) {
 
 
   };
+  const[SideMenuOpne, setSideMenuOpne] = useState();
+  const toggleSideMenu = () => {
+     if(!SideMenuOpne){
+      return(
+        <SideMenu/>
+      )
+     }
+  }
+
   return (
     <>
       <header id="MYID" className="shadow fixed z-50 top-0  dark:bg-slate-900/80 pt-[2.5px] pb-[10px] bg-gray-100 bg-opacity-75  w-[100%] dark:backdrop-blur-xl backdrop-blur-3xl ">
@@ -79,7 +88,7 @@ function Navigation({ toggleSideMenu }) {
             </div>
           </div>
         </nav>
-        {/* <div className="max-w-screen-2xl border-b-[1px] dark:border-white border-black  "></div> */}
+     
       </header>
 
     </>

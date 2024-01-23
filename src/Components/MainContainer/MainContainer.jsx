@@ -13,7 +13,7 @@ export default function MainContainer() {
       <div className=" overflow-auto  bg-white dark:bg-slate-900 h-full relative  ">
 
         <div className="flex ">
-          <div className=" h-[100vh] fixed z-13 ">
+          <div className=" h-full fixed z-13 dark:bg-white w-[226px] top-[53px] left-[44px] ">
             <SideMenu className="h-[100vh] w-14 " />
           </div>
 
