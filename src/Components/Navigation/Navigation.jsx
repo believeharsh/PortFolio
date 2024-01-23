@@ -28,10 +28,9 @@ function Navigation({ toggleSideMenu }) {
           <div className="flex flex-warp justify-between items-center mx-auto pb-3  border-b-[1.5px] border-black dark:border-white">
             <div className="">
               <div className="flex justify-center items-center ">
-                <div className="pr-[15px]" id="menuButton">
-                  {/* <IoMenu " /> */}
-                  {/* <SideMenuButton /> */}
-                  <IoMenu className=" text-4xl text-black dark:text-white  hover:bg-slate-700 hover:rounded-xl   "/>
+                <div className="pr-[11px] p1" id="menuButton">
+                
+                  <IoMenu className=" text-4xl text-black dark:text-white  hover:bg-slate-700 hover:rounded-sm"/>
                  
                 </div>
                 <div className="flex justify-center items-center">
