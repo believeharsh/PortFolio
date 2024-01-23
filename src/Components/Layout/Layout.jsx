@@ -9,7 +9,7 @@ function Layout() {
   return (
     <>
 
-      <Navigation />
+      
       
       <MainContainer>
       </MainContainer>

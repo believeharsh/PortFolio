@@ -29,7 +29,7 @@ export default function MainContainer() {
           <div className=" bg-blue-200  dark:bg-slate-900 left-0 h-[1750px]  w-[44px] fixed z-10">
             <Mainleft />
           </div>
-          <div className=" bg-gray-100  dark:bg-gradient-to-r from-gray-800 via-slate-9j00 to-gray-800 rounded-xl w-[calc(100%-49px-49px)]  mx-auto mt-[62px] px-2 py-2 mb-1 border-[1.5px] dark:border-white border-black ">
+          <div className=" bg-gray-100 h-[100vh] dark:bg-gradient-to-r from-gray-800 via-slate-9j00 to-gray-800 rounded-xl w-[calc(100%-49px-49px)]  mx-auto mt-[62px] px-2 py-2 mb-1 border-[1.5px] dark:border-white border-black ">
             <div className="">
 
               <Outlet />
