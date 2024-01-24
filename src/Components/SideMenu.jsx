@@ -19,29 +19,29 @@ function SideMenu({sidebar}) {
             <p>Learning Frontend Development | Coding keen | Self Development content | React | JS | Learner🚀</p>
           </div>
           <div className="flex flex-col justify-center item-center space-y-2">
-            <div className="flex space-x-1 space-y-2 bg-blue-500 px-11 py-1 rounded-xl mx-auto items-center ">
+            <div className="flex space-x-1 space-y-2 bg-blue-500 px-6 w-[180px] py-1 rounded-xl items-center justify-center">
               <IoLogoLinkedin className="text-2xl" alt="" 
             
               />
               <p className="text-thin text-xl text-black">LinkedIn</p>
             
             </div>
-            <div className="flex space-x-1 space-y-2 bg-blue-500 px-11 py-1 rounded-xl justify-center mx-auto  items-center ">
-              <IoLogoGithub  className="rounded-full" alt="" 
+            <div className="flex space-x-1 space-y-2 bg-blue-500 px-6 w-[180px] py-1 rounded-xl items-center justify-center">
+              <IoLogoGithub  className="text-2xl" alt="" 
             
               />
               <p className="text-thin text-xl text-black">github</p>
             
             </div>
-            <div className="flex space-x-1 space-y-2 bg-blue-500 px-11 py-1 rounded-xl justify-center mx-auto  items-center">
-              <IoLogoInstagram  className="rounded-full" alt="" 
+            <div className="flex space-x-1 space-y-2 bg-blue-500 px-6 w-[180px] py-1 rounded-xl items-center justify-center">
+              <IoLogoInstagram  className="text-2xl" alt="" 
             
               />
               <p className="text-thin text-xl text-black">Instagram</p>
             
             </div>
-            <div className="flex space-x-1 space-y-2 bg-blue-500 px-11 py-1 rounded-xl mx-auto items-center ">
-              <IoLogoYoutube className="rounded-full" alt="" 
+            <div className="flex space-x-1 space-y-2 bg-blue-500 px-6 w-[180px] py-1 rounded-xl items-center justify-center ">
+              <IoLogoYoutube className="text-2xl" alt="" 
             
               />
               <p className="text-thin text-xl text-black">YouTube</p>
