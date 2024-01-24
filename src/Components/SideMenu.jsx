@@ -1,4 +1,3 @@
-import { GoProjectSymlink } from "react-icons/go";
 import { IoLogoLinkedin } from "react-icons/io";
 import { IoLogoGithub } from "react-icons/io";
 import { IoLogoInstagram } from "react-icons/io";
