@@ -9,7 +9,7 @@ function SideMenu({sidebar}) {
   return (
     <>
    
-     <div className={`h-full fixed z-13 backdrop-blur-lg bg-slate-900/30  dark:bg-slate-900/30  backdrop-3xl w-[226px] top-[53px] left-[44px]  ${sidebar ? 'translate-x[0%]' : 'translate-x-[-100%] duration-[0.2s] ease-linear '}`}>
+     <div className={`h-full fixed z-[11] backdrop-blur-lg bg-slate-900/30  dark:bg-slate-900/30  backdrop-3xl w-[226px] top-[53px] left-[44px]  ${sidebar ? 'translate-x[0%]' : 'translate-x-[-100%] duration-[0.2s] ease-linear '}`}>
         <div className="flex flex-col  items-center justify-center space-y-3 mt-8 p-1">
           <div>
             <img src="\src\Assets\Pictures\Profile2.png"  className="rounded-full h-[100px] w-[100px] " alt="" />

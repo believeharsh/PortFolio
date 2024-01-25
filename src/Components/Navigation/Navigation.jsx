@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 import MainContainer from "../MainContainer/MainContainer";
 
 
-function Navigation({click}) {
+function Navigation({click }) {
   const [Theme, setTheme] = useState("dark");
 
   useEffect(() => {
