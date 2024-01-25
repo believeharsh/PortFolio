@@ -20,7 +20,7 @@ export default function MainContainer() {
   return (
     <>
     <Navigation  click={handleclick} />
-      {/* <div className=" overflow-auto  bg-white dark:bg-slate-900 h-full relative  "> */}
+
       <div className={` bg-white dark:bg-slate-900 h-full relative  `}   >
 
         <div className="flex ">
