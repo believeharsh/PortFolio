@@ -17,7 +17,8 @@ function Navigation({click }) {
     } else document.documentElement.classList.remove("dark");
   }, [Theme]);
 
-  const ToggleTheme = () => {
+  const ToggleTheme = (event) => {
+    event.preventDefault();
     setTheme(Theme === "dark" ? "light" : "dark");
 
 

@@ -10,7 +10,8 @@ export default function MainContainer() {
   const [sidebar, setSidebar] = useState(false);
   const [CenterBlur, setCenterBlur] = useState(false)
 
-  const handleclick =  () => {
+  const handleclick =  (event) => {
+    event.preventDefault();
     setSidebar(!sidebar)
     setCenterBlur(!CenterBlur)
   }
