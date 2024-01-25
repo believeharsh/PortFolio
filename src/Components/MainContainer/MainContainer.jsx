@@ -1,7 +1,7 @@
 import { Outlet } from "react-router-dom";
 import Mainleft from "../Mainleft/Mainleft";
 import MainRight from "../MainRight/MainRight";
-import SideMenu from "../SideMenu";
+import SideMenu from "../SideMenu/SideMenu";
 import { useState } from "react";
 import Navigation from "../Navigation/Navigation";
 

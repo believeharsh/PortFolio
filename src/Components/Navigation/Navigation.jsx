@@ -5,7 +5,7 @@ import { FaHome } from "react-icons/fa";
 import { CiLight } from "react-icons/ci";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import MainContainer from "../MainContainer/MainContainer";
+
 
 
 function Navigation({click }) {
