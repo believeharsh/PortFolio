@@ -23,7 +23,6 @@ function Skills() {
             <div className="Skills">React</div>
             <div className="Skills">React</div>
             <div className="Skills">React</div>
-
           </div>
 
           

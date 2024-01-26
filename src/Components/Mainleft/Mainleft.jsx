@@ -7,20 +7,20 @@ export default function Mainleft() {
   return (
     <>
       <div className="flex flex-col justify-center items-center pt-[80px] space-y-6  ">
-        <div className="p-2 bg-transparent rounded-xl dark:active:bg-blue-800 dark:hover:bg-slate-800 ">
+        <div className="p-2 bg-transparent rounded-xl dark:active:bg-blue-800 dark:hover:bg-slate-800 hover:bg-gray-300 active:bg-blue-800 ">
           <Link to='/projects'>
            <GoProjectSymlink
               className="text-black dark:text-white text-3xl font-bold"/>
             
           </Link>
         </div>
-        <div className="p-2 bg-transparent rounded-xl dark:active:bg-blue-800 dark:hover:bg-slate-800 ">
+        <div className="p-2 bg-transparent rounded-xl dark:active:bg-blue-800 dark:hover:bg-slate-800 hover:bg-gray-300 active:bg-blue-800 ">
           <MdOutlineMail
             className="text-black dark:text-white text-3xl font-bold  
     "
           />
         </div>
-        <div className="p-2 bg-transparent rounded-xl dark:active:bg-blue-800 dark:hover:bg-slate-800 ">
+        <div className="p-2 bg-transparent rounded-xl dark:active:bg-blue-800 dark:hover:bg-slate-800 hover:bg-gray-300 active:bg-blue-800">
           <FaUserFriends
             className="text-black dark:text-white text-3xl font-bold  
     "
