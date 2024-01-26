@@ -10,40 +10,40 @@ function SideMenu({sidebar}) {
     <>
    
      <div className={`h-full fixed z-[11] backdrop-blur-lg bg-slate-900/30  dark:bg-slate-900/30  backdrop-3xl w-[226px] top-[53px] left-[44px]  ${sidebar ? 'translate-x[0%]' : 'translate-x-[-100%] duration-[0.2s] ease-linear '}`}>
-        <div className="flex flex-col  items-center justify-center space-y-3 mt-8 p-1">
-          <div>
-            <img src="\src\Assets\Pictures\Profile2.png"  className="rounded-full h-[100px] w-[100px] " alt="" />
+        <div className="flex flex-col  items-center justify-center space-y-3 mt-8 sm:mt-12 p-1">
+          <div className="">
+            <img src="\src\Assets\Pictures\CurrentProfile.jpeg"  className="rounded-full xl:h-[100px] xl:w-[100px] md:h-[80px] md:w-[80px] sm:w-[50px] sm:h-[50px] w-[50px] h-[50px]  " alt="" />
           </div>
-          <div className="dark:text-white text-white font-mono text-xl text-center">
+          <div className="dark:text-white text-white font-mono xl:text-xl text-center  md:text-[12px] sm:text-[8px]">
             <p>Learning Frontend Development | Coding keen | Self Development content | React | JS | Learner🚀</p>
           </div>
           <div className="flex flex-col justify-center item-center space-y-2">
-            <div className="flex space-x-1 space-y-2 bg-blue-500 px-6 w-[180px] py-1 rounded-xl items-center justify-center">
-              <IoLogoLinkedin className="text-2xl" alt="" 
+            <div className="flex space-x-1  bg-blue-500 px-6 w-[180px] py-1 rounded-xl items-center pl-[55px]">
+              <IoLogoLinkedin className="xl:text-2xl md:text-xl" alt="" 
             
               />
-              <p className="text-thin text-xl text-black">LinkedIn</p>
+              <p className=" md:text-sm xl:text-2xl sm:text-[10px]  text-black">LinkedIn</p>
             
             </div>
-            <div className="flex space-x-1 space-y-2 bg-blue-500 px-6 w-[180px] py-1 rounded-xl items-center justify-center">
-              <IoLogoGithub  className="text-2xl" alt="" 
+            <div className="flex space-x-1  bg-blue-500 px-6 xl:w-[180px] sm:text-sm py-1 rounded-xl items-center pl-[55px]">
+              <IoLogoGithub  className="xl:text-2xl md:text-xl" alt="" 
             
               />
-              <p className="text-thin text-xl text-black">github</p>
+              <p className=" md:text-sm xl:text-2xl sm:text-[10px]  text-black">github</p>
             
             </div>
-            <div className="flex space-x-1 space-y-2 bg-blue-500 px-6 w-[180px] py-1 rounded-xl items-center justify-center">
-              <IoLogoInstagram  className="text-2xl" alt="" 
+            <div className="flex space-x-1  bg-blue-500 px-6 w-[180px] py-1 rounded-xl items-center pl-[55px]">
+              <IoLogoInstagram  className="xl:text-2xl md:text-xl" alt="" 
             
               />
-              <p className="text-thin text-xl text-black">Instagram</p>
+              <p className=" md:text-sm xl:text-2xl sm:text-[10px] text-center text-black">Instagram</p>
             
             </div>
-            <div className="flex space-x-1 space-y-2 bg-blue-500 px-6 w-[180px] py-1 rounded-xl items-center justify-center ">
-              <IoLogoYoutube className="text-2xl" alt="" 
+            <div className="flex space-x-1  bg-blue-500 px-6 w-[180px] py-1 rounded-xl items-center pl-[55px] ">
+              <IoLogoYoutube className="xl:text-2xl md:text-xl" alt="" 
             
               />
-              <p className="text-thin text-xl text-black">YouTube</p>
+              <p className=" md:text-sm xl:text-2xl sm:text-[10px] text-black">YouTube</p>
             
             </div>
        

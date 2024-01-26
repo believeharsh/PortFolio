@@ -55,7 +55,7 @@ function Home() {
       </div> */}
       <div className=" w-full  py-7 px-5 bg-transparent">
           <div className=" mx-auto">
-            <div className=" bg-slate-400 dark:bg-slate-700 p-3 rounded-xl  flex justify-center items-center">
+            <div className=" bg-[#e3e3e3] dark:bg-slate-700 p-3 rounded-xl  flex justify-center items-center">
               <div className=" flex flex-wrap space-between p-4">
                 <div className="flex flex-wrap flex-col justify-center items-center mr-8">
                   <img
@@ -63,19 +63,19 @@ function Home() {
                     alt=""
                     className="flex w-[100px] h-[100px] rounded-[54%]"
                   />
-                  <p className="text-lg bg-slate-800 rounded-xl p-[4px] px-3 py-1 mt-2 text-white active:bg-blue-900 border-white border-[1.2px] hover:bg-slate-700 hover:b-1">
+                  <p className="text-lg  rounded-xl p-[4px] px-3 py-1 mt-2 text-black  dark:text-white shadow-black shadow-md hover:bg-white transition-all duration-300 dark:hover:text-black hover:border-black active:bg-blue-900 border border-white cursor-pointer">
                     Resume
                   </p>
                 </div>
                 <div className="flex flex-wrap flex-col justify-center items-center ml-4">
                   <div className="">
-                    <p className="md:text-[6vw] md:text-left text-center text-[10vw] tracking-tight text-white">
+                    <p className="md:text-[6vw] md:text-left text-center text-[10vw] tracking-tight text-black dark:text-white">
                       Harsh Dahiya{" "}
                     </p>
                   </div>
 
                   <div className="">
-                    <div className="pl-[5px] cursor-pointer justify-between text-white flex items-center shadow-black shadow-md hover:bg-white transition-all duration-300 hover:text-black hover:border-black active:bg-blue-900 border border-white rounded-[20px] h-[40px]">
+                    <div className="pl-[5px] cursor-pointer justify-between dark:text-white flex items-center shadow-black shadow-md hover:bg-white transition-all duration-300 dark:hover:text-black hover:border-black active:bg-blue-900 border border-white rounded-[20px] h-[40px]">
                       <p className="md:text-[20px] text-[24px] whitespace-nowrap ml-[15px]">
                         full stack developer{" "}
                       </p>
@@ -93,7 +93,7 @@ function Home() {
                       </svg>
                     </div>
                     <div className="">
-                      <p className="text-white text-[16px]">
+                      <p className="text-black dark:text-white text-[16px]">
                         Front-end Enginner - Microsys.In
                       </p>
                     </div>

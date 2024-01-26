@@ -4,7 +4,7 @@ function Skills() {
   return (
    <>
       <div className="mt-4 pb-5 w-[70vw] mx-auto overflow-auto h-full">
-          <div className="flex justify-center items-center flex-wrap space-x-2 space-y-1 py-1">
+          <div className="flex justify-center items-center flex-wrap  space-x-2 py-1">
 
 
 

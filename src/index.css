@@ -3,5 +3,5 @@
 @tailwind utilities;
 
 .Skills{
-    @apply dark:bg-slate-800 text-xl px-3 py-1 rounded-xl border-[1.2px] dark:hover:bg-slate-900 dark:hover:text-white cursor-pointer dark:text-white dark:active:bg-blue-900 bg-black  text-white dark:border-white border-blue-700 active:bg-slate-700 dark:shadow-white shadow-black shadow-sm
+    @apply dark:bg-slate-800 text-xl px-3 py-1 rounded-xl border-[1.2px] dark:hover:bg-slate-900 dark:hover:text-white cursor-pointer dark:text-white dark:active:bg-blue-900 bg-black  text-white dark:border-white border-blue-700 active:bg-slate-700 dark:shadow-white shadow-black shadow-sm mb-2
 }
