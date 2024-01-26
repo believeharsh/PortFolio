@@ -53,17 +53,17 @@ function Home() {
           </div>
         </div>
       </div> */}
-      <div className=" w-full dark:bg-slate-900 p-10 bg-transparent">
+      <div className=" w-full  py-7 px-5 bg-transparent">
           <div className=" mx-auto">
             <div className=" bg-slate-400 dark:bg-slate-700 p-3 rounded-xl  flex justify-center items-center">
               <div className=" flex flex-wrap space-between p-4">
                 <div className="flex flex-wrap flex-col justify-center items-center mr-8">
                   <img
-                    src="/src/assets/Pictures/profile.png"
+                    src="/src/assets/Pictures/CurrentProfile.jpeg"
                     alt=""
                     className="flex w-[100px] h-[100px] rounded-[54%]"
                   />
-                  <p className="text-lg bg-slate-800 rounded-xl p-[4px] pl-3 pr-3 mt-2 text-white font-serif hover:bg-slate-700 hover:b-1">
+                  <p className="text-lg bg-slate-800 rounded-xl p-[4px] px-3 py-1 mt-2 text-white active:bg-blue-900 border-white border-[1.2px] hover:bg-slate-700 hover:b-1">
                     Resume
                   </p>
                 </div>
@@ -75,7 +75,7 @@ function Home() {
                   </div>
 
                   <div className="">
-                    <div className="pl-[5px] cursor-pointer justify-between text-white flex items-center shadow-black shadow-md hover:bg-white transition-all duration-300 hover:text-[#9ca8a8] border border-white rounded-[20px] h-[40px]">
+                    <div className="pl-[5px] cursor-pointer justify-between text-white flex items-center shadow-black shadow-md hover:bg-white transition-all duration-300 hover:text-black hover:border-black active:bg-blue-900 border border-white rounded-[20px] h-[40px]">
                       <p className="md:text-[20px] text-[24px] whitespace-nowrap ml-[15px]">
                         full stack developer{" "}
                       </p>
