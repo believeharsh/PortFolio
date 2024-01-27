@@ -12,7 +12,7 @@ function Projects5() {
                 </a>
               </div>
               <div className="max-w-[290px] h-[80px] mx-auto mb-1 mt-1">
-                <img src="src\Assets\Pictures\LinkedinBanner.png" className="rounded-xl" alt="" />
+                <img src="public\Assets\Pictures\LinkedinBanner.png" className="rounded-xl" alt="" />
               </div>
               <div className="text-white text-xl font-mono border-white border-b-[1.3px] mb-1">Microsys.In </div>
               <div className="text-white text-xl font-mono overflow-hidden ">
