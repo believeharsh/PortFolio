@@ -1,49 +1,67 @@
-// import React from 'react'
-import { FaExternalLinkAlt } from "react-icons/fa";
 
 import LatestProjectsHeader from "./LatestProjects/LatestProjectsHeader";
-import LatestProject2 from "./LatestProjects/LatestProject2";
-import LatestProject3 from "./LatestProjects/LatestProject3";
-import LatestProject1 from "./LatestProjects/LatestProject1";
 import RestProjectsHeader from "./RestProjects/RestProjectsHeader";
-import Projects4 from "./RestProjects/Projects4";
-import Projects5 from "./RestProjects/Projects5";
-import Projects6 from "./RestProjects/Projects6";
-import Projects7 from "./RestProjects/Projects7";
-import Projects8 from "./RestProjects/Projects8";
+import CommonProjectDiv from "./CommonProjectDiv/CommonProjectDiv";
+
+import { useState } from "react";
 
 function Projects() {
+
   return (
     <>
-    
 
       <div className="">
-        <div className="">
+        <div className="flex flex-col mb-6">
+          <LatestProjectsHeader />
+          <div className="flex justify-center items-center px-3 py-2 flex-wrap ">
+            <CommonProjectDiv ProjectName="Microsys.In"
+              LiveLink=""
+              ProjectImg="Public\Assets\Pictures\LinkedinBanner.png"
+              ProjectDes="Website of my collage which help students to save time and get better in thier field."
 
-          <div className="flex flex-col mb-6">
-             <LatestProjectsHeader/>
-             <div className="flex justify-center items-center px-3 py-2 flex-wrap ">
-              <LatestProject1/>
-             <LatestProject2/>
-           <LatestProject3/>
-             </div>
+            />
+            <CommonProjectDiv ProjectName="Spotify"
+              LiveLink=""
+              ProjectImg="Public\Assets\Pictures\LinkedinBanner.png"
+              ProjectDes="Spotify is the No. 1 website for listing endless songs accoridng to your taste. "
+            />
+            <CommonProjectDiv ProjectName="Portfolio"
+              LiveLink=""
+              ProjectImg="Public\Assets\Pictures\LinkedinBanner.png"
+              ProjectDes="This is my portfolio website i made for showing my skills, projects and ohter details." />
           </div>
-          <div className="flex flex-col mb-6">
-              <RestProjectsHeader/>
-              <div className="flex justify-center items-center px-3 py-2 flex-wrap ">
-               <Projects4/>
-               <Projects5/>
-               <Projects6/>
-               <Projects7/>
-               <Projects8/>
+        </div>
+        <div className="flex flex-col mb-6">
+          <RestProjectsHeader />
+          <div className="flex justify-center items-center px-3 py-2 flex-wrap ">
 
-              </div>
+            <CommonProjectDiv ProjectName="Spotify"
+              LiveLink=""
+              ProjectImg="Public\Assets\Pictures\LinkedinBanner.png"
+              ProjectDes="Spotify is the No. 1 website for listing endless songs accoridng to your taste. " />
+
+            <CommonProjectDiv ProjectName="Spotify"
+              LiveLink=""
+              ProjectImg="Public\Assets\Pictures\LinkedinBanner.png"
+              ProjectDes="Spotify is the No. 1 website for listing endless songs accoridng to your taste. " />
+
+            <CommonProjectDiv ProjectName="Spotify"
+              LiveLink=""
+              ProjectImg="Public\Assets\Pictures\LinkedinBanner.png"
+              ProjectDes="Spotify is the No. 1 website for listing endless songs accoridng to your taste. " />
+            <CommonProjectDiv ProjectName="Spotify"
+              LiveLink=""
+              ProjectImg="Public\Assets\Pictures\LinkedinBanner.png"
+              ProjectDes="Spotify is the No. 1 website for listing endless songs accoridng to your taste. " />
+
+            <CommonProjectDiv ProjectName="Spotify"
+              LiveLink=""
+              ProjectImg="Public\Assets\Pictures\LinkedinBanner.png"
+              ProjectDes="Spotify is the No. 1 website for listing endless songs accoridng to your taste. " />
+
           </div>
-
         </div>
       </div>
-
-
 
     </>
   )
