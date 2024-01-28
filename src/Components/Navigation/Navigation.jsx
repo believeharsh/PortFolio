@@ -9,7 +9,7 @@ import { Link } from "react-router-dom";
 
 
 
-function Navigation({click }) {
+function Navigation({click}) {
   const [Theme, setTheme] = useState("dark");
 
   useEffect(() => {
@@ -45,7 +45,7 @@ function Navigation({click }) {
                     className="text-black dark:text-white text-2xl font-serif mx-2  dark:active:bg-blue-800 dark:hover:bg-slate-800 rounded-full hover:bg-gray-300 active:bg-blue-700 p-2 "
                     to="/"
                   >
-                    <FaHome id="ToggleSideMenu " className="" />
+                    <FaHome  className="" />
                   </Link>
                   <div className="text-black mx-1 text-2xl dark:text-white dark:active:bg-blue-800 dark:hover:bg-slate-800 rounded-xl hover:bg-gray-300  px-3 py-2">Harsh Dahiya </div>
                 </div>
@@ -63,7 +63,7 @@ function Navigation({click }) {
                     </li>
                   </Link>
 
-                  <Link to="/about">
+                  <Link to="/experience">
                     <li className=" dark:active:bg-blue-800 dark:hover:bg-slate-800 rounded-xl px-2 py-1  list-none hover:bg-gray-300 active:bg-blue-700">
                       <p className="text-black dark:text-white text-xl ">
                         Experience
