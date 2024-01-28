@@ -12,7 +12,7 @@ function SideMenu({sidebar}) {
      <div className={`h-full fixed z-[11] backdrop-blur-2xl bg-slate-900/30  dark:bg-slate-900/30  backdrop-3xl w-[226px] top-[53px] left-[44px]  ${sidebar ? 'translate-x[0%]' : 'translate-x-[-100%] duration-[0.2s] ease-linear '}`}>
         <div className="flex flex-col  items-center justify-center space-y-3 mt-8 sm:mt-12 p-1">
           <div className="">
-            <img src="public\Assets\Pictures\CurrentProfile.jpeg"  className="rounded-full xl:h-[100px] xl:w-[100px] md:h-[80px] md:w-[80px] sm:w-[50px] sm:h-[50px] w-[50px] h-[50px]  " alt="" />
+            <img src="/assets/CurrentProfile.jpeg"  className="rounded-full xl:h-[100px] xl:w-[100px] md:h-[80px] md:w-[80px] sm:w-[50px] sm:h-[50px] w-[50px] h-[50px]  " alt="" />
           </div>
           <div className="dark:text-white text-white font-mono xl:text-xl text-center  md:text-[12px] sm:text-[8px]">
             <p>Learning Frontend Development | Coding keen | Self Development content | React | JS | Learner🚀</p>

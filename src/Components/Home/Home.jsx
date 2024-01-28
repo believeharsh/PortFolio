@@ -10,7 +10,7 @@ function Home() {
               <div className=" flex flex-wrap space-between p-4">
                 <div className="flex flex-wrap flex-col justify-center items-center mr-8">
                   <img
-                    src="public/assets/Pictures/CurrentProfile.jpeg"
+                    src="/assets/CurrentProfile.jpeg"
                     alt=""
                     className="flex w-[100px] h-[100px] rounded-[54%]"
                   />
