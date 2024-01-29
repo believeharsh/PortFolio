@@ -4,11 +4,13 @@ import MainRight from "../MainRight/MainRight";
 import SideMenu from "../SideMenu/SideMenu";
 import { useState, useEffect, useRef } from "react";
 import Navigation from "../Navigation/Navigation";
+import Connect from "../Connect/Connect";
 
 
 export default function MainContainer() {
   const [sidebar, setSidebar] = useState(false);
   const [CenterBlur, setCenterBlur] = useState(false)
+  const [ConnectMenu, setConnectMenu] = useState(false)
 
   
  const RefSideMenu = useRef()
@@ -18,6 +20,11 @@ export default function MainContainer() {
     event.preventDefault();
     setSidebar(!sidebar)
     setCenterBlur(!CenterBlur)
+  }
+
+  const ToggleConnect = (event) => {
+    event.preventDefault();
+    setConnectMenu(!ConnectMenu)
   }
 
 
@@ -49,9 +56,12 @@ useEffect(() => {
           <div className="">
             <SideMenu sidebar={sidebar}  RefSideMenu={RefSideMenu}  />
           </div>
+          <div className="">
+            <Connect Connectmenu={ConnectMenu} />
+          </div>
 
           <div className=" bg-white  dark:bg-slate-900 left-0 h-[1750px]  w-[44px] fixed z-[11] dark:shadow-sm dark:shadow-slate-100 ">
-            <Mainleft />
+            <Mainleft ToggleConnect={ToggleConnect} />
           </div>
           <div className={`  bg-white  dark:bg-gradient-to-r from-gray-800 via-slate-900 to-gray-800 rounded-xl w-[calc(100%-49px-49px)]  mx-auto mt-[63px] px-2 py-2 mb-1 border-[1.5px] dark:border-white  ${CenterBlur  ? 'blur-sm z-[10] overflow-hidden' : ''  }`}>
             <div className="">

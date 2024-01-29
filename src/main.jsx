@@ -6,6 +6,7 @@ import Layout from './Components/Layout/Layout.jsx'
 import MainCenter from './Components/MainCenter/MainCenter.jsx'
 import Experience from './Components/Experience/Experience.jsx'
 import Projects from './Components/Projects/Projects.jsx'
+import Connect from './Components/Connect/Connect.jsx'
 
 // eslint-disable-next-line react-refresh/only-export-components
 const Router = createBrowserRouter(
@@ -14,6 +15,7 @@ const Router = createBrowserRouter(
      <Route path='' element={<MainCenter/>}/>
      <Route path='/experience' element={<Experience/>}/>
      <Route path='/projects' element={<Projects/>}/>
+     {/* <Route path='/connect' element={<Connect/>}/> */}
  
     </Route>
 

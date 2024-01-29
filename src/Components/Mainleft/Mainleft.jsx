@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import { GoProjectSymlink } from "react-icons/go";
 import { MdOutlineMail } from "react-icons/md";
 import { FaUserFriends } from "react-icons/fa";
-export default function Mainleft() {
+export default function Mainleft(props) {
   return (
     <>
       <div className="flex flex-col justify-center items-center pt-[80px] space-y-6  ">
@@ -21,7 +21,7 @@ export default function Mainleft() {
           />
         </div>
         <div className="p-2 bg-transparent rounded-xl dark:active:bg-blue-800 dark:hover:bg-slate-800 hover:bg-gray-300 active:bg-blue-800">
-          <FaUserFriends
+          <FaUserFriends onClick={props.ToggleConnect}
             className="text-black dark:text-white text-3xl font-bold  
     "
           />

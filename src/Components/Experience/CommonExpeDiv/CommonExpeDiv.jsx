@@ -1,6 +1,5 @@
 
-
-function CommonExpeDiv(props ){
+function CommonExpeDiv(props){
    
   return (
     <>
