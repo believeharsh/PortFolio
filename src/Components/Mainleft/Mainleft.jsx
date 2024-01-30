@@ -20,8 +20,8 @@ export default function Mainleft(props) {
     "
           />
         </div>
-        <div className="p-2 bg-transparent rounded-xl dark:active:bg-blue-800 dark:hover:bg-slate-800 hover:bg-gray-300 active:bg-blue-800">
-          <FaUserFriends onClick={props.ToggleConnect}
+        <div onClick={props.ToggleConnect} className="p-2 bg-transparent rounded-xl dark:active:bg-blue-800 dark:hover:bg-slate-800 hover:bg-gray-300 active:bg-blue-800">
+          <FaUserFriends 
             className="text-black dark:text-white text-3xl font-bold  
     "
           />
