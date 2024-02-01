@@ -4,11 +4,11 @@ function Home() {
   return (
     <>
      
-      <div className=" w-full  py-7 px-5 bg-transparent">
-          <div className=" mx-auto">
-            <div className=" bg-[#e3e3e3] dark:bg-slate-700 p-3 rounded-xl  flex justify-center items-center">
-              <div className=" flex flex-wrap space-between p-4">
-                <div className="flex flex-wrap flex-col justify-center items-center mr-8">
+      <div className="  py-7 px-5 bg-transparent mt-1 md:mt-0">
+          <div className="mx-auto">
+            <div className=" bg-[#e3e3e3]  dark:bg-slate-700 p-3 rounded-xl  flex justify-center items-center">
+              <div className=" flex flex-wrap flex-col sm:flex-row sm:space-between p-4  ">
+                <div className="flex mx-auto sm:mr-8 flex-wrap flex-col justify-center items-center ">
                   <img
                     src="/assets/CurrentProfile.jpeg"
                     alt=""
@@ -19,23 +19,23 @@ function Home() {
                   </p>
                 </div>
                 <div className="flex flex-wrap flex-col justify-center items-center ml-4">
-                  <div className="">
-                    <p className="md:text-[6vw] md:text-left text-center text-[10vw] tracking-tight text-black dark:text-white">
+                  <div className=" sm:mr-0">
+                    <p className="md:text-[6vw] md:text-left text-center text-[30px] sm:text-[6vw]  text-black dark:text-white">
                       Harsh Dahiya{" "}
                     </p>
                   </div>
 
                   <div className="">
-                    <div className="pl-[5px] cursor-pointer justify-between dark:text-white flex items-center shadow-black shadow-md hover:bg-white transition-all duration-300 dark:hover:text-black hover:border-black active:bg-blue-900 border border-white rounded-[20px] h-[40px]">
-                      <p className="md:text-[20px] text-[24px] whitespace-nowrap ml-[15px]">
+                    <div className=" px-2 py-1 md:pl-[5px] cursor-pointer justify-between dark:text-white flex items-center shadow-black shadow-md hover:bg-white transition-all duration-300 dark:hover:text-black hover:border-black active:bg-blue-900 border border-white rounded-[20px] h-[40px] mr-2 md:mr-0">
+                      <p className=" mx-auto text-[20px] md:text-[24px] whitespace-nowrap  md:mx-[15px]">
                         full stack developer{" "}
                       </p>
-                      <svg
+                      <svg 
                         stroke="currentColor"
                         fill="currentColor"
                         strokeWidth="0"
                         viewBox="0 0 16 16"
-                        className="ml-[2rem] scale-125 mr-[8px]"
+                        className="md:ml-[2rem] scale-125 md:mr-[8px] hidden md:visible"
                         height="1em"
                         width="1em"
                         xmlns="http://www.w3.org/2000/svg"

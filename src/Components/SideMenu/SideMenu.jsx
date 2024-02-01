@@ -7,14 +7,14 @@ function SideMenu(props) {
   return (
     <>
       <div
-        className={`h-full fixed z-[11] backdrop-blur-2xl bg-slate-900/30  dark:bg-slate-900/30  backdrop-3xl w-[226px] top-[53px] left-[44px]  ${
+        className={`h-full fixed z-[11] backdrop-blur-2xl bg-slate-900/30  dark:bg-slate-900/30  backdrop-3xl md:w-[226px] w-[270px] top-[53px] left-[44px]  ${
           props.sidebar
             ? "translate-x[0%]"
             : "translate-x-[-100%] duration-[0.2s] ease-linear "
         }`}
         ref={props.RefSideMenu}
       >
-        <div className="flex flex-col  items-center justify-center space-y-3 mt-8 sm:mt-12 p-1">
+        <div className="flex flex-col  items-center justify-center space-y-3 md:mt-8 mt-[70px] p-1">
           <div className="">
             <img
               src="/assets/CurrentProfile.jpeg"

@@ -3,7 +3,7 @@ import React from 'react'
 function Skills() {
   return (
    <>
-      <div className="mt-4 pb-5 w-[70vw] mx-auto overflow-auto h-full">
+      <div className="mt-4 pb-5 w-[70vw] md:mx-auto pr-4 md:pd-0 overflow-auto h-full">
           <div className="flex justify-center items-center flex-wrap  space-x-2 py-1">
 
 

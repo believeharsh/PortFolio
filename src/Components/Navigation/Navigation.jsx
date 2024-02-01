@@ -6,10 +6,7 @@ import { MdLightMode } from "react-icons/md";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
-
-
-
-function Navigation({click}) {
+function Navigation({ click }) {
   const [Theme, setTheme] = useState("dark");
 
   useEffect(() => {
@@ -21,33 +18,37 @@ function Navigation({click}) {
   const ToggleTheme = (event) => {
     event.preventDefault();
     setTheme(Theme === "dark" ? "light" : "dark");
-
-
   };
-
-
-  
 
   return (
     <>
-      <header id="MYID" className="shadow fixed z-50 top-0  dark:bg-slate-900/80 pt-[2.5px] pb-[10px] bg-white bg-opacity-75  w-[100%] dark:backdrop-blur-sm backdrop-blur-3xl ">
+      <header
+        id="MYID"
+        className="shadow fixed z-50 top-0  dark:bg-slate-900/80 pt-[2.5px] pb-[10px] bg-white bg-opacity-75  w-[100%] dark:backdrop-blur-sm backdrop-blur-3xl "
+      >
         <nav className=" px-3 py-1 ">
           <div className="flex flex-warp justify-between items-center mx-auto pb-2  border-b-[1.5px] border-black dark:border-white">
             <div className="">
               <div className="flex justify-center items-center space-x-4">
-                <div className="dark:active:bg-blue-800 dark:hover:bg-slate-800 rounded-full ml-3 hover:bg-gray-300 active:bg-blue-700 p-1" id="menuButton ">
-                
-                  <IoMenu className=" text-4xl text-black dark:text-white " onClick={click} />
-                 
+                <div
+                  className="dark:active:bg-blue-800 dark:hover:bg-slate-800 rounded-full ml-3 hover:bg-gray-300 active:bg-blue-700 p-1"
+                  id="menuButton "
+                >
+                  <IoMenu
+                    className=" text-4xl text-black dark:text-white "
+                    onClick={click}
+                  />
                 </div>
                 <div className="flex justify-center items-center">
                   <Link
                     className="text-black dark:text-white text-2xl font-serif mx-2  dark:active:bg-blue-800 dark:hover:bg-slate-800 rounded-full hover:bg-gray-300 active:bg-blue-700 p-2 "
                     to="/"
                   >
-                    <FaHome  className="" />
+                    <FaHome className="" />
                   </Link>
-                  <div className="text-black mx-1 text-2xl dark:text-white dark:active:bg-blue-800 dark:hover:bg-slate-800 rounded-xl hover:bg-gray-300  px-3 py-2">Harsh Dahiya </div>
+                  <div className="text-black mx-1 text-2xl dark:text-white dark:active:bg-blue-800 dark:hover:bg-slate-800 rounded-xl hover:bg-gray-300  px-3 py-2">
+                    Harsh Dahiya{" "}
+                  </div>
                 </div>
               </div>
             </div>
@@ -78,17 +79,13 @@ function Navigation({click}) {
                     ) : (
                       <MdLightMode className="  text-black dark:text-white  text-3xl " />
                     )}
-
                   </li>
-
                 </div>
               </div>
             </div>
           </div>
         </nav>
-     
       </header>
-
     </>
   );
 }
