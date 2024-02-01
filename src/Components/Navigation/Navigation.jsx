@@ -24,10 +24,10 @@ function Navigation({ click }) {
     <>
       <header
         id="MYID"
-        className="shadow fixed z-50 top-0  dark:bg-slate-900/80 pt-[2.5px] pb-[10px] bg-white bg-opacity-75  w-[100%] dark:backdrop-blur-sm backdrop-blur-3xl "
+        className="shadow fixed z-50 top-0  dark:bg-slate-900/80 pt-[1px] pb-[5px] bg-white bg-opacity-75  w-[100%] dark:backdrop-blur-sm backdrop-blur-3xl "
       >
         <nav className=" px-3 py-1 ">
-          <div className="flex flex-warp justify-between items-center mx-auto pb-2  border-b-[1.5px] border-black dark:border-white">
+          <div className="flex flex-warp justify-between items-center mx-auto pb-[2px]  border-b-[1.5px] border-black dark:border-white">
             <div className="">
               <div className="flex justify-center items-center space-x-4">
                 <div
@@ -46,7 +46,7 @@ function Navigation({ click }) {
                   >
                     <FaHome className="" />
                   </Link>
-                  <div className="text-black mx-1 text-2xl dark:text-white dark:active:bg-blue-800 dark:hover:bg-slate-800 rounded-xl hover:bg-gray-300  px-3 py-2">
+                  <div className="text-black mx-1 text-2xl dark:text-white dark:active:bg-blue-800 dark:hover:bg-slate-800 rounded-xl hover:bg-gray-300  px-3 py-1">
                     Harsh Dahiya{" "}
                   </div>
                 </div>

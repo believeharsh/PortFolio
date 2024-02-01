@@ -52,7 +52,7 @@ export default function MainContainer() {
             <Mainleft ToggleConnect={ToggleConnect} />
           </div>
           <div
-            className={`  bg-white  dark:bg-gradient-to-r from-gray-800 via-slate-900 to-gray-800 rounded-xl w-[calc(100%-49px-49px)]  mx-auto mt-[110px] md:mt-[78px] px-2 py-2 mb-1 border-[1.5px] dark:border-white  ${
+            className={`  bg-white  dark:bg-gradient-to-r from-gray-800 via-slate-900 to-gray-800 rounded-xl w-[calc(100%-49px-49px)]  mx-auto mt-[105px] md:mt-[65px] px-2 py-2 mb-1 border-[1.5px] dark:border-white  ${
               CenterBlur ? "blur-sm z-[10] overflow-hidden" : ""
             }`}
           >
