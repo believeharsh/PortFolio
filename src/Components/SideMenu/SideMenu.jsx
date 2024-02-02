@@ -30,28 +30,33 @@ function SideMenu(props) {
           </div>
           <div className="flex flex-col justify-center item-center space-y-2">
             <div className="flex space-x-1 dark:text-white text-black dark:bg-slate-800 shadow-sm dark:shadow-white shadow-black  px-6 w-[180px] py-1 rounded-xl items-center pl-[55px] md:pl-[42px] sm:pl-[55px]">
-              <IoLogoLinkedin className="xl:text-2xl md:text-xl" alt="" />
+             <a href="https://www.linkedin.com/in/believeharsh11/"target="_blank"  ><IoLogoLinkedin className="xl:text-2xl md:text-xl"  /></a> 
               <p className=" md:text-sm xl:text-2xl sm:text-[10px] ">
                 LinkedIn
               </p>
             </div>
+
             <div className="flex space-x-1 dark:text-white text-black dark:bg-slate-800 shadow-sm dark:shadow-white shadow-black  px-6 w-[180px] py-1 rounded-xl items-center pl-[55px] md:pl-[42px] ">
-              <IoLogoGithub className="xl:text-2xl md:text-xl" alt="" />
+              <a href="https://github.com/believeharsh" target="_blank"><IoLogoGithub className="xl:text-2xl md:text-xl" /></a>
               <p className=" md:text-sm xl:text-2xl sm:text-[10px] ">github</p>
             </div>
+
             <div className="flex space-x-1 dark:text-white text-black dark:bg-slate-800 shadow-sm dark:shadow-white shadow-black  px-6 w-[180px] py-1 rounded-xl items-center pl-[55px] md:pl-[42px]">
-              <IoLogoInstagram className="xl:text-2xl md:text-xl" alt="" />
+             <a href="https://www.instagram.com/bontinue_/" target="_blank"><IoLogoInstagram className="xl:text-2xl md:text-xl" /></a> 
               <p className=" md:text-sm xl:text-2xl sm:text-[10px] text-center ">
                 Instagram
               </p>
             </div>
+
             <div className="flex space-x-1 dark:text-white text-black dark:bg-slate-800 shadow-sm dark:shadow-white shadow-black  px-6 w-[180px] py-1 rounded-xl items-center pl-[55px] md:pl-[42px]">
-              <IoLogoYoutube className="xl:text-2xl md:text-xl" alt="" />
+             <a href="https://www.youtube.com/@Bontinue" target="_blank"><IoLogoYoutube className="xl:text-2xl md:text-xl" alt="" /></a> 
               <p className=" md:text-sm xl:text-2xl sm:text-[10px]">YouTube</p>
             </div>
+
           </div>
-          <div></div>
-          <div></div>
+        
+        
+
         </div>
       </div>
     </>
