@@ -24,10 +24,10 @@ function Navigation({ click }) {
     <>
       <header
         id="MYID"
-        className="shadow fixed z-50 top-0  dark:bg-slate-900/80 pt-[1px] pb-[5px] bg-white bg-opacity-75  w-[100%] dark:backdrop-blur-sm backdrop-blur-3xl "
+        className="shadow fixed z-50 top-0  dark:bg-slate-900/80 pt-[1px] pb-[5px] bg-white bg-opacity-75  w-[100%] dark:backdrop-blur-sm backdrop-blur-3xl max-h-[69.5px]"
       >
         <nav className=" px-3 py-1 ">
-          <div className="flex flex-warp justify-between items-center mx-auto pb-[2px]  border-b-[1.5px] border-black dark:border-white">
+          <div className="flex flex-wrap flex-col sm:flex-row justify-between items-center mx-auto pb-[2px]  border-b-[1.5px] border-black dark:border-white">
             <div className="">
               <div className="flex justify-center items-center space-x-4">
                 <div
@@ -55,7 +55,7 @@ function Navigation({ click }) {
 
             <div className="">
               <div className=" text-black dark:text-white text-lg  flex justify-between items-center ">
-                <div className="flex justify-center items-center space-x-4">
+                <div className="flex justify-center items-center space-x-4 ml-3 sm:ml-0">
                   <Link to="/Projects">
                     <li className=" dark:active:bg-blue-800 dark:hover:bg-slate-800 rounded-xl px-2 py-1   list-none hover:bg-gray-300 active:bg-blue-700">
                       <p className="text-black dark:text-white text-xl ">

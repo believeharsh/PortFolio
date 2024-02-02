@@ -3,14 +3,14 @@ function CommonExpeDiv(props){
    
   return (
     <>
-      <div className="flex mx-auto mb-5 dark:border-white border-black border-b-[2px] px-3 py-5">
+      <div className="flex flex-col md:flex-row mx-auto mb-5 dark:border-white border-black border-b-[2px] px-3 py-5 space-y-3 md:space-y-1 justify-center items-center">
         <div className="md:flex-row flex-col justify-center mr-4">
           <div className="">
             <img
         
           src={`${props.ImageUrl}`}
     
-              className="md:w-[200px] md:h-[120px] w-[100px] h-[80px]"
+              className="md:w-[240px] md:h-[170px] w-[200px] h-[120px] rounded-xl"
               alt=""
             />
           </div>

@@ -10,8 +10,8 @@ import { FaHeart } from "react-icons/fa";
 function Connect(props) {
     return (
         <>
-            <div className={`fixed border-[4px] border-blue-700  rounded-2xl z-[11] backdrop-blur-2xl bg-white text-black  backdrop-3xl  bottom-[55px] left-[44px] w-[300px] h-[150px]  ${props.Connectmenu
-                        ? "translate-x-[15%]"
+            <div className={`fixed border-[4px] border-blue-700  rounded-2xl z-[11] backdrop-blur-2xl bg-white text-black  backdrop-3xl  bottom-[55px] left-[44px] w-[250px]  sm:w-[280px] md:w-[300px]  ${props.Connectmenu
+                        ? "translate-x-[4%] sm:translate-x-[10%]"
                         : "translate-x-[-100%] duration-[0.4s] ease-in-out "
                     }  `}
             >
