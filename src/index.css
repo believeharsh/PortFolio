@@ -6,191 +6,23 @@
     @apply dark:bg-slate-800 text-xl px-3 py-1 rounded-xl border-[1.2px] dark:hover:bg-slate-900 dark:hover:text-white cursor-pointer dark:text-white dark:active:bg-blue-900 bg-black  text-white dark:border-white border-blue-700 active:bg-slate-700 dark:shadow-white shadow-black shadow-sm mb-2
 }
 
-.contact-container {
-    margin-left: 5%;
-    margin-right: 5%;
-    font-family: "Montserrat", sans-serif;
-}
 
-#contact {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    grid-gap: 30px;
-    margin-top: 40px;
-}
+ 
 
-.first-column p {
-    margin-top: 30px;
-    font-family: 'Ysabeau Office', sans-serif;
-    font-weight: 600;
-}
-
-.first-column p i {
-    color: #000000;
-    margin-right: 15px;
-    font-size: 25px;
-}
-
-.social-icons {
-    margin-top: 35px;
-}
-
-.social-icons a {
-    text-decoration: none;
-    font-size: 30px;
-    margin-right: 12px;
-    color: #000000;
-    display: inline-block;
-    transition: transform 0.5s;
-}
-
-.social-icons a:hover {
-    color: #646FD4;
-    transform: translateY(-5px);
-}
-
-.btn.btn2 {
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
-        rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
-        rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
-    font-family: 'Ysabeau Office', sans-serif;
-    ;
-    display: block;
-    width: fit-content;
-    background: #646FD4;
-    border-radius: 6px;
-    text-decoration: none;
-    color: #000000;
-    font-weight: 600;
-    border: none;
-}
-
-.second-column form {
-    width: 92%;
-}
-
-form input,
-form textarea {
-    width: 100%;
-    border: 0;
-    outline: none;
-    background: #646FD4;
-    padding: 15px;
-    color: #000000;
-    margin: 15px 0;
-    font-size: 20px;
-    border-radius: 10px;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
-        rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
-        rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
-}
-
-::placeholder {
-    color: black;
-}
-
-.first-column a.btn {
-    padding: 10px 15px;
-    margin-top: 10px;
-}
-
-form .btn2 {
-    padding: 10px 35px;
-    font-size: 18px;
-    margin-top: 16px;
-    cursor: pointer;
-    margin-bottom: 46px;
-}
-
-.fotter {
-    background: #A1C2F1;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
-    margin: 0px 1%;
-    border-radius: 10px;
-    margin-top: 35px;
-    margin-bottom: 10px;
-}
-
-.fotter-row {
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: 5%;
-    margin-right: 0%;
-
-}
-
-.fotter-divs {
-    margin: 5px 10px;
-}
-
-.col1 {
-    flex-basis: 55%;
-
-}
-
-.col2 {
-    flex-basis: 15%;
-
-}
-
-.col3 {
-    flex-basis: 15%;
-
-}
-
-.fotter-divs h3 {
-    font-family: 'Ysabeau Office', sans-serif;
-    font-size: 23px;
-    color: #40128B;
-}
-
-.fotter-divs p {
-    font-family: 'Signika Negative', sans-serif;
-    font-size: 15px;
-    font-weight: 500;
-}
-
-.fotter-divs a {
-    text-decoration: none;
-    color: black;
-    font-family: 'Signika Negative', sans-serif;
-    font-size: 15px;
-}
-
-
-.fotter-links {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-}
-
-.fotter-links a:hover {
-    color: rgb(77, 6, 255);
-}
-
-.greeting {
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
-    width: 100%;
-    text-align: center;
-    padding: 15px 0;
-    background: #262626;
-    margin-top: 20px;
-    font-weight: 500;
-    color: white;
-    font-family: 'Ysabeau Office', sans-serif;
-    font-size: 15px;
-    border-top: 2px solid white;
-    border-radius: 10px;
-}
-
-
-
-#msg {
-    color: #ff0000;
-    font-family: 'Signika Negative', sans-serif;
-    margin-top: -30px;
-    display: block;
-    font-size: 15px;
-    font-family: "Montserrat", sans-serif;
-}
-
+::-webkit-scrollbar {
+    width: 5px; /* Width of the scrollbar */
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: rgb(13, 17, 46); /* Color of the scrollbar track */
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #fffdfd; /* Color of the scrollbar thumb */
+    border-radius: 1px; /* Border radius of the scrollbar thumb */
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #c0c0c0;
+     /* Color of the scrollbar thumb on hover */
+  }

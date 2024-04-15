@@ -3,8 +3,6 @@ import LatestProjectsHeader from "./LatestProjects/LatestProjectsHeader";
 import RestProjectsHeader from "./RestProjects/RestProjectsHeader";
 import CommonProjectDiv from "./CommonProjectDiv/CommonProjectDiv";
 
-import { useState } from "react";
-
 function Projects() {
 
   return (
@@ -14,13 +12,13 @@ function Projects() {
         <div className="flex flex-col mb-6">
           <LatestProjectsHeader />
           <div className="flex justify-center items-center px-3 py-2 flex-wrap ">
-            <CommonProjectDiv ProjectName="Microsys.In"
-              LiveLink=""
-              ProjectImg="/assets/LinkedinBanner.png"
-              ProjectDes="Website of my collage which help students to save time and get better in thier field."
+            <CommonProjectDiv ProjectName="100-Projects-Dashboard"
+              LiveLink="https://believeharsh-100-project-dashboard.vercel.app/"
+              ProjectImg="/assets/100-Project-Dashboard.png"
+              ProjectDes="Here I've added 100 projects with their live link and source code link too. "
 
             />
-            <CommonProjectDiv ProjectName="Spotify"
+            <CommonProjectDiv ProjectName="To-Do-App"
               LiveLink=""
               ProjectImg="/assets/LinkedinBanner.png"
               ProjectDes="Spotify is the No. 1 website for listing endless songs accoridng to your taste. "
