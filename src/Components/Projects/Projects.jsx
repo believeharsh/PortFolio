@@ -19,9 +19,9 @@ function Projects() {
 
             />
             <CommonProjectDiv ProjectName="To-Do-App"
-              LiveLink=""
-              ProjectImg="/assets/LinkedinBanner.png"
-              ProjectDes="Spotify is the No. 1 website for listing endless songs accoridng to your taste. "
+              LiveLink="https://believeharsh-to-do-app.vercel.app/"
+              ProjectImg="/assets/ToDo.png"
+              ProjectDes="ToDo App built in React and Tailwind CSS for saving your daily todos in the browser itself."
             />
             <CommonProjectDiv ProjectName="Portfolio"
               LiveLink=""

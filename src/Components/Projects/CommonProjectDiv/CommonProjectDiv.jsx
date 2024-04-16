@@ -12,9 +12,9 @@ function CommonProjectDiv(props) {
                     </a>
                   </div>
                   <div className="max-w-[290px] h-[80px] mx-auto mb-1 mt-1">
-                    <img src={`${props.ProjectImg}`} className="rounded-xl" alt="" />
+                    <img src={`${props.ProjectImg}`} className="rounded-xl max-w-[270px] h-[40px]" alt="" />
                   </div>
-                  <div className="text-white text-xl font-mono border-white border-b-[1.3px] mb-1">{props.ProjectName}</div>
+                  {/* <div className="text-white text-xl font-mono border-white border-b-[1.3px] mb-1">{props.ProjectName}</div> */}
                   <div className="text-white text-xl font-mono overflow-hidden ">
                     {props.ProjectDes}
                   </div>
