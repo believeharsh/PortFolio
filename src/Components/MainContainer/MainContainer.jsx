@@ -48,11 +48,11 @@ export default function MainContainer() {
             <Connect Connectmenu={ConnectMenu} />
           </div>
 
-          <div className=" bg-white  dark:bg-slate-900 left-0 h-[1750px]  w-[44px] fixed z-[11] dark:shadow-sm dark:shadow-slate-100 ">
+          <div className="MainLeft-Container">
             <Mainleft ToggleConnect={ToggleConnect} />
           </div>
           <div
-            className={`  bg-white  dark:bg-gradient-to-r from-gray-800 via-slate-900 to-gray-800 rounded-xl w-[calc(100%-49px-49px)] mt-[90px] sm:mt-[55px] mx-auto  px-2 py-2 mb-1 border-[1.5px] dark:border-white  ${
+            className={`MainCenter-Container  ${
               CenterBlur ? "blur-sm z-[10] overflow-hidden" : ""
             }`}
           >
@@ -61,7 +61,9 @@ export default function MainContainer() {
             </div>
           </div>
 
-          <div className=" bg-white  dark:bg-slate-900  right-0 fixed z-10 w-[44px] h-[1750px]  shadow-sm dark:shadow-slate-100 ">
+          <div
+            className="MainRight-Container"
+          >
             <MainRight />
           </div>
         </div>

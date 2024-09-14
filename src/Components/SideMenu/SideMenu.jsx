@@ -7,7 +7,7 @@ function SideMenu(props) {
   return (
     <>
       <div
-        className={`h-full fixed z-[11] backdrop-blur-2xl bg-slate-900/30  dark:bg-slate-900/30  backdrop-3xl md:w-[226px] w-[270px] top-[53px] left-[44px]  ${
+        className={`h-full fixed z-[11] backdrop-blur-2xl bg-slate-900/30  dark:bg-slate-900/30 backdrop-3xl md:w-[226px] w-[270px] top-[53px] left-[44px]  ${
           props.sidebar
             ? "translate-x[0%]"
             : "translate-x-[-100%] duration-[0.2s] ease-linear "
@@ -29,34 +29,41 @@ function SideMenu(props) {
             </p>
           </div>
           <div className="flex flex-col justify-center item-center space-y-2">
-            <div className="flex space-x-1 dark:text-white text-black dark:bg-slate-800 shadow-sm dark:shadow-white shadow-black  px-6 w-[180px] py-1 rounded-xl items-center pl-[55px] md:pl-[42px] sm:pl-[55px]">
-             <a href="https://www.linkedin.com/in/believeharsh11/"target="_blank"  ><IoLogoLinkedin className="xl:text-2xl md:text-xl"  /></a> 
+            <div className="sidemenu-btn">
+              <a
+                href="https://www.linkedin.com/in/believeharsh11/"
+                target="_blank"
+              >
+                <IoLogoLinkedin className="xl:text-2xl md:text-xl" />
+              </a>
               <p className=" md:text-sm xl:text-2xl sm:text-[10px] ">
                 LinkedIn
               </p>
             </div>
 
-            <div className="flex space-x-1 dark:text-white text-black dark:bg-slate-800 shadow-sm dark:shadow-white shadow-black  px-6 w-[180px] py-1 rounded-xl items-center pl-[55px] md:pl-[42px] ">
-              <a href="https://github.com/believeharsh" target="_blank"><IoLogoGithub className="xl:text-2xl md:text-xl" /></a>
+            <div className="sidemenu-btn">
+              <a href="https://github.com/believeharsh" target="_blank">
+                <IoLogoGithub className="xl:text-2xl md:text-xl" />
+              </a>
               <p className=" md:text-sm xl:text-2xl sm:text-[10px] ">github</p>
             </div>
 
-            <div className="flex space-x-1 dark:text-white text-black dark:bg-slate-800 shadow-sm dark:shadow-white shadow-black  px-6 w-[180px] py-1 rounded-xl items-center pl-[55px] md:pl-[42px]">
-             <a href="https://www.instagram.com/bontinue_/" target="_blank"><IoLogoInstagram className="xl:text-2xl md:text-xl" /></a> 
+            <div className="sidemenu-btn">
+              <a href="https://www.instagram.com/bontinue_/" target="_blank">
+                <IoLogoInstagram className="xl:text-2xl md:text-xl" />
+              </a>
               <p className=" md:text-sm xl:text-2xl sm:text-[10px] text-center ">
                 Instagram
               </p>
             </div>
 
-            <div className="flex space-x-1 dark:text-white text-black dark:bg-slate-800 shadow-sm dark:shadow-white shadow-black  px-6 w-[180px] py-1 rounded-xl items-center pl-[55px] md:pl-[42px]">
-             <a href="https://www.youtube.com/@Bontinue" target="_blank"><IoLogoYoutube className="xl:text-2xl md:text-xl" alt="" /></a> 
+            <div className="sidemenu-btn">
+              <a href="https://www.youtube.com/@Bontinue" target="_blank">
+                <IoLogoYoutube className="xl:text-2xl md:text-xl" alt="" />
+              </a>
               <p className=" md:text-sm xl:text-2xl sm:text-[10px]">YouTube</p>
             </div>
-
           </div>
-        
-        
-
         </div>
       </div>
     </>

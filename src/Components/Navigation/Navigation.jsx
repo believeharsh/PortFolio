@@ -22,16 +22,13 @@ function Navigation({ click }) {
 
   return (
     <>
-      <header
-        id="MYID"
-        className="shadow fixed z-50 top-0  dark:bg-slate-900/80 pt-[1px] pb-[5px] bg-white bg-opacity-75  w-[100%] dark:backdrop-blur-sm backdrop-blur-3xl max-h-[69.5px]"
-      >
+      <header id="MYID" className="navbar-header">
         <nav className=" px-3 py-1 ">
-          <div className="flex flex-wrap flex-col sm:flex-row justify-between items-center mx-auto pb-[2px]  border-b-[1.5px] border-black dark:border-white">
+          <div className="navbar-parent-div">
             <div className="">
               <div className="flex justify-center items-center space-x-4">
                 <div
-                  className="dark:active:bg-blue-800 dark:hover:bg-slate-800 rounded-full ml-3 hover:bg-gray-300 active:bg-blue-700 p-1"
+                  className="nav-btn-style p-1"
                   id="menuButton "
                 >
                   <IoMenu
@@ -41,12 +38,12 @@ function Navigation({ click }) {
                 </div>
                 <div className="flex justify-center items-center">
                   <Link
-                    className="text-black dark:text-white text-2xl font-serif mx-2  dark:active:bg-blue-800 dark:hover:bg-slate-800 rounded-full hover:bg-gray-300 active:bg-blue-700 p-2 "
+                    className="nav-btn-style text-2xl font-serif mx-2 rounded-full p-2 "
                     to="/"
                   >
                     <FaHome className="" />
                   </Link>
-                  <div className="text-black mx-1 text-2xl dark:text-white dark:active:bg-blue-800 dark:hover:bg-slate-800 rounded-xl hover:bg-gray-300  px-3 py-1">
+                  <div className="nav-btn-style mx-1 text-2xl rounded-xl px-3 py-1">
                     Harsh Dahiya{" "}
                   </div>
                 </div>
@@ -57,7 +54,7 @@ function Navigation({ click }) {
               <div className=" text-black dark:text-white text-lg  flex justify-between items-center ">
                 <div className="flex justify-center items-center space-x-4 ml-3 sm:ml-0">
                   <Link to="/Projects">
-                    <li className=" dark:active:bg-blue-800 dark:hover:bg-slate-800 rounded-xl px-2 py-1   list-none hover:bg-gray-300 active:bg-blue-700">
+                    <li className="nav-btn-style rounded-xl px-2 py-1 list-none ">
                       <p className="text-black dark:text-white text-xl ">
                         Projects
                       </p>
@@ -65,19 +62,19 @@ function Navigation({ click }) {
                   </Link>
 
                   <Link to="/experience">
-                    <li className=" dark:active:bg-blue-800 dark:hover:bg-slate-800 rounded-xl px-2 py-1  list-none hover:bg-gray-300 active:bg-blue-700">
+                    <li className=" nav-btn-style rounded-xl px-2 py-1 list-none">
                       <p className="text-black dark:text-white text-xl ">
                         Experience
                       </p>
                     </li>
                   </Link>
                 </div>
-                <div className="dark:active:bg-blue-800 dark:hover:bg-slate-800 hover:bg-gray-300 active:bg-blue-700 rounded-full   ml-4 mr-4">
+                <div className="nav-btn-style rounded-full ml-4 mr-4">
                   <li className=" list-none p-2 " onClick={ToggleTheme}>
                     {Theme === "dark" ? (
-                      <MdDarkMode className="  text-black dark:text-white  text-3xl" />
+                      <MdDarkMode className="Theme-Btn" />
                     ) : (
-                      <MdLightMode className="  text-black dark:text-white  text-3xl " />
+                      <MdLightMode className="Theme-Btn" />
                     )}
                   </li>
                 </div>

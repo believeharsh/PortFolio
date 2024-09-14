@@ -3,7 +3,7 @@ import React from 'react'
 function RestProjectsHeader() {
   return (
     <>
-      <div className="mb-3 mx-3 dark:bg-slate-800 shadow-sm dark:shadow-white shadow-black rounded-xl pl-5">
+      <div className="rest-project-div">
         <p className="text-black dark:text-white  text-2xl px-1 py-1">Projects
           <span className="border-b-[1px] border-black "></span>
         </p>
