@@ -61,7 +61,7 @@ function SideMenu(props) {
               <a href="https://www.youtube.com/@Bontinue" target="_blank">
                 <IoLogoYoutube className="xl:text-2xl md:text-xl" alt="" />
               </a>
-              <p className=" md:text-sm xl:text-2xl sm:text-[10px]">YouTube</p>
+              <p className="md:text-sm xl:text-2xl sm:text-[10px]">YouTube</p>
             </div>
           </div>
         </div>
