@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  @apply dark:bg-slate-800 bg-cover bg-center min-h-[100vh] m-0;
+}
+
 .Skills {
   @apply dark:bg-slate-800 text-xl px-3 py-1 rounded-xl border-[1.2px] dark:hover:bg-slate-900 dark:hover:text-white cursor-pointer dark:text-white dark:active:bg-blue-900 bg-black  text-white dark:border-white border-blue-700 active:bg-slate-700 dark:shadow-white shadow-black shadow-sm mb-2;
 }
@@ -24,19 +28,17 @@
   /* Color of the scrollbar thumb on hover */
 }
 
-
 /* Navbar Styles  */
 .navbar-header {
-  @apply shadow fixed z-50 top-0  dark:bg-slate-900/80 pt-[1px] pb-[5px] bg-white bg-opacity-75  w-[100%] dark:backdrop-blur-sm backdrop-blur-3xl max-h-[69.5px]
-
+  @apply shadow fixed z-50 top-0  dark:bg-slate-900/80 pt-[1px] pb-[5px] bg-white bg-opacity-75  w-[100%] dark:backdrop-blur-sm backdrop-blur-3xl max-h-[69.5px];
 }
 
 .navbar-parent-div {
-  @apply flex flex-wrap flex-col sm:flex-row justify-between items-center mx-auto pb-[2px]  border-b-[1.5px] border-black dark:border-white
+  @apply flex flex-wrap flex-col sm:flex-row justify-between items-center mx-auto pb-[2px]  border-b-[1.5px] border-black dark:border-white;
 }
 
-.nav-btn-style{
-  @apply dark:active:bg-blue-800 dark:hover:bg-slate-800 rounded-full ml-3 hover:bg-gray-300 active:bg-blue-700 text-black dark:text-white
+.nav-btn-style {
+  @apply dark:active:bg-blue-800 dark:hover:bg-slate-800 rounded-full ml-3 hover:bg-gray-300 active:bg-blue-700 text-black dark:text-white;
 }
 
 /* MainLeft Container Styles */
@@ -46,54 +48,58 @@
 }
 
 .MainLeft-Child {
-  @apply p-[5px] bg-transparent rounded-xl md:dark:active:bg-blue-800 md:dark:hover:bg-slate-800 md:hover:bg-gray-300 active:text-blue-800
+  @apply p-[5px] bg-transparent rounded-xl md:dark:active:bg-blue-800 md:dark:hover:bg-slate-800 md:hover:bg-gray-300 active:text-blue-800;
 }
 
 .Projects-link-icon {
-  @apply text-black dark:text-white text-3xl font-bold
+  @apply text-black dark:text-white text-3xl font-bold;
 }
 
 .MainCenter-Container {
   @apply bg-white  dark:bg-gradient-to-r from-gray-800 via-slate-900 to-gray-800 rounded-xl w-[calc(100%-49px-49px)] mt-[90px] sm:mt-[55px] mx-auto  px-2 py-2 mb-1 border-[1.5px] dark:border-white;
 }
 
-
 /* MainRight Container CSS  */
 .MainRight-Container {
   @apply bg-white  dark:bg-slate-900  right-0 fixed z-10 w-[44px] h-[1750px]  shadow-sm dark:shadow-slate-100;
 }
 .MainRight-Child {
-  @apply p-[5px] bg-transparent rounded-xl md:dark:active:bg-blue-800 md:dark:hover:bg-slate-800 md:hover:bg-gray-300 active:text-blue-800
+  @apply p-[5px] bg-transparent rounded-xl md:dark:active:bg-blue-800 md:dark:hover:bg-slate-800 md:hover:bg-gray-300 active:text-blue-800;
 }
-
 
 .Theme-Btn {
-  @apply text-black dark:text-white  text-3xl
+  @apply text-black dark:text-white  text-3xl;
 }
-
 
 /* Common Project Container  */
 .common-project-div {
-  @apply dark:bg-slate-900/60 bg-slate-900 shadow-sm dark:shadow-slate-100 rounded-2xl px-2 py-2 border-[1px] flex flex-col max-w-[280px] mx-1 md:my-1 my-2 dark:hover:bg-slate-900/90
+  @apply dark:bg-slate-900/60 bg-slate-900 shadow-sm dark:shadow-slate-100 rounded-2xl px-2 py-2 border-[1px] flex flex-col max-w-xl mx-1 md:my-1 my-2 dark:hover:bg-slate-900/90;
 }
 
-
 .latest-project-div {
-  @apply mb-3 mx-3 dark:bg-slate-800 shadow-sm dark:shadow-white shadow-black rounded-xl pl-5
+  @apply mb-3 mx-3 dark:bg-slate-800 shadow-sm dark:shadow-white shadow-black rounded-xl pl-5;
 }
 
 .rest-project-div {
-  @apply mb-3 mx-3 dark:bg-slate-800 shadow-sm dark:shadow-white shadow-black rounded-xl pl-5
+  @apply mb-3 mx-3 dark:bg-slate-800 shadow-sm dark:shadow-white shadow-black rounded-xl pl-5;
 }
 
 .sidemenu-btn {
-  @apply flex space-x-1 dark:text-white text-black dark:bg-slate-800 shadow-sm dark:shadow-white shadow-black  px-6 w-[180px] py-1 rounded-xl items-center pl-[55px] md:pl-[42px] sm:pl-[55px]
+  @apply flex space-x-1 dark:text-white text-black dark:bg-slate-800 shadow-sm dark:shadow-white shadow-black  px-6 w-[180px] py-1 rounded-xl items-center pl-[55px] md:pl-[42px] sm:pl-[55px];
 }
 
 .skills-parent-div {
-  @apply mt-4 pb-5 w-[70vw] md:mx-auto pr-4  overflow-auto h-full
+  @apply mt-4 pb-5 w-[70vw] md:mx-auto pr-4  overflow-auto h-full;
 }
 
 .tooltip-style {
-  @apply absolute top-10 scale-0 transition-all rounded-[9px] px-2 py-1 bg-black border-white  border-[0.5px] text-xs text-white group-hover:scale-100
+  @apply absolute top-10 scale-0 transition-all rounded-[9px] px-2 py-1 bg-black border-white  border-[0.5px] text-xs text-white group-hover:scale-100;
+}
+
+.limit-text {
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* Number of lines to show */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }

@@ -11,7 +11,7 @@ export default function MainContainer() {
   const [CenterBlur, setCenterBlur] = useState(false);
   const [ConnectMenu, setConnectMenu] = useState(false);
 
-  const RefSideMenu = useRef();
+  const sidebarRef = useRef();
 
   const ToggleSideBar = (event) => {
     event.preventDefault();
@@ -23,47 +23,34 @@ export default function MainContainer() {
     event.preventDefault();
     setConnectMenu(!ConnectMenu);
   };
-
-  useEffect(() => {
-    const CloseSideBar = (e) => {
-      if (!RefSideMenu.current.contains(e.target)) {
-        setSidebar(false);
-        console.log("hello");
-      }
-    };
-    document.addEventListener("click", CloseSideBar);
-    return document.removeEventListener("click", CloseSideBar);
-  });
-
+ 
   return (
     <>
       <Navigation click={ToggleSideBar} />
-
-      <div className={` bg-white dark:bg-slate-900 h-full relative  `}>
-        <div className="flex ">
-          <div className="">
-            <SideMenu sidebar={sidebar} RefSideMenu={RefSideMenu} />
+      <div className="bg-white dark:bg-slate-900 h-full relative">
+        <div className="flex">
+          <div>
+            <SideMenu sidebar={sidebar} RefSideMenu={sidebarRef} />
           </div>
-          <div className="">
+          <div>
             <Connect Connectmenu={ConnectMenu} />
           </div>
 
           <div className="MainLeft-Container">
             <Mainleft ToggleConnect={ToggleConnect} />
           </div>
+
           <div
-            className={`MainCenter-Container  ${
+            className={`MainCenter-Container ${
               CenterBlur ? "blur-sm z-[10] overflow-hidden" : ""
             }`}
           >
-            <div className="">
+            <div>
               <Outlet />
             </div>
           </div>
 
-          <div
-            className="MainRight-Container"
-          >
+          <div className="MainRight-Container">
             <MainRight />
           </div>
         </div>
