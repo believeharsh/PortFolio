@@ -1,5 +1,4 @@
-// import React from 'react'
-import Home from "../Home/Home";
+import Home from "../../Pages/Home";
 import Skills from "../Skills/Skills";
 
 export default function MainCenter() {

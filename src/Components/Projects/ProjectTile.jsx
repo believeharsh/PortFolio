@@ -2,7 +2,7 @@ import React from "react";
 import { FaExternalLinkAlt } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 
-function CommonProjectDiv(props) {
+function ProjectTile(props) {
   return (
     <>
       <div className="flex flex-wrap justify-center items-center">
@@ -46,4 +46,4 @@ function CommonProjectDiv(props) {
   );
 }
 
-export default CommonProjectDiv;
+export default ProjectTile;

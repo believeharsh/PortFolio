@@ -9,11 +9,8 @@ import {
 } from "react-router-dom";
 import Layout from "./Components/Layout/Layout.jsx";
 import MainCenter from "./Components/MainCenter/MainCenter.jsx";
-import Experience from "./Components/Experience/Experience.jsx";
-import Projects from "./Components/Projects/Projects.jsx";
-import Connect from "./Components/Connect/Connect.jsx";
-
-
+import Experience from "./Pages/Experience.jsx";
+import Projects from "./Pages/Projects.jsx";
 
 const Router = createBrowserRouter(
   createRoutesFromElements(

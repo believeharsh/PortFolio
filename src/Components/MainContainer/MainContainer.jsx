@@ -2,7 +2,7 @@ import { Outlet } from "react-router-dom";
 import Mainleft from "../Mainleft/Mainleft";
 import MainRight from "../MainRight/MainRight";
 import SideMenu from "../SideMenu/SideMenu";
-import { useState, useEffect, useRef } from "react";
+import { useState, useRef } from "react";
 import Navigation from "../Navigation/Navigation";
 import Connect from "../Connect/Connect";
 
