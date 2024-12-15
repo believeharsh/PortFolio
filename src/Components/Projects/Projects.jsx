@@ -36,9 +36,12 @@ function Projects() {
           <div className="flex justify-center items-center px-3 py-2 flex-wrap gap-3 ">
 
             <CommonProjectDiv ProjectName="Spotify"
-              LiveLink=""
-              ProjectImg="/assets/LinkedinBanner.png"
-              ProjectDes="Spotify is the No. 1 website for listing endless songs accoridng to your taste. " />
+              LiveLink="https://believeharsh-100-project-dashboard.vercel.app/"
+              ProjectImg="/assets/100Projects-DashBoard.png"
+              ProjectDes="A DashBoard that consist 100 small projects with their respective live and  Source Code Links."
+              CodeLink="https://github.com/believeharsh/100-Project-Dashboard"
+              />
+       
 
             <CommonProjectDiv ProjectName="Spotify"
               LiveLink=""
