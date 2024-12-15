@@ -49,7 +49,7 @@ function Projects() {
               ProjectDes="Spotify is the No. 1 website for listing endless songs accoridng to your taste. "
             />
 
-            <CommonProjectDiv
+            <ProjectTile
               ProjectName="Spotify"
               LiveLink=""
               ProjectImg="/assets/LinkedinBanner.png"

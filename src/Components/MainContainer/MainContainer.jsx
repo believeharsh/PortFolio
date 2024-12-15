@@ -4,52 +4,46 @@ import MainRight from "../MainRight/MainRight";
 import SideMenu from "../SideMenu/SideMenu";
 import { useState, useRef } from "react";
 import Navigation from "../Navigation/Navigation";
-import Connect from "../Connect/Connect";
+import useOutsideClick from "../../Hooks/UseOutSide-Click";
 
 export default function MainContainer() {
   const [sidebar, setSidebar] = useState(false);
   const [CenterBlur, setCenterBlur] = useState(false);
-  const [ConnectMenu, setConnectMenu] = useState(false);
 
   const sidebarRef = useRef();
 
+
+  useOutsideClick(sidebarRef, () => {
+    if (sidebar) {
+      setSidebar(false);
+      setCenterBlur(false); 
+    }
+  });
+
+  
   const ToggleSideBar = (event) => {
-    event.preventDefault();
-    setSidebar(!sidebar);
-    setCenterBlur(!CenterBlur);
+    event.preventDefault() ;
+    setSidebar(prevState => !prevState); 
+    setCenterBlur(prevState => !prevState); 
   };
 
-  const ToggleConnect = (event) => {
-    event.preventDefault();
-    setConnectMenu(!ConnectMenu);
-  };
- 
   return (
     <>
       <Navigation click={ToggleSideBar} />
       <div className="bg-white dark:bg-slate-900 h-full relative">
         <div className="flex">
-          <div>
-            <SideMenu sidebar={sidebar} RefSideMenu={sidebarRef} />
-          </div>
-          <div>
-            <Connect Connectmenu={ConnectMenu} />
-          </div>
-
+         
+          <SideMenu sidebar={sidebar} RefSideMenu={sidebarRef} />
           <div className="MainLeft-Container">
-            <Mainleft ToggleConnect={ToggleConnect} />
+            <Mainleft />
           </div>
-
           <div
             className={`MainCenter-Container ${
               CenterBlur ? "blur-sm z-[10] overflow-hidden" : ""
             }`}
           >
-            <div>
-              <Outlet />
-            </div>
+            <Outlet />
           </div>
-
           <div className="MainRight-Container">
             <MainRight />
           </div>
