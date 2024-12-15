@@ -30,7 +30,7 @@ function SideMenu(props) {
             </p>
           </div>
           <div className="flex flex-col justify-center item-center space-y-2">
-            <div className="sidemenu-btn">
+            <div className="sidemenu-btn ">
               <a
                 href="https://www.linkedin.com/in/believeharsh11/"
                 target="_blank"

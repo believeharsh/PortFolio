@@ -14,7 +14,7 @@ import Projects from "./Components/Projects/Projects.jsx";
 import Connect from "./Components/Connect/Connect.jsx";
 
 
-// eslint-disable-next-line react-refresh/only-export-components
+
 const Router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<Layout />}>
