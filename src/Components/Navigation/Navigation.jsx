@@ -48,8 +48,8 @@ const  Navigation = ({ click }) => {
                   >
                     <FaHome className="" />
                   </Link>
-                  <div className="nav-btn-style mx-1 text-2xl rounded-xl px-3 py-1">
-                    Harsh Dahiya{" "}
+                  <div className="nav-btn-style mx-1 text-2xl rounded-xl px-3 py-1 cursor-pointer">
+                    <Link to="/">Harsh Dahiya{" "}</Link>
                   </div>
                 </div>
               </div>

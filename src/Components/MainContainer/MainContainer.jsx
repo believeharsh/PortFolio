@@ -11,6 +11,7 @@ import Footer from "../Footer/Footer";
 const MainContainer = () =>  {
   const [sidebar, setSidebar] = useState(false);
   const sidebarRef = useRef();
+  const connectRef = useRef() ; 
   const [ConnectMenu, setConnectMenu] = useState(false);
 
   useOutsideClick(sidebarRef, () => {
@@ -18,6 +19,10 @@ const MainContainer = () =>  {
       setSidebar(false);
     }
   });
+  useOutsideClick(connectRef, () => {
+    if(ConnectMenu)
+    setConnectMenu(false) ; 
+  })
 
   const ToggleSideBar = (event) => {
     event.stopPropagation();
@@ -25,7 +30,8 @@ const MainContainer = () =>  {
   };
   const ToggleConnect = (event) => {
     event.preventDefault();
-    setConnectMenu(!ConnectMenu);
+    event.stopPropagation() ; 
+    setConnectMenu((prevState) => !prevState);
   };
 
   return (
@@ -35,7 +41,7 @@ const MainContainer = () =>  {
         <div className="flex">
           <SideMenu sidebar={sidebar} RefSideMenu={sidebarRef} />
           <div>
-            <Connect Connectmenu={ConnectMenu} />
+            <Connect Connectmenu={ConnectMenu} connectRef={connectRef} />
           </div>
           <div className="MainLeft-Container">
             <Mainleft  ToggleConnect={ToggleConnect}/>
