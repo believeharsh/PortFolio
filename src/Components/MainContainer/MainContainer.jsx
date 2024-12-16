@@ -6,6 +6,7 @@ import Mainleft from "../Mainleft/Mainleft";
 import MainRight from "../MainRight/MainRight";
 import { Outlet } from "react-router-dom";
 import Connect from "../Connect/Connect"
+import Footer from "../Footer/Footer";
 
 const MainContainer = () =>  {
   const [sidebar, setSidebar] = useState(false);
@@ -47,12 +48,14 @@ const MainContainer = () =>  {
             }`}
           >
             <Outlet />
+            <Footer/>
           </div>
           <div className="MainRight-Container">
             <MainRight />
           </div>
         </div>
       </div>
+      
     </>
   );
 }

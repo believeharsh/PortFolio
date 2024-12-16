@@ -8,14 +8,14 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import Layout from "./Components/Layout/Layout.jsx";
-import MainCenter from "./Components/MainCenter/MainCenter.jsx";
 import Experience from "./Pages/Experience.jsx";
 import Projects from "./Pages/Projects.jsx";
+import Home from "./Pages/Home.jsx";
 
 const Router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<Layout />}>
-      <Route path="" element={<MainCenter />} />
+      <Route path="" element={<Home />} />
       <Route path="/experience" element={<Experience />} />
       <Route path="/projects" element={<Projects />} />
     </Route>
