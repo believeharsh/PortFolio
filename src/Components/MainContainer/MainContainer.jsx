@@ -17,11 +17,10 @@ export default function MainContainer() {
   });
 
   const ToggleSideBar = (event) => {
-    event.stopPropagation() ;
+    event.stopPropagation();
     setSidebar((prevState) => !prevState);
   };
 
-  console.log(sidebar);
   return (
     <>
       <Navigation click={ToggleSideBar} />
@@ -33,7 +32,9 @@ export default function MainContainer() {
           </div>
           <div
             className={`MainCenter-Container ${
-              sidebar ? "blur-sm z-[10] overflow-hidden" : ""
+              sidebar
+                ? "blur-sm z-[10] overflow-hidden pointer-events-none"
+                : ""
             }`}
           >
             <Outlet />

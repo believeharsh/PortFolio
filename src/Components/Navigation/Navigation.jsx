@@ -5,14 +5,20 @@ import { FaHome } from "react-icons/fa";
 import { MdLightMode } from "react-icons/md";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import useLightDark from "../../Hooks/UseLightDarkMode";
+
 
 function Navigation({ click }) {
-  const [Theme, setTheme] = useState("dark");
+  const [Theme, setTheme] = useLightDark("theme" , 'dark') ; 
 
   useEffect(() => {
     if (Theme === "dark") {
       document.documentElement.classList.add("dark");
-    } else document.documentElement.classList.remove("dark");
+      document.documentElement.classList.remove("light");
+    } else {
+      document.documentElement.classList.add("light");
+      document.documentElement.classList.remove("dark");
+    }
   }, [Theme]);
 
   const ToggleTheme = (event) => {
