@@ -3,18 +3,17 @@ import { IoLogoLinkedin } from "react-icons/io";
 import { IoLogoGithub } from "react-icons/io";
 import { IoLogoInstagram } from "react-icons/io";
 import { IoLogoYoutube } from "react-icons/io";
-import { FaPhone, FaPhoneAlt } from "react-icons/fa";
+import { FaPhone } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
-import { FaHeart } from "react-icons/fa";
 
-function Connect(props) {
+const Connect = ({Connectmenu}) =>  {
   return (
     <>
       <div
-        className={`fixed border-[4px] border-blue-700  rounded-2xl z-[11] backdrop-blur-2xl bg-white text-black  backdrop-3xl  bottom-[55px] left-[44px] w-[250px]  sm:w-[280px] md:w-[300px]  ${
-          props.Connectmenu
+        className={`fixed border-[4px] border-blue-700  rounded-2xl z-[11] backdrop-blur-2xl bg-white text-black  backdrop-3xl  bottom-[55px] left-[44px] w-[250px]  sm:w-[280px] md:w-[300px]  duration-[0.4s] ease-in-out  ${
+          Connectmenu
             ? "translate-x-[4%] sm:translate-x-[10%]"
-            : "translate-x-[-100%] duration-[0.4s] ease-in-out "
+            : "translate-x-[-100%] "
         }  `}
       >
         <div className="">
@@ -39,21 +38,31 @@ function Connect(props) {
             </div>
             <div className="flex mx-auto text-[25px] mt-4 ">
               <div className="mr-4  rounded-full border-[1px] border-cyan-400 hover:bg-slate-400 p-2 ">
-                <a href="https://www.linkedin.com/in/believeharsh11/" target="_blank" ><IoLogoLinkedin /></a>
-               
+                <a
+                  href="https://www.linkedin.com/in/believeharsh11/"
+                  target="_blank"
+                >
+                  <IoLogoLinkedin />
+                </a>
               </div>
               <div className="mr-4 rounded-full border-[1px] border-cyan-400 hover:bg-slate-400 p-2">
-                <a href="https://github.com/believeharsh" target="_blank" ><IoLogoGithub /></a>
+                <a href="https://github.com/believeharsh" target="_blank">
+                  <IoLogoGithub />
+                </a>
               </div>
               <div className="mr-4 rounded-full border-[1px] border-cyan-400 hover:bg-slate-400 p-2">
-                <a href="https://www.instagram.com/bontinue_/  " target="_blank" > <IoLogoInstagram /></a>
-
-               
+                <a
+                  href="https://www.instagram.com/bontinue_/  "
+                  target="_blank"
+                >
+                  {" "}
+                  <IoLogoInstagram />
+                </a>
               </div>
               <div className="mr-4 rounded-full border-[1px] border-cyan-400 hover:bg-slate-400 p-2">
-                <a href="https://www.youtube.com/@Bontinue" target="_blank" ><IoLogoYoutube /></a>
-
-        
+                <a href="https://www.youtube.com/@Bontinue" target="_blank">
+                  <IoLogoYoutube />
+                </a>
               </div>
             </div>
           </div>

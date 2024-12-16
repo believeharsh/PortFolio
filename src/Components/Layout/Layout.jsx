@@ -1,7 +1,7 @@
 import Footer from "../Footer/Footer";
 import MainContainer from "../MainContainer/MainContainer";
 
-function Layout() {
+const Layout = () => {
   return (
     <>
       <MainContainer />

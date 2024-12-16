@@ -5,10 +5,12 @@ import SideMenu from "../SideMenu/SideMenu";
 import Mainleft from "../Mainleft/Mainleft";
 import MainRight from "../MainRight/MainRight";
 import { Outlet } from "react-router-dom";
+import Connect from "../Connect/Connect"
 
-export default function MainContainer() {
+const MainContainer = () =>  {
   const [sidebar, setSidebar] = useState(false);
   const sidebarRef = useRef();
+  const [ConnectMenu, setConnectMenu] = useState(false);
 
   useOutsideClick(sidebarRef, () => {
     if (sidebar) {
@@ -20,6 +22,10 @@ export default function MainContainer() {
     event.stopPropagation();
     setSidebar((prevState) => !prevState);
   };
+  const ToggleConnect = (event) => {
+    event.preventDefault();
+    setConnectMenu(!ConnectMenu);
+  };
 
   return (
     <>
@@ -27,8 +33,11 @@ export default function MainContainer() {
       <div className="bg-white dark:bg-slate-900 h-full relative">
         <div className="flex">
           <SideMenu sidebar={sidebar} RefSideMenu={sidebarRef} />
+          <div>
+            <Connect Connectmenu={ConnectMenu} />
+          </div>
           <div className="MainLeft-Container">
-            <Mainleft />
+            <Mainleft  ToggleConnect={ToggleConnect}/>
           </div>
           <div
             className={`MainCenter-Container ${
@@ -47,3 +56,5 @@ export default function MainContainer() {
     </>
   );
 }
+
+export default MainContainer ; 

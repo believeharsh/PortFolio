@@ -2,7 +2,7 @@ import React from "react";
 import { FaExternalLinkAlt } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 
-function ProjectTile(props) {
+const ProjectTile = (props) => {
   return (
     <>
       <div className="flex flex-wrap justify-center items-center">

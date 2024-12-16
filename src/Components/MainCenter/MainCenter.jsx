@@ -1,7 +1,7 @@
 import Home from "../../Pages/Home";
 import Skills from "../Skills/Skills";
 
-export default function MainCenter() {
+const MainCenter = () => {
   return (
     <>
       <div className="p-2 rounded-xl ">
@@ -11,3 +11,4 @@ export default function MainCenter() {
     </>
   );
 }
+export default MainCenter ; 

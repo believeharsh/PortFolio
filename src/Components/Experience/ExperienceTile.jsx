@@ -1,5 +1,5 @@
 
-function ExperienceTile(props){
+const ExperienceTile = (props) => {
    
     return (
       <>

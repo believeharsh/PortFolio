@@ -5,7 +5,7 @@ import {
   IoLogoYoutube,
 } from "react-icons/io";
 
-function SideMenu({ sidebar, RefSideMenu }) {
+const SideMenu = ({ sidebar, RefSideMenu }) => {
   return (
     <div
       ref={RefSideMenu}

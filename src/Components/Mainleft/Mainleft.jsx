@@ -3,7 +3,8 @@ import { GoProjectSymlink } from "react-icons/go";
 import { MdOutlineMail } from "react-icons/md";
 import { FaUserFriends } from "react-icons/fa";
 import Tooltip from "../Tooltip/Tooltip";
-export default function Mainleft({ToggleConnect}) {
+
+const MainLeft = ({ToggleConnect}) => {
   return (
     <>
       <div className="flex flex-col justify-center items-center pt-[130px] md:pt-[90px] space-y-6">
@@ -28,3 +29,4 @@ export default function Mainleft({ToggleConnect}) {
     </>
   );
 }
+export default MainLeft ; 

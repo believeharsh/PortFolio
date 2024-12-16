@@ -17,7 +17,7 @@ const useLightDark = ({ key, defaultValue }) => {
   useEffect(() => {
     localStorage.setItem(key, JSON.stringify(value));
   }, [value, key]);
-  console.log(value); 
+ 
 
   return [value, setValue];
 };

@@ -1,6 +1,6 @@
 import React from "react";
 
-function Skills() {
+const Skills = ()  => {
   return (
     <>
       <div className="skills-parent-div">

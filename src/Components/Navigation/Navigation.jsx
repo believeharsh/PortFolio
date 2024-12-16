@@ -1,14 +1,13 @@
-// import React from 'react'
 import { MdDarkMode, MdLight } from "react-icons/md";
 import { IoMenu } from "react-icons/io5";
 import { FaHome } from "react-icons/fa";
 import { MdLightMode } from "react-icons/md";
-import { useEffect, useState } from "react";
+import { useEffect} from "react";
 import { Link } from "react-router-dom";
 import useLightDark from "../../Hooks/UseLightDarkMode";
 
 
-function Navigation({ click }) {
+const  Navigation = ({ click }) => {
   const [Theme, setTheme] = useLightDark("theme" , 'dark') ; 
 
   useEffect(() => {

@@ -1,7 +1,7 @@
 import React from 'react'
 import propTypes from 'prop-types' ; 
 
-function ProjectsHeader({heading}) {
+const ProjectsHeader = ({heading}) => {
   return (
     <>
       <div className="latest-project-div">

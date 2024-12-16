@@ -1,7 +1,6 @@
 import { FaLinkedin, FaGithub, FaTwitter } from "react-icons/fa6";
-// import { FaGithub } from "react-icons/fa6";
 
-function MainRight() {
+const MainRight = () => {
   return (
     <div className="flex flex-col justify-center items-center pt-[130px] md:pt-[90px] space-y-6 ">
       <div className="MainRight-Child">
