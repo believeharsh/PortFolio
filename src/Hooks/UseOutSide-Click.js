@@ -1,20 +1,19 @@
-import {useEffect} from 'react' ; 
+import { useEffect } from "react";
 
 const useOutSideClick = (ref, hanlder) => {
-    useEffect(() => {
-        const listener = (event) => {
-            if(!ref.current || ref.current.contains(event.target)){
-                return ; 
-            }
-            hanlder(event) ; 
-        }
+  useEffect(() => {
+    const listener = (event) => {
+      if (ref.current && !ref.current.contains(event.target)) {
+        hanlder();
+      }
+    };
 
-        document.addEventListener("mousedown" , listener) ; 
+    document.addEventListener("click", listener);
 
-        return () => {
-            document.removeEventListener('mousedown', listener) ; 
-        }
-    }, [ref, hanlder]) ; 
-}
+    return () => {
+      document.removeEventListener("click", listener);
+    };
+  }, [ref, hanlder]);
+};
 
-export default useOutSideClick ; 
+export default useOutSideClick;

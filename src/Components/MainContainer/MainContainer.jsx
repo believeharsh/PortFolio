@@ -1,45 +1,39 @@
-import { Outlet } from "react-router-dom";
-import Mainleft from "../Mainleft/Mainleft";
-import MainRight from "../MainRight/MainRight";
-import SideMenu from "../SideMenu/SideMenu";
 import { useState, useRef } from "react";
 import Navigation from "../Navigation/Navigation";
 import useOutsideClick from "../../Hooks/UseOutSide-Click";
+import SideMenu from "../SideMenu/SideMenu";
+import Mainleft from "../Mainleft/Mainleft";
+import MainRight from "../MainRight/MainRight";
+import { Outlet } from "react-router-dom";
 
 export default function MainContainer() {
   const [sidebar, setSidebar] = useState(false);
-  const [CenterBlur, setCenterBlur] = useState(false);
-
   const sidebarRef = useRef();
-
 
   useOutsideClick(sidebarRef, () => {
     if (sidebar) {
       setSidebar(false);
-      setCenterBlur(false); 
     }
   });
 
-  
   const ToggleSideBar = (event) => {
-    event.preventDefault() ;
-    setSidebar(prevState => !prevState); 
-    setCenterBlur(prevState => !prevState); 
+    event.stopPropagation() ;
+    setSidebar((prevState) => !prevState);
   };
 
+  console.log(sidebar);
   return (
     <>
       <Navigation click={ToggleSideBar} />
       <div className="bg-white dark:bg-slate-900 h-full relative">
         <div className="flex">
-         
           <SideMenu sidebar={sidebar} RefSideMenu={sidebarRef} />
           <div className="MainLeft-Container">
             <Mainleft />
           </div>
           <div
             className={`MainCenter-Container ${
-              CenterBlur ? "blur-sm z-[10] overflow-hidden" : ""
+              sidebar ? "blur-sm z-[10] overflow-hidden" : ""
             }`}
           >
             <Outlet />

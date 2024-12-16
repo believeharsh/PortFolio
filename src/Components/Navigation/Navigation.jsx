@@ -22,7 +22,7 @@ function Navigation({ click }) {
 
   return (
     <>
-      <header id="MYID" className="navbar-header">
+      <header id="MYID" className="navbar-header" >
         <nav className=" px-3 py-1 ">
           <div className="navbar-parent-div">
             <div className="">

@@ -3,7 +3,7 @@ import { GoProjectSymlink } from "react-icons/go";
 import { MdOutlineMail } from "react-icons/md";
 import { FaUserFriends } from "react-icons/fa";
 import Tooltip from "../Tooltip/Tooltip";
-export default function Mainleft(props) {
+export default function Mainleft({ToggleConnect}) {
   return (
     <>
       <div className="flex flex-col justify-center items-center pt-[130px] md:pt-[90px] space-y-6">
@@ -19,7 +19,7 @@ export default function Mainleft(props) {
             <MdOutlineMail className="Projects-link-icon" />
           </Tooltip>
         </div>
-        <div onClick={props.ToggleConnect} className="MainLeft-Child">
+        <div onClick={ToggleConnect} className="MainLeft-Child">
           <Tooltip message={"Connect"}>
             <FaUserFriends className="Projects-link-icon" />
           </Tooltip>
