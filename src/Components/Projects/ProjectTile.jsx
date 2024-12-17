@@ -6,47 +6,53 @@ const ProjectTile = (props) => {
   return (
     <>
       <div className="flex flex-wrap justify-center items-center">
-        <div className="common-project-div">
-          <div className="flex justify-between items-center border-b-[1.3px] border-white mb-1 py-1 pb-[8px]">
-            <button className="rounded-xl px-4 py-1 dark:bg-slate-900 text-white text-xl dark:hover:bg-slate-700 dark:active:bg-blue-600 border-white border-[0.7px] ml-1 ">
+        <div className="common-project-div w-full sm:w-80 md:w-[400px] lg:w-[500px] xl:w-[600px] mx-4 mb-6 rounded-xl shadow-lg overflow-hidden">
+          {/* Header Section */}
+          <div className="flex justify-between items-center border-b-[1.3px] border-white mb-1 py-2 px-4">
+            <button className="rounded-xl px-4 py-2 bg-blue-500 text-white text-xl hover:bg-blue-600 transition duration-300">
               {props.ProjectName}
             </button>
-            <div className="flex justify-center items-center">
-            <a
-              href={props.LiveLink}
-              className="dark:bg-slate-900 dark:hover:bg-slate-700 dark:active:bg-blue-600 text-white text-xl p-2 rounded-full mr-1 "
-              target="_blank"
-            >
-              <FaExternalLinkAlt />
-            </a>
-            <a
-              href={props.CodeLink}
-              className="dark:bg-slate-900 dark:hover:bg-slate-700 dark:active:bg-blue-600 text-white text-xl p-2 rounded-full mr-1 "
-              target="_blank"
-            >
-              <FaGithub/>
-            </a>
+            <div className="flex justify-center items-center space-x-2">
+              <a
+                href={props.LiveLink}
+                className="bg-gray-800 hover:bg-gray-700 text-white text-xl p-2 rounded-full"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaExternalLinkAlt />
+              </a>
+              <a
+                href={props.CodeLink}
+                className="bg-gray-800 hover:bg-gray-700 text-white text-xl p-2 rounded-full"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaGithub />
+              </a>
             </div>
-          
           </div>
-          <div className="min-w-[300px] h-[170px] mx-auto mb-2 mt-2">
+
+          {/* Image Section */}
+          <div className="min-w-full h-[200px] mx-auto mb-2 mt-2">
             <img
-              src={`${props.ProjectImg}`}
-              className="rounded-xl max-w-full max-h-full  object-cover"
-              alt=""
+              src={props.ProjectImg}
+              className="rounded-xl w-full h-full object-cover"
+              alt="Project"
             />
           </div>
 
-          <div className="text-white text-xl font-mono limit-text">
+          {/* Description Section */}
+          <div className="text-black dark:text-white text-lg font-mono px-4 pb-4">
             {props.ProjectDes}
           </div>
         </div>
       </div>
     </>
   );
-}
+};
 
 export default ProjectTile;
+
 
 
 

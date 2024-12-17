@@ -1,60 +1,21 @@
-// const ExperienceTile = (props) => {
-//   return (
-//     <>
-//       <div className="flex flex-col md:flex-row mx-auto mb-5 dark:border-white border-black border-b-[2px] px-3 py-5 space-y-3 md:space-y-1 justify-center items-center">
-//         <div className="md:flex-row flex-col justify-center mr-4">
-//           <div className="">
-//             <img
-//               src={`${props.ImageUrl}`}
-//               className="md:w-[240px] md:h-[170px] w-[200px] h-[120px] rounded-xl"
-//               alt=""
-//             />
-//           </div>
-//         </div>
-//         <div className="flex ">
-//           <div className="mr-2">
-//             <div>
-//               <img src={`${props.logo}`} className="h-10 w-8" alt="" />
-//             </div>
-//           </div>
-//           <div className="">
-//             <div className="dark:text-white text-black">
-//               <p className="text-3xl mb-2">
-//                 {props.company}
-//                 <span className="text-xl ml-2">(current)</span>
-//               </p>
-//               <li className="text-xl">{props.location}</li>
-//               <li className="text-xl">{props.tanure}</li>
-//               <li className="text-xl">{props.skill}</li>
-//             </div>
-//           </div>
-//         </div>
-//       </div>
-//     </>
-//   );
-// };
-
-// export default ExperienceTile;
-
-
 const ExperienceTile = (props) => {
   return (
-    <div className="flex flex-col mx-auto mb-8 px-6 py-5 border-b-2 border-gray-300 dark:border-gray-600 max-w-[1100px]">
+    <div className="flex flex-col mx-auto mb-8 px-6 py-5 border-b-2 border-gray-300 dark:border-gray-600 max-w-full sm:max-w-[1100px]">
       {/* Top Section */}
-      <div className="flex items-center mb-6">
+      <div className="flex flex-col sm:flex-row items-center mb-6">
         {/* Profile Picture */}
-        <div className="flex-shrink-0">
+        <div className="flex-shrink-0 mb-4 sm:mb-0">
           <img
             src={`${props.ImageUrl}`}
             alt={`${props.title}`}
-            className="h-[100px] w-[100px] lg:h-[120px] lg:w-[120px] rounded-full object-cover shadow-md"
+            className="h-[100px] w-[100px] sm:h-[120px] sm:w-[120px] lg:h-[140px] lg:w-[140px] rounded-full object-cover shadow-md"
           />
         </div>
 
         {/* Role and Company Info */}
-        <div className="flex flex-col ml-6 w-full">
+        <div className="flex flex-col sm:flex-row sm:ml-6 w-full">
           {/* Role and Tagline */}
-          <div className="flex items-center justify-between">
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between sm:w-full mb-4 sm:mb-0">
             <h2 className="text-2xl lg:text-3xl font-bold dark:text-white text-black">
               {props.title}
             </h2>
@@ -63,13 +24,13 @@ const ExperienceTile = (props) => {
             )}
           </div>
           {props.tagline && (
-            <p className="text-lg lg:text-xl text-gray-600 dark:text-gray-400">
+            <p className="text-lg lg:text-xl text-gray-600 dark:text-gray-400 sm:ml-6">
               {props.tagline}
             </p>
           )}
 
           {/* Company Logo and Name */}
-          <div className="flex items-center mt-2">
+          <div className="flex items-center mt-2 sm:mt-0 sm:ml-6">
             {props.logo && (
               <img
                 src={`${props.logo}`}
@@ -127,3 +88,5 @@ const ExperienceTile = (props) => {
 };
 
 export default ExperienceTile;
+
+
