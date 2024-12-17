@@ -1,16 +1,18 @@
+import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa6";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
     <footer className="bg-[#e3e3e3] dark:bg-slate-800 text-black dark:text-white py-5 px-4 mt-10">
       <div className="max-w-screen-lg mx-auto flex flex-col md:flex-row justify-between items-center">
-        {/* Left Section - Copyright */}
+      
         <div className="mb-4 md:mb-0">
           <p className="text-sm md:text-base text-center md:text-left">
             © {new Date().getFullYear()} Harsh Dahiya. All rights reserved.
           </p>
         </div>
 
-        {/* Middle Section - Quick Links */}
+     
         <div className="mb-4 md:mb-0">
           <ul className="flex space-x-4 text-sm md:text-base">
             <li>
@@ -22,20 +24,24 @@ const Footer = () => {
               </a>
             </li>
             <li>
-              <a
+              {/* <a
                 href="#experience"
                 className="hover:underline transition-all duration-200"
               >
                 Experience
-              </a>
+              </a> */}
+              <Link to="experience">
+                <p className="hover:underline transition-all duration-200">
+                Experience
+                </p>
+              </Link>
             </li>
             <li>
-              <a
-                href="#projects"
-                className="hover:underline transition-all duration-200"
-              >
+            <Link to="projects">
+                <p className="hover:underline transition-all duration-200">
                 Projects
-              </a>
+                </p>
+              </Link>
             </li>
             <li>
               <a
@@ -48,7 +54,7 @@ const Footer = () => {
           </ul>
         </div>
 
-        {/* Right Section - Social Media */}
+        
         <div className="flex space-x-4">
           <a
             href="https://linkedin.com/in/harshdahiya"
@@ -56,11 +62,7 @@ const Footer = () => {
             rel="noopener noreferrer"
             className="hover:scale-110 transition-transform duration-200"
           >
-            <img
-              src="/assets/icons/linkedin.svg"
-              alt="LinkedIn"
-              className="w-5 h-5 md:w-6 md:h-6"
-            />
+            <FaLinkedin/>
           </a>
           <a
             href="https://github.com/harshdahiya"
@@ -68,21 +70,13 @@ const Footer = () => {
             rel="noopener noreferrer"
             className="hover:scale-110 transition-transform duration-200"
           >
-            <img
-              src="/assets/icons/github.svg"
-              alt="GitHub"
-              className="w-5 h-5 md:w-6 md:h-6"
-            />
+         <FaGithub/>
           </a>
           <a
             href="mailto:harsh.dahiya@example.com"
             className="hover:scale-110 transition-transform duration-200"
           >
-            <img
-              src="/assets/icons/email.svg"
-              alt="Email"
-              className="w-5 h-5 md:w-6 md:h-6"
-            />
+          <FaTwitter/>
           </a>
         </div>
       </div>
@@ -91,4 +85,3 @@ const Footer = () => {
 };
 
 export default Footer;
-
