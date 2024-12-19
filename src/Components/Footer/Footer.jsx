@@ -24,12 +24,7 @@ const Footer = () => {
               </a>
             </li>
             <li>
-              {/* <a
-                href="#experience"
-                className="hover:underline transition-all duration-200"
-              >
-                Experience
-              </a> */}
+              
               <Link to="experience">
                 <p className="hover:underline transition-all duration-200">
                 Experience
@@ -65,7 +60,7 @@ const Footer = () => {
             <FaLinkedin/>
           </a>
           <a
-            href="https://github.com/harshdahiya"
+            href="https://github.com/believeharsh"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:scale-110 transition-transform duration-200"
