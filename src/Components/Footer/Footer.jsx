@@ -14,17 +14,8 @@ const Footer = () => {
 
      
         <div className="mb-4 md:mb-0">
-          <ul className="flex space-x-4 text-sm md:text-base">
+          <ul className="flex space-x-4 text-lg md:text-base">
             <li>
-              <a
-                href="#about"
-                className="hover:underline transition-all duration-200"
-              >
-                About
-              </a>
-            </li>
-            <li>
-              
               <Link to="experience">
                 <p className="hover:underline transition-all duration-200">
                 Experience
@@ -52,10 +43,10 @@ const Footer = () => {
         
         <div className="flex space-x-4">
           <a
-            href="https://linkedin.com/in/harshdahiya"
+            href="https://www.linkedin.com/in/believeharsh11/"
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:scale-110 transition-transform duration-200"
+            className="hover:scale-110 transition-transform duration-200 text-lg"
           >
             <FaLinkedin/>
           </a>
@@ -63,13 +54,13 @@ const Footer = () => {
             href="https://github.com/believeharsh"
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:scale-110 transition-transform duration-200"
+            className="hover:scale-110 transition-transform duration-200 text-lg"
           >
          <FaGithub/>
           </a>
           <a
             href="mailto:harsh.dahiya@example.com"
-            className="hover:scale-110 transition-transform duration-200"
+            className="hover:scale-110 transition-transform duration-200 text-lg"
           >
           <FaTwitter/>
           </a>

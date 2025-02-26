@@ -7,20 +7,20 @@ const HomeConnect = () => {
         <h2 className="text-2xl font-bold mb-4">Contact</h2>
         <p className="text-lg">Feel free to reach out!</p>
         <ul className="text-lg list-disc pl-6">
-          <li>Email: harsh.dahiya@example.com</li>
+          <li>Email: onlybelieveharsh@gmail.com</li>
           <li>
             LinkedIn:{" "}
             <a
-              href="https://linkedin.com/in/harshdahiya"
-              className="text-blue-500"
+              href="https://www.linkedin.com/in/believeharsh11/"
+              className="text-blue-500 hover:underline"
             >
-              linkedin.com/in/harshdahiya
+              linkedin.com/in/believeharsh11/
             </a>
           </li>
           <li>
             GitHub:{" "}
-            <a href="https://github.com/harshdahiya" className="text-blue-500">
-              github.com/harshdahiya
+            <a href="https://github.com/believeharsh" className="text-blue-500 hover:underline">
+            github.com/believeharsh
             </a>
           </li>
         </ul>

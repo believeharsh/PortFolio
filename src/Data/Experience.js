@@ -13,8 +13,8 @@ const experiences = [
       "Integrated third-party APIs for seamless data exchange",
       "Optimized application performance, improving load time by 30%",
     ],
-    logo: "https://via.placeholder.com/40",
-    ImageUrl: "https://via.placeholder.com/300x200",
+    logo: "/Experience-page-Images/logo1.avif",
+    ImageUrl: "/Experience-page-Images/MyImage-2.jpeg",
   },
   {
     title: "Frontend Developer",
@@ -30,8 +30,8 @@ const experiences = [
       "Built interactive dashboards using React and D3.js",
       "Improved accessibility scores by adhering to WCAG standards",
     ],
-    logo: "https://via.placeholder.com/40",
-    ImageUrl: "https://via.placeholder.com/300x200",
+    logo: "/Experience-page-Images/logo2.jpg",
+    ImageUrl: "/Experience-page-Images/MyImage-1.jpeg",
   },
   {
     title: "Full Stack Intern",
@@ -47,8 +47,8 @@ const experiences = [
       "Created a dynamic client interface using Vue.js",
       "Wrote unit tests, increasing code coverage by 20%",
     ],
-    logo: "https://via.placeholder.com/40",
-    ImageUrl: "https://via.placeholder.com/300x200",
+    logo: "/Experience-page-Images/logo3.png",
+    ImageUrl: "/Experience-page-Images/MyImage3.png",
   },
 ];
 

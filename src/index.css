@@ -6,26 +6,29 @@ body {
   @apply dark:bg-slate-800 bg-cover bg-center min-h-[100vh] m-0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .Skills {
   @apply dark:bg-slate-800 text-xl px-3 py-1 rounded-xl border-[1.2px] dark:hover:bg-slate-900 dark:hover:text-white cursor-pointer dark:text-white dark:active:bg-blue-900 bg-black  text-white dark:border-white border-blue-700 active:bg-slate-700 dark:shadow-white shadow-black shadow-sm mb-2;
 }
 
 ::-webkit-scrollbar {
-  width: 5px; /* Width of the scrollbar */
+  width: 5px; 
 }
 
 ::-webkit-scrollbar-track {
-  background: rgb(13, 17, 46); /* Color of the scrollbar track */
+  background: rgb(13, 17, 46); 
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #fffdfd; /* Color of the scrollbar thumb */
-  border-radius: 1px; /* Border radius of the scrollbar thumb */
+  background: #fffdfd; 
+  border-radius: 1px; 
 }
 
 ::-webkit-scrollbar-thumb:hover {
   background: #c0c0c0;
-  /* Color of the scrollbar thumb on hover */
 }
 
 /* Navbar Styles  */
@@ -98,7 +101,6 @@ body {
 
 .limit-text {
   display: -webkit-box;
-  /* -webkit-line-clamp: 3; Number of lines to show */
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
