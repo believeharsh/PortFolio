@@ -8,7 +8,7 @@ const HomeEducation = () => {
         <ul className="text-lg list-disc pl-6">
           <li className="mb-2">
             <strong>Bachelor's in Computer Science</strong> - Microsys Institute of Technology, Umaria
-            (2022 - Present)
+            (Sep 2022 - Present)
           </li>
           <li className="mb-2">
             <strong>High School</strong> - Govt. Excellence School, Umaria (2018 - 2022)

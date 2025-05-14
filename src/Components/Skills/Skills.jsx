@@ -15,6 +15,7 @@ const Skills = ()  => {
           <div className="Skills">Git</div>
           <div className="Skills">Github</div>
           <div className="Skills">Java</div>
+          <div className="Skills">FireBase</div>
           <div className="Skills">ExpressJS</div>
           <div className="Skills">MongoDB</div>
           <div className="Skills">NodeJS</div>
