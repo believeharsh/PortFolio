@@ -7,12 +7,15 @@ import MainRight from "../MainRight/MainRight";
 import { Outlet } from "react-router-dom";
 import Connect from "../Connect/Connect";
 import Footer from "../Footer/Footer";
+import ResumeModal from "../Resume-Modal/ResumeModal";
+
 
 const MainContainer = () => {
   const [sidebar, setSidebar] = useState(false);
   const sidebarRef = useRef();
   const connectRef = useRef();
   const [ConnectMenu, setConnectMenu] = useState(false);
+  const [showResume, setShowResume] = useState(false);
 
   useOutsideClick(sidebarRef, () => {
     if (sidebar) {
@@ -47,19 +50,20 @@ const MainContainer = () => {
               <Mainleft ToggleConnect={ToggleConnect} />
             </div>
             <div
-              className={`MainCenter-Container ${
-                sidebar
+              className={`MainCenter-Container ${sidebar
                   ? "blur-sm z-[10] overflow-hidden pointer-events-none"
                   : ""
-              }`}
+                }`}
             >
-              <Outlet />
+              <Outlet context={{ openResume: () => setShowResume(true) }}/>
               <Footer />
             </div>
             <div className="MainRight-Container">
               <MainRight />
             </div>
           </div>
+
+          {showResume && <ResumeModal onClose={() => setShowResume(false)} />}
         </div>
       </div>
     </>
