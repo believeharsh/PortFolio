@@ -5,27 +5,27 @@ const Footer = () => {
   return (
     <footer className="bg-[#e3e3e3] dark:bg-slate-800 text-black dark:text-white py-5 px-4 mt-10">
       <div className="max-w-screen-lg mx-auto flex flex-col md:flex-row justify-between items-center">
-      
+
         <div className="mb-4 md:mb-0">
           <p className="text-sm md:text-base text-center md:text-left">
             © {new Date().getFullYear()} Harsh Dahiya. All rights reserved.
           </p>
         </div>
 
-     
+
         <div className="mb-4 md:mb-0">
           <ul className="flex space-x-4 text-lg md:text-base">
             <li>
               <Link to="experience">
                 <p className="hover:underline transition-all duration-200">
-                Experience
+                  Experience
                 </p>
               </Link>
             </li>
             <li>
-            <Link to="projects">
+              <Link to="projects">
                 <p className="hover:underline transition-all duration-200">
-                Projects
+                  Projects
                 </p>
               </Link>
             </li>
@@ -40,7 +40,7 @@ const Footer = () => {
           </ul>
         </div>
 
-        
+
         <div className="flex space-x-4">
           <a
             href="https://www.linkedin.com/in/believeharsh11/"
@@ -48,7 +48,7 @@ const Footer = () => {
             rel="noopener noreferrer"
             className="hover:scale-110 transition-transform duration-200 text-lg"
           >
-            <FaLinkedin/>
+            <FaLinkedin />
           </a>
           <a
             href="https://github.com/believeharsh"
@@ -56,13 +56,13 @@ const Footer = () => {
             rel="noopener noreferrer"
             className="hover:scale-110 transition-transform duration-200 text-lg"
           >
-         <FaGithub/>
+            <FaGithub />
           </a>
           <a
-            href="mailto:harsh.dahiya@example.com"
+            href="https://x.com/believeharsh"
             className="hover:scale-110 transition-transform duration-200 text-lg"
           >
-          <FaTwitter/>
+            <FaTwitter />
           </a>
         </div>
       </div>
