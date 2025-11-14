@@ -1,0 +1,56 @@
+@theme {
+  /* Core primary (electric blue) */
+  --color-primary-50:  #eaf2ff;
+  --color-primary-100: #d7e8ff;
+  --color-primary-200: #b8d6ff;
+  --color-primary-300: #88b9ff;
+  --color-primary-400: #5f97ff;
+  --color-primary-500: #3b82f6; /* main */
+  --color-primary-600: #2563eb; /* hover / interactive */
+  --color-primary-700: #1e4dc4;
+  --color-primary-800: #1e3a8a;
+  --color-primary-900: #1e293b;
+
+  /* DARK NEUTRALS (single dark theme) */
+  --color-bg-primary: #070709; /* page background (very dark) */
+  --color-bg-secondary: #0f1112; /* surface (panels) */
+  --color-bg-tertiary: #181a1b; /* cards / raised */
+  --color-border: #232426; /* subtle borders */
+  --color-border-hover: #2d3033; /* border hover state */
+
+  /* Text */
+  --color-text-primary: #e9eef8; /* high-contrast text */
+  --color-text-secondary: #9aa3b2; /* secondary */
+  --color-text-muted: #70757d; /* muted */
+
+  /* Status colors (kept minimal + desaturated for dark) */
+  --color-success: #10b981; /* success */
+  --color-warning: #f59e0b; /* warning */
+  --color-error: #ef4444; /* error */
+  --color-info: #3b82f6; /* info */
+
+  /* Accent: subtle neon for small highlights (use sparingly) */
+  --color-accent: #a855f7; /* kept for small non-primary highlights (optional) */
+  --color-accent-hover: #9333ea;
+
+  /* Background tints for status chips */
+  --color-bg-success: rgba(16, 185, 129, 0.08);
+  --color-bg-warning: rgba(245, 158, 11, 0.08);
+  --color-bg-error: rgba(239, 68, 68, 0.08);
+  --color-bg-info: rgba(59, 130, 246, 0.08);
+  --color-bg-accent: rgba(168, 85, 247, 0.08);
+
+  /* Overlay and backdrop */
+  --color-overlay: rgba(7, 7, 9, 0.8);
+  --color-backdrop: rgba(7, 7, 9, 0.6);
+
+  /* Semantic convenience */
+  --bg-page: var(--color-bg-primary);
+  --bg-surface: var(--color-bg-secondary);
+  --bg-card: var(--color-bg-tertiary);
+  --text-primary: var(--color-text-primary);
+  --text-secondary: var(--color-text-secondary);
+  --text-muted: var(--color-text-muted);
+  --accent: var(--color-primary-500);
+  --accent-hover: var(--color-primary-600);
+}
