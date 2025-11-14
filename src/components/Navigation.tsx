@@ -34,7 +34,7 @@ const Navigation: React.FC = () => {
           : 'bg-transparent'
       }`}
     >
-      <div className="max-w-5xl mx-auto px-6">
+      <div className="max-w-5xl mx-auto px-4">
         <div className="flex items-center justify-between h-20">
           {/* Left side - Profile Picture + Navigation */}
           <div className="flex items-center gap-8">
@@ -66,7 +66,7 @@ const Navigation: React.FC = () => {
                     e.preventDefault();
                     handleNavClick(item.href);
                   }}
-                  className="text-text-secondary hover:text-primary-400 transition-colors font-medium text-sm cursor-pointer"
+                  className="text-text-secondary hover:text-primary-400 transition-colors font-medium text-md cursor-pointer"
                 >
                   {item.label}
                 </a>
