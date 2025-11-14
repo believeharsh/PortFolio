@@ -1,6 +1,13 @@
-import React from 'react';
-import { Mail, Send, Github, Linkedin, Twitter } from 'lucide-react';
-import { usePortfolio } from '../context/portfolioContext';
+import React from "react";
+import { Mail, Send } from "lucide-react";
+import {
+  FaSquareXTwitter,
+  FaGithub,
+  FaLinkedin,
+  FaInstagram,
+  FaYoutube,
+} from "react-icons/fa6";
+import { usePortfolio } from "../context/portfolioContext";
 
 const Contact: React.FC = () => {
   const { data } = usePortfolio();
@@ -8,9 +15,11 @@ const Contact: React.FC = () => {
 
   const getIcon = (iconName: string) => {
     const icons: { [key: string]: React.ReactNode } = {
-      github: <Github className="w-5 h-5" />,
-      linkedin: <Linkedin className="w-5 h-5" />,
-      twitter: <Twitter className="w-5 h-5" />
+      github: <FaGithub className="w-6 h-6" />,
+      linkedin: <FaLinkedin className="w-6 h-6" />,
+      x: <FaSquareXTwitter className="w-6 h-6" />,
+      instagram: <FaInstagram className="w-6 h-6" />,
+      youtube: <FaYoutube className="w-6 h-6" />,
     };
     return icons[iconName.toLowerCase()] || null;
   };
@@ -24,7 +33,8 @@ const Contact: React.FC = () => {
             Let's Work Together
           </h2>
           <p className="text-text-secondary text-lg max-w-2xl mx-auto">
-            I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.
+            I'm always open to discussing new projects, creative ideas, or
+            opportunities to be part of your vision.
           </p>
         </div>
 
@@ -40,10 +50,11 @@ const Contact: React.FC = () => {
                 Drop me a message
               </h3>
               <p className="text-text-secondary">
-                Feel free to reach out for collaborations or just a friendly chat
+                Feel free to reach out for collaborations or just a friendly
+                chat
               </p>
             </div>
-            
+
             <a
               href={`mailto:${personalInfo.email}`}
               className="inline-flex items-center gap-2 px-8 py-4 bg-primary-500 hover:bg-primary-600 text-white font-medium rounded-lg transition-all duration-200 hover:shadow-lg hover:shadow-primary-500/20"
@@ -59,7 +70,9 @@ const Contact: React.FC = () => {
               <div className="w-full border-t border-border"></div>
             </div>
             <div className="relative flex justify-center text-sm">
-              <span className="px-4 bg-bg-tertiary text-text-muted">Or connect with me on</span>
+              <span className="px-4 bg-bg-tertiary text-text-muted">
+                Or connect with me on
+              </span>
             </div>
           </div>
 
@@ -87,7 +100,8 @@ const Contact: React.FC = () => {
         {/* Footer */}
         <div className="text-center mt-16 pt-8 border-t border-border">
           <p className="text-text-muted text-sm">
-            © {new Date().getFullYear()} {personalInfo.name}. Built with React & TypeScript.
+            © {new Date().getFullYear()} {personalInfo.name}. Built with React &
+            TypeScript.
           </p>
         </div>
       </div>
