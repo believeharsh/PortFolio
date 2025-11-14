@@ -7,16 +7,13 @@ const Experience: React.FC = () => {
   const { experience } = data;
 
   return (
-    <section id="experience" className="section-container bg-bg-secondary">
+    <section id="experience" className="section-container">
       <div className="max-w-5xl mx-auto">
         {/* Section header */}
-        <div className="space-y-2 mb-12">
+        <div className="space-y-2 mb-6">
           <h2 className="text-3xl md:text-4xl font-bold text-text-primary">
             Work Experience
           </h2>
-          <p className="text-text-secondary">
-            My professional journey and accomplishments
-          </p>
         </div>
 
         {/* Timeline */}

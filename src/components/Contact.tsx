@@ -16,8 +16,8 @@ const Contact: React.FC = () => {
   };
 
   return (
-    <section id="contact" className="section-container bg-bg-secondary">
-      <div className="max-w-4xl mx-auto">
+    <section id="contact" className="section-container ">
+      <div className="max-w-5xl mx-auto">
         {/* Section header */}
         <div className="text-center space-y-4 mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-text-primary">

@@ -16,21 +16,17 @@ const Hero: React.FC = () => {
   };
 
   return (
-    <section className="section-container min-h-screen flex items-center">
-      <div className="w-full max-w-4xl mx-auto">
+    <section className="section-container flex items-center mt-16">
+      <div className="w-full max-w-5xl mx-auto">
         {/* Main content */}
         <div className="space-y-6 animate-fade-in">
           {/* Greeting */}
           <div className="space-y-2">
-            <p className="text-base md:text-lg text-primary-400 font-medium">
-              Hi, I'm
-            </p>
-            <h1 className="text-5xl md:text-6xl lg:text-7xl font-extrabold text-gradient-primary">
-              {personalInfo.name}
+            <h1 className='text-base md:text-4xl text-primary-400 font-medium'>
+                Hi, I'm
+                <span>  { personalInfo.name} - </span>    
+                <span className='text-primary-300'>  {personalInfo.title}.</span>
             </h1>
-            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-text-secondary">
-              {personalInfo.title}
-            </h2>
           </div>
 
           {/* Bio */}
@@ -47,10 +43,6 @@ const Hero: React.FC = () => {
               <Mail className="w-4 h-4" />
               <span className="text-sm md:text-base">{personalInfo.email}</span>
             </a>
-            <div className="flex items-center gap-2">
-              <MapPin className="w-4 h-4" />
-              <span className="text-sm md:text-base">{personalInfo.location}</span>
-            </div>
           </div>
 
           {/* CTA buttons */}

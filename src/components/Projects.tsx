@@ -8,7 +8,7 @@ const Projects: React.FC = () => {
 
   return (
     <section id="projects" className="section-container">
-      <div className="max-w-6xl mx-auto">
+      <div className="max-w-5xl mx-auto">
         {/* Section header */}
         <div className="space-y-2 mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-text-primary">

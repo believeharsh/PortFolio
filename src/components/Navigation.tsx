@@ -17,10 +17,10 @@ const Navigation: React.FC = () => {
   }, []);
 
   const navItems = [
-    { label: 'Skills', href: '#skills' },
+    // { label: 'Skills', href: '#skills' },
     { label: 'Experience', href: '#experience' },
     { label: 'Projects', href: '#projects' },
-    { label: 'Contact', href: '#contact' },
+    // { label: 'Contact', href: '#contact' },
   ];
 
   const handleNavClick = (href: string) => {
@@ -40,7 +40,7 @@ const Navigation: React.FC = () => {
           : 'bg-transparent'
       }`}
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-5xl mx-auto ">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <a

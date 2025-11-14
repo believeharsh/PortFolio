@@ -11,10 +11,10 @@ const PortfolioContext = createContext<PortfolioContextType | undefined>(undefin
 // Default portfolio data - Replace with your actual data
 const defaultData: PortfolioData = {
   personalInfo: {
-    name: "Your Name",
+    name: "Harsh Dahiya",
     title: "Full Stack Developer",
     bio: "Passionate developer with expertise in building scalable web applications. I love creating elegant solutions to complex problems.",
-    email: "your.email@example.com",
+    email: "onlybelieveharsh@gmail.com",
     location: "Your City, Country",
     resume: "/resume.pdf"
   },
