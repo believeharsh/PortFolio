@@ -5,6 +5,8 @@ export interface Skill {
 }
 
 export interface Experience {
+  companyWebsite: string | undefined;
+  companyLogo: any;
   id: string;
   title: string;
   company: string;

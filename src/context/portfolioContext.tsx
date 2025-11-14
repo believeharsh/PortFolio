@@ -33,6 +33,8 @@ const defaultData: PortfolioData = {
       id: "1",
       title: "Senior Full Stack Developer",
       company: "Tech Company",
+      companyLogo: "https://itux.com", // URL to company logo
+      companyWebsite: "https://itux.solutios.com", // Company website URL
       location: "Remote",
       startDate: "Jan 2022",
       endDate: "Present",
@@ -47,6 +49,8 @@ const defaultData: PortfolioData = {
       id: "2",
       title: "Full Stack Developer",
       company: "Startup Inc",
+      companyLogo: "https://itux.com", // URL to company logo
+      companyWebsite: "https://itux.solutios.com", // Company website URL
       location: "City, Country",
       startDate: "Jun 2020",
       endDate: "Dec 2021",
