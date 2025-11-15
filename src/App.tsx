@@ -6,7 +6,8 @@ import Experience from './components/Experience';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
 import GitHubActivity from './components/GithubActivity';
-
+import ImageGallery from './components/ImageGallary';
+import { sampleGalleryImages } from './components/ImageGallary';
 function App() {
   return (
     <PortfolioProvider>
@@ -17,6 +18,7 @@ function App() {
           <Experience />
           {/* <Skills /> */}
           <Projects />
+          <ImageGallery images={sampleGalleryImages} title=''/>
           <GitHubActivity/>
           <Contact />
         </main>
