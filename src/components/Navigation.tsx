@@ -34,7 +34,7 @@ const Navigation: React.FC = () => {
           : 'bg-transparent'
       }`}
     >
-      <div className="max-w-5xl mx-auto px-4">
+      <div className="max-w-5xl mx-auto">
         <div className="flex items-center justify-between h-20">
           {/* Left side - Profile Picture + Navigation */}
           <div className="flex items-center gap-8">
