@@ -1,4 +1,3 @@
-
 import React from "react";
 
 export interface TechItem {
@@ -10,19 +9,19 @@ export interface TechItem {
 interface TechBadgeProps {
   item: TechItem;
   // visual controls
-  size?: number | string;           // px number or CSS size like "1em"
-  badgeClassName?: string;          // outer container
-  iconWrapperClassName?: string;    // size + alignment wrapper
-  nameClassName?: string;           // text styling
-  glow?: boolean;                   // subtle colored glow on hover
+  size?: number | string; // px number or CSS size like "1em"
+  badgeClassName?: string; // outer container
+  iconWrapperClassName?: string; // size + alignment wrapper
+  nameClassName?: string; // text styling
+  glow?: boolean; // subtle colored glow on hover
 }
 
 export const TechBadge: React.FC<TechBadgeProps> = ({
   item,
   size = "1em",
-  badgeClassName = "group relative flex items-center gap-2.5 px-4 py-2.5 bg-bg-tertiary border border-border rounded-lg transition-all duration-200 hover:shadow-md hover:scale-105",
-  iconWrapperClassName = "w-6 h-6 flex items-center justify-center shrink-0",
-  nameClassName = "text-sm font-medium text-text-secondary group-hover:text-text-primary transition-colors",
+  badgeClassName = "",
+  iconWrapperClassName = "",
+  nameClassName = "",
   glow = true,
 }) => {
   const { name, icon, color = "#3b82f6" } = item;
@@ -30,9 +29,11 @@ export const TechBadge: React.FC<TechBadgeProps> = ({
   const isStringIcon = typeof icon === "string";
 
   return (
-    <div className={badgeClassName}>
+    <div
+      className={`${badgeClassName} group relative flex items-center bg-bg-tertiary border border-border rounded-lg transition-all duration-200 hover:shadow-md hover:scale-105`}
+    >
       <div
-        className={iconWrapperClassName}
+        className={`${iconWrapperClassName} flex items-center justify-center shrink-0`}
         style={{
           // when size is a number assume px, else use provided string (e.g. "1em")
           width: typeof size === "number" ? `${size}px` : size,
@@ -45,15 +46,19 @@ export const TechBadge: React.FC<TechBadgeProps> = ({
             alt={`${name} icon`}
             className="w-full h-full object-contain"
             style={{ filter: "brightness(0.95)" }}
-            loading="lazy" 
+            loading="lazy"
           />
         ) : (
           // if icon is a ReactNode like an imported SVG/component, render it
-          icon as React.ReactNode
+          (icon as React.ReactNode)
         )}
       </div>
 
-      <span className={nameClassName}>{name}</span>
+      <span
+        className={`${nameClassName} text-text-secondary group-hover:text-text-primary transition-colors`}
+      >
+        {name}
+      </span>
 
       {glow && (
         <div

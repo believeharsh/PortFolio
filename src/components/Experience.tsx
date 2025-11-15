@@ -134,18 +134,13 @@ const Experience: React.FC = () => {
                                 Skills
                               </h4>
                               <div className="flex flex-wrap gap-2">
-                                {/* {exp.technologies.map((tech) => (
-                                  <span
-                                    key={tech}
-                                    className="px-2.5 py-1 bg-bg-secondary hover:bg-bg-tertiary border border-border hover:border-border-hover rounded text-xs text-text-secondary transition-colors"
-                                  >
-                                    {tech}
-                                  </span>
-                                ))} */}
                                 <div className="pt-2">
                                   <TechStackCard
                                     technologies={exp.technologies}
                                     title=""
+                                    badgeClassName="gap-2 px-3 py-2"
+                                    iconWrapperClassName="w-4 h-4 "
+                                    nameClassName="text-sm"
                                   />
                                 </div>
                               </div>

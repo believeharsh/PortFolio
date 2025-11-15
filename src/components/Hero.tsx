@@ -11,7 +11,6 @@ import Icon from "./icon/Icon";
 import { technologies } from "./techstack-card/myTechnlogiesArr";
 import TechStackCard from "./techstack-card/TechStackCard";
 
-
 const Hero: React.FC = () => {
   const { data } = usePortfolio();
   const { personalInfo, socialLinks } = data;
@@ -47,7 +46,13 @@ const Hero: React.FC = () => {
           </p>
 
           <div className="pt-2">
-            <TechStackCard technologies={technologies} title="" />
+            <TechStackCard
+              technologies={technologies}
+              title=""
+              badgeClassName="gap-2 px-3 py-2"
+              iconWrapperClassName="w-4 h-4 "
+              nameClassName="text-sm"
+            />
           </div>
 
           {/* CTA buttons */}
