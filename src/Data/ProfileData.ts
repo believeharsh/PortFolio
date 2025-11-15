@@ -3,6 +3,7 @@ import type { PortfolioData } from "../types/portfolio.types";
 export const defaultData: PortfolioData = {
   personalInfo: {
     name: "Harsh Dahiya",
+    avatar : "https://res.cloudinary.com/dd5elqfus/image/upload/v1763193281/MypictureLogo_portfolio_qf4odm.png",
     title: "Full Stack Developer",
     bio: "Passionate developer with expertise in building scalable web applications. I love creating elegant solutions to complex problems.",
     email: "onlybelieveharsh@gmail.com",
