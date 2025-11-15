@@ -9,7 +9,7 @@ export const defaultData: PortfolioData = {
     bio: "Passionate developer with expertise in building scalable web applications. I love creating elegant solutions to complex problems.",
     email: "onlybelieveharsh@gmail.com",
     location: "Your City, Country",
-    resume: "/resume.pdf",
+    resume: "https://drive.google.com/file/d/1pr2JVgqEbit9TUEFMbDaqaBCj69qD2lA/view",
   },
   skills: [
     { name: "React", category: "frontend" },
