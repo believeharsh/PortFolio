@@ -19,7 +19,7 @@ const Icon: React.FC<IconProps> = ({
   const LucideIconComponent = iconMap[key];
 
   if (!LucideIconComponent) {
-    if (process.env.NODE_ENV === "development") {
+    if (import.meta.env.NODE_ENV === "development") {
       console.warn(`Icon "${name}" not found in iconMap (lookup key: "${key}").`);
       console.log("Available keys:", Object.keys(iconMap));
     }

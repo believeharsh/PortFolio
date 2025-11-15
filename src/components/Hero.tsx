@@ -7,8 +7,10 @@ import {
   FaYoutube,
 } from "react-icons/fa6";
 import { usePortfolio } from "../context/portfolioContext";
-import { TechStack, technologies } from "./TechStackCard";
 import Icon from "./icon/Icon";
+import { technologies } from "./techstack-card/myTechnlogiesArr";
+import TechStackCard from "./techstack-card/TechStackCard";
+
 
 const Hero: React.FC = () => {
   const { data } = usePortfolio();
@@ -45,7 +47,7 @@ const Hero: React.FC = () => {
           </p>
 
           <div className="pt-2">
-            <TechStack technologies={technologies} title="" />
+            <TechStackCard technologies={technologies} title="" />
           </div>
 
           {/* CTA buttons */}
