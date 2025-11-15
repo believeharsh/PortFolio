@@ -1,6 +1,14 @@
-import React, { useState } from 'react';
-import { Briefcase, MapPin, Calendar, ExternalLink, ChevronDown, ChevronUp } from 'lucide-react';
-import { usePortfolio } from '../context/portfolioContext';
+import React, { useState } from "react";
+import {
+  Briefcase,
+  MapPin,
+  Calendar,
+  ExternalLink,
+  ChevronDown,
+  ChevronUp,
+} from "lucide-react";
+import { usePortfolio } from "../context/portfolioContext";
+import TechStackCard from "./techstack-card/TechStackCard";
 
 const Experience: React.FC = () => {
   const { data } = usePortfolio();
@@ -8,7 +16,7 @@ const Experience: React.FC = () => {
   const [expandedIds, setExpandedIds] = useState<Set<string>>(new Set());
 
   const toggleExpand = (id: string) => {
-    setExpandedIds(prev => {
+    setExpandedIds((prev) => {
       const newSet = new Set(prev);
       if (newSet.has(id)) {
         newSet.delete(id);
@@ -33,7 +41,7 @@ const Experience: React.FC = () => {
         <div className="space-y-0">
           {experience.map((exp, index) => {
             const isExpanded = expandedIds.has(exp.id);
-            
+
             return (
               <div
                 key={exp.id}
@@ -65,7 +73,7 @@ const Experience: React.FC = () => {
                           <h3 className="text-lg sm:text-xl font-semibold text-text-primary">
                             {exp.title}
                           </h3>
-                          
+
                           <div className="flex items-center gap-2 flex-wrap">
                             <a
                               href={exp.companyWebsite}
@@ -78,7 +86,7 @@ const Experience: React.FC = () => {
                                 <ExternalLink className="w-3.5 h-3.5 opacity-0 group-hover:opacity-100 transition-opacity" />
                               )}
                             </a>
-                            {exp.endDate === 'Present' && (
+                            {exp.endDate === "Present" && (
                               <span className="px-2 py-0.5 text-xs font-medium rounded bg-bg-success text-success border border-success/20">
                                 Current
                               </span>
@@ -90,11 +98,15 @@ const Experience: React.FC = () => {
                         <div className="flex flex-col items-end gap-1 text-sm text-text-secondary shrink-0">
                           <div className="flex items-center gap-1">
                             <Calendar className="w-3.5 h-3.5" />
-                            <span className="whitespace-nowrap">{exp.startDate} - {exp.endDate}</span>
+                            <span className="whitespace-nowrap">
+                              {exp.startDate} - {exp.endDate}
+                            </span>
                           </div>
                           <div className="flex items-center gap-1">
                             <MapPin className="w-3.5 h-3.5" />
-                            <span className="whitespace-nowrap">{exp.location}</span>
+                            <span className="whitespace-nowrap">
+                              {exp.location}
+                            </span>
                           </div>
                         </div>
                       </div>
@@ -105,7 +117,10 @@ const Experience: React.FC = () => {
                           {/* Description */}
                           <ul className="space-y-2">
                             {exp.description.map((item, i) => (
-                              <li key={i} className="flex gap-2 text-sm text-text-secondary leading-relaxed">
+                              <li
+                                key={i}
+                                className="flex gap-2 text-sm text-text-secondary leading-relaxed"
+                              >
                                 <span className="text-primary-500 mt-1">•</span>
                                 <span>{item}</span>
                               </li>
@@ -119,14 +134,20 @@ const Experience: React.FC = () => {
                                 Skills
                               </h4>
                               <div className="flex flex-wrap gap-2">
-                                {exp.technologies.map((tech) => (
+                                {/* {exp.technologies.map((tech) => (
                                   <span
                                     key={tech}
                                     className="px-2.5 py-1 bg-bg-secondary hover:bg-bg-tertiary border border-border hover:border-border-hover rounded text-xs text-text-secondary transition-colors"
                                   >
                                     {tech}
                                   </span>
-                                ))}
+                                ))} */}
+                                <div className="pt-2">
+                                  <TechStackCard
+                                    technologies={exp.technologies}
+                                    title=""
+                                  />
+                                </div>
                               </div>
                             </div>
                           )}

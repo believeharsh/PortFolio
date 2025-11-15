@@ -34,7 +34,28 @@ export const defaultData: PortfolioData = {
         "Implemented CI/CD pipelines reducing deployment time by 60%",
         "Mentored junior developers and conducted code reviews",
       ],
-      technologies: ["React", "Node.js", "AWS", "Docker"],
+      technologies: [
+        {
+          name: "MongoDB",
+          icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg",
+          color: "#47a248",
+        },
+        {
+          name: "Tailwind CSS",
+          icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg",
+          color: "#06b6d4",
+        },
+        {
+          name: "Git",
+          icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg",
+          color: "#f05032",
+        },
+        {
+          name: "npm",
+          icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/npm/npm-original-wordmark.svg",
+          color: "#cb3837",
+        },
+      ],
     },
     {
       id: "2",
@@ -50,7 +71,28 @@ export const defaultData: PortfolioData = {
         "Developed responsive web applications using React",
         "Optimized database queries improving performance by 40%",
       ],
-      technologies: ["React", "Express", "MongoDB", "Redis"],
+      technologies: [
+        {
+          name: "MongoDB",
+          icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg",
+          color: "#47a248",
+        },
+        {
+          name: "Tailwind CSS",
+          icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg",
+          color: "#06b6d4",
+        },
+        {
+          name: "Git",
+          icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg",
+          color: "#f05032",
+        },
+        {
+          name: "npm",
+          icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/npm/npm-original-wordmark.svg",
+          color: "#cb3837",
+        },
+      ],
     },
   ],
   projects: [

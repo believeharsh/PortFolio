@@ -14,7 +14,7 @@ export interface Experience {
   startDate: string;
   endDate: string | 'Present';
   description: string[];
-  technologies: string[];
+  technologies: Technologies[];
 }
 
 export interface Technologies {
