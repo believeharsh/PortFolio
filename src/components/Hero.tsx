@@ -1,5 +1,4 @@
 import React from "react";
-import { Mail, FileText } from "lucide-react";
 import {
   FaSquareXTwitter,
   FaGithub,
@@ -9,6 +8,7 @@ import {
 } from "react-icons/fa6";
 import { usePortfolio } from "../context/portfolioContext";
 import { TechStack, technologies } from "./TechStackCard";
+import Icon from "./icon/Icon";
 
 const Hero: React.FC = () => {
   const { data } = usePortfolio();
@@ -57,7 +57,8 @@ const Hero: React.FC = () => {
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-3 sm:px-4 py-2 sm:py-2.5 bg-primary-500 hover:bg-primary-600 text-white font-medium text-sm sm:text-base rounded-lg transition-all duration-200 hover:shadow-lg hover:shadow-primary-500/20"
               >
-                <FileText className="w-4 h-4" />
+                {/* <FileText className="w-4 h-4" /> */}
+                <Icon name="file-text" className="w-4 h-4" />
                 View Resume
               </a>
             )}
@@ -65,7 +66,8 @@ const Hero: React.FC = () => {
               href="#contact"
               className="inline-flex items-center gap-2 px-3 sm:px-4 py-2 sm:py-2.5 bg-bg-tertiary hover:bg-surface-hover text-text-primary font-medium text-sm sm:text-base rounded-lg border border-border hover:border-border-hover transition-all duration-200"
             >
-              <Mail className="w-4 h-4" />
+              {/* <Mail className="w-4 h-4" /> */}
+              <Icon name="mail" />
               Get in Touch
             </a>
           </div>

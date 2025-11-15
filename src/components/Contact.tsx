@@ -1,5 +1,4 @@
 import React from "react";
-import { Mail, Send } from "lucide-react";
 import {
   FaSquareXTwitter,
   FaGithub,
@@ -8,6 +7,7 @@ import {
   FaYoutube,
 } from "react-icons/fa6";
 import { usePortfolio } from "../context/portfolioContext";
+import Icon from "./icon/Icon";
 
 const Contact: React.FC = () => {
   const { data } = usePortfolio();
@@ -43,7 +43,8 @@ const Contact: React.FC = () => {
           {/* Email CTA */}
           <div className="space-y-4">
             <div className="w-16 h-16 bg-primary-500/10 rounded-full flex items-center justify-center mx-auto">
-              <Mail className="w-8 h-8 text-primary-400" />
+              {/* <Mail className="w-8 h-8 text-primary-400" /> */}
+               <Icon name="mail" className="w-8 h-8 text-primary-400" />
             </div>
             <div className="space-y-2">
               <h3 className="text-xl font-semibold text-text-primary">
@@ -59,7 +60,8 @@ const Contact: React.FC = () => {
               href={`mailto:${personalInfo.email}`}
               className="inline-flex items-center gap-2 px-8 py-4 bg-primary-500 hover:bg-primary-600 text-white font-medium rounded-lg transition-all duration-200 hover:shadow-lg hover:shadow-primary-500/20"
             >
-              <Send className="w-4 h-4" />
+              {/* <Send className="w-4 h-4" /> */}
+               <Icon name="send"  className="w-4 h-4" />
               Send Email
             </a>
           </div>
