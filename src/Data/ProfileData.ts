@@ -159,23 +159,26 @@ export const defaultData: PortfolioData = {
   socialLinks: [
     {
       platform: "GitHub",
-      url: "https://github.com/yourusername",
+      url: "https://github.com/believeharsh",
       icon: "github",
     },
     {
       platform: "LinkedIn",
-      url: "https://linkedin.com/in/yourusername",
+      url: "https://www.linkedin.com/in/believeharsh11",
       icon: "linkedin",
     },
-    { platform: "X", url: "https://twitter.com/yourusername", icon: "x" },
+    { platform: "X", 
+      url: "https://x.com/believeharsh", 
+      icon: "x"
+    },
     {
       platform: "Youtube",
-      url: "https://twitter.com/yourusername",
+      url: "https://youtube.com/@bontinue?si=nwTpJn5epoVX2Ps_",
       icon: "youtube",
     },
     {
       platform: "Instagram",
-      url: "https://twitter.com/yourusername",
+      url: "https://www.instagram.com/theharshdahiya1/",
       icon: "instagram",
     },
   ],
