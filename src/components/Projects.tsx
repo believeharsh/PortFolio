@@ -1,6 +1,7 @@
-import React from 'react';
-import { ExternalLink, Github } from 'lucide-react';
-import { usePortfolio } from '../context/portfolioContext';
+import React from "react";
+import { ExternalLink, Github } from "lucide-react";
+import { usePortfolio } from "../context/portfolioContext";
+import TechStackCard from "./techstack-card/TechStackCard";
 
 const Projects: React.FC = () => {
   const { data } = usePortfolio();
@@ -54,14 +55,12 @@ const Projects: React.FC = () => {
 
                 {/* Technologies */}
                 <div className="flex flex-wrap gap-2">
-                  {project.technologies.map((tech) => (
-                    <span
-                      key={tech}
-                      className="px-2 py-1 bg-bg-secondary border border-border rounded text-xs text-text-muted"
-                    >
-                      {tech}
-                    </span>
-                  ))}
+                  <div className="pt-2">
+                    <TechStackCard
+                      technologies={project.technologies}
+                      title=""
+                    />
+                  </div>
                 </div>
               </div>
 

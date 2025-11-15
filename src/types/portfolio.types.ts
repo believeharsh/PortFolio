@@ -17,11 +17,17 @@ export interface Experience {
   technologies: string[];
 }
 
+export interface Technologies {
+  name : string, 
+  icon : string, 
+  color : string 
+}
+
 export interface Project {
   id: string;
   title: string;
   description: string;
-  technologies: string[];
+  technologies: Technologies[];
   githubUrl?: string;
   liveUrl?: string;
   imageUrl?: string;
