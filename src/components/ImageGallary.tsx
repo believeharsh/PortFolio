@@ -221,43 +221,43 @@ const ImageGallery: React.FC<ImageGalleryProps> = ({
 export const sampleGalleryImages: GalleryImage[] = [
   {
     id: '1',
-    url: 'https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=400',
+    url: './src/assets/ImageGallary/Image_gallary1.jpg',
     caption: 'Tech conference 2024',
     date: 'March 2024'
   },
   {
     id: '2',
-    url: 'https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=400',
+    url: './src/assets/ImageGallary/Image_gallary2.jpg',
     caption: 'Workshop presentation',
     date: 'February 2024'
   },
   {
     id: '3',
-    url: 'https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=400',
+    url: './src/assets/ImageGallary/Image_gallary3.jpg',
     caption: 'Hackathon victory',
     date: 'January 2024'
   },
   {
     id: '4',
-    url: 'https://images.unsplash.com/photo-1515187029135-18ee286d815b?w=400',
+    url: './src/assets/ImageGallary/Image_gallary4.jpg',
     caption: 'Product launch event',
     date: 'December 2023'
   },
   {
     id: '5',
-    url: 'https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=400',
+    url: './src/assets/ImageGallary/Image_gallary5.jpg',
     caption: 'Networking session',
     date: 'November 2023'
   },
   {
     id: '6',
-    url: 'https://images.unsplash.com/photo-1552664730-d307ca884978?w=400',
+    url: './src/assets/ImageGallary/Image_gallary6.jpg',
     caption: 'Team building',
     date: 'October 2023'
   },
   {
     id: '7',
-    url: 'https://images.unsplash.com/photo-1531482615713-2afd69097998?w=400',
+    url: './src/assets/ImageGallary/Image_gallary7.jpg',
     caption: 'Speaking engagement',
     date: 'September 2023'
   },

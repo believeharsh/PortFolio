@@ -49,34 +49,34 @@ export const technologies = [
     icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/npm/npm-original-wordmark.svg',
     color: '#cb3837'
   },
-  {
-    name: 'PostgreSQL',
-    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg',
-    color: '#4169e1'
-  },
-  {
-    name: 'Python',
-    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg',
-    color: '#3776ab'
-  },
-  {
-    name: 'Docker',
-    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg',
-    color: '#2496ed'
-  },
-  {
-    name: 'AWS',
-    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg',
-    color: '#ff9900'
-  },
+  // {
+  //   name: 'PostgreSQL',
+  //   icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg',
+  //   color: '#4169e1'
+  // },
+  // {
+  //   name: 'Python',
+  //   icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg',
+  //   color: '#3776ab'
+  // },
+  // {
+  //   name: 'Docker',
+  //   icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg',
+  //   color: '#2496ed'
+  // },
+  // {
+  //   name: 'AWS',
+  //   icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg',
+  //   color: '#ff9900'
+  // },
   {
     name: 'Redux',
     icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg',
     color: '#764abc'
   },
-  {
-    name: 'GraphQL',
-    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/graphql/graphql-plain.svg',
-    color: '#e10098'
-  }
+  // {
+  //   name: 'GraphQL',
+  //   icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/graphql/graphql-plain.svg',
+  //   color: '#e10098'
+  // }
 ];
