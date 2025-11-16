@@ -7,16 +7,6 @@ export interface TechItem {
   color?: string;
 }
 
-// interface TechBadgeProps {
-//   item: TechItem;
-//   // visual controls
-//   size?: number | string;           // px number or CSS size like "1em"
-//   badgeClassName?: string;          // outer container
-//   iconWrapperClassName?: string;    // size + alignment wrapper
-//   nameClassName?: string;           // text styling
-//   glow?: boolean;                   // subtle colored glow on hover
-// }
-
 
 interface TechStackProps {
   title?: string;

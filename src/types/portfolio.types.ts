@@ -18,7 +18,7 @@ export interface Experience {
 }
 
 export interface Technologies {
-  name : string, 
+  name? : string, 
   icon : string, 
   color : string 
 }

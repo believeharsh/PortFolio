@@ -101,24 +101,19 @@ export const defaultData: PortfolioData = {
   projects: [
     {
       id: "1",
-      title: "E-Commerce Platform",
+      title: "Cravo",
       description:
-        "A full-featured e-commerce platform with payment integration, inventory management, and admin dashboard.",
-      //   technologies: ["React", "Node.js", "MongoDB", "Stripe"],
+        "A online food delivery platform with category and region base search, cart, wishlist, payment, order tracking features",
+      imageUrl: "./src/assets/Projects/Cravo.png",
       technologies: [
         {
-          name: "TypeScript",
-          icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg",
-          color: "#3178c6",
-        },
-        {
-          name: "JavaScript",
+          // name: "JavaScript",
           icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
           color: "#f7df1e",
         },
       ],
-      githubUrl: "https://github.com/yourusername/project",
-      liveUrl: "https://project-demo.com",
+      githubUrl: "https://github.com/believeharsh/Cravo",
+      liveUrl: "https://cravo.online",
     },
     {
       id: "2",

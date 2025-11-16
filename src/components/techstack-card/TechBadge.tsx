@@ -1,7 +1,7 @@
 import React from "react";
 
 export interface TechItem {
-  name: string;
+  name?: string;
   icon: string | React.ReactNode; // URL or an icon component/node
   color?: string;
 }
@@ -30,7 +30,9 @@ export const TechBadge: React.FC<TechBadgeProps> = ({
 
   return (
     <div
-      className={`${badgeClassName} group relative flex items-center bg-bg-tertiary border border-border rounded-lg transition-all duration-200 hover:shadow-md hover:scale-105`}
+      className={`${badgeClassName} ${
+        name ? "bg-bg-tertiary border border-border rounded-lg transition-all duration-200 hover:shadow-md hover:scale-105" : ""
+      } group relative flex items-center`}
     >
       <div
         className={`${iconWrapperClassName} flex items-center justify-center shrink-0`}
@@ -53,12 +55,13 @@ export const TechBadge: React.FC<TechBadgeProps> = ({
           (icon as React.ReactNode)
         )}
       </div>
-
-      <span
-        className={`${nameClassName} text-text-secondary group-hover:text-text-primary transition-colors`}
-      >
-        {name}
-      </span>
+      {name && (
+        <span
+          className={`${nameClassName} text-text-secondary group-hover:text-text-primary transition-colors`}
+        >
+          {name}
+        </span>
+      )}
 
       {glow && (
         <div
