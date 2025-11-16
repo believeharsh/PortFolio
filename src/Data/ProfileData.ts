@@ -105,7 +105,7 @@ export const defaultData: PortfolioData = {
       title: "Cravo",
       description:
         "A online food delivery platform with category and region base search, cart, wishlist, payment, order tracking features",
-      imageUrl: "./Projects/Cravo.png",
+      imageUrl: "./Projects/Project_Cravo.png",
       technologies: [
         {
           // name: "JavaScript",
@@ -156,7 +156,7 @@ export const defaultData: PortfolioData = {
       title: "BlogHive",
       description:
         "Bloghive, This is the application where you can write your stories, publish your ideas and interact with people.",
-      imageUrl: "./Projects/Bloghive.png",
+      imageUrl: "./Projects/Project_Bloghive.png",
       technologies: [
         {
           // name: "React",
@@ -207,7 +207,7 @@ export const defaultData: PortfolioData = {
       title: "DevMate",
       description:
         "A productivity hub tailored for developers—organize bookmarks, manage todos, and track your productivity with an interactive dashboard—all in one centralized platform.",
-      imageUrl: "./Projects/DevMate.png",
+      imageUrl: "./Projects/Project_DevMate.png",
       technologies: [
         {
           // name: "JavaScript",
