@@ -9,7 +9,8 @@ export const defaultData: PortfolioData = {
     bio: "Passionate developer with expertise in building scalable web applications. I love creating elegant solutions to complex problems.",
     email: "onlybelieveharsh@gmail.com",
     location: "Your City, Country",
-    resume: "https://drive.google.com/file/d/1pr2JVgqEbit9TUEFMbDaqaBCj69qD2lA/view",
+    resume:
+      "https://drive.google.com/file/d/1pr2JVgqEbit9TUEFMbDaqaBCj69qD2lA/view",
   },
   skills: [
     { name: "React", category: "frontend" },
@@ -111,47 +112,131 @@ export const defaultData: PortfolioData = {
           icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
           color: "#f7df1e",
         },
+        {
+          // name: "react",
+          icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+          color: "#f7df1e",
+        },
+        {
+          // name: "Node.js",
+          icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
+          color: "#339933",
+        },
+        {
+          // name: "Express",
+          icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg",
+          color: "#000000",
+        },
+        {
+          // name: "MongoDB",
+          icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg",
+          color: "#47a248",
+        },
+        {
+          // name: "Tailwind CSS",
+          icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg",
+          color: "#06b6d4",
+        },
+        {
+          // name: "Git",
+          icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg",
+          color: "#f05032",
+        },
+        {
+          // name: "npm",
+          icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/npm/npm-original-wordmark.svg",
+          color: "#cb3837",
+        },
       ],
       githubUrl: "https://github.com/believeharsh/Cravo",
       liveUrl: "https://cravo.online",
     },
     {
       id: "2",
-      title: "Task Management App",
+      title: "BlogHive",
       description:
-        "Real-time collaborative task management application with drag-and-drop functionality.",
+        "Bloghive, This is the application where you can write your stories, publish your ideas and interact with people.",
+      imageUrl: "./src/assets/Projects/Bloghive.png",
       technologies: [
         {
-          name: "TypeScript",
-          icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg",
-          color: "#3178c6",
-        },
-        {
-          name: "JavaScript",
+          // name: "React",
           icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
           color: "#f7df1e",
         },
+        {
+          // name: "JavaScript",
+          icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+          color: "#f7df1e",
+        },
+        {
+          // name: "Node.js",
+          icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
+          color: "#339933",
+        },
+        {
+          // name: "Express",
+          icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg",
+          color: "#000000",
+        },
+        {
+          // name: "MongoDB",
+          icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg",
+          color: "#47a248",
+        },
+        {
+          // name: "Tailwind CSS",
+          icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg",
+          color: "#06b6d4",
+        },
+        {
+          // name: "Git",
+          icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg",
+          color: "#f05032",
+        },
+        {
+          // name: "npm",
+          icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/npm/npm-original-wordmark.svg",
+          color: "#cb3837",
+        },
       ],
-      githubUrl: "https://github.com/yourusername/project2",
+      githubUrl: "https://github.com/believeharsh/BlogHive",
+      liveUrl: "https://bloghive-htc.onrender.com",
     },
     {
       id: "3",
-      title: "Analytics Dashboard",
+      title: "DevMate",
       description:
-        "Data visualization dashboard with interactive charts and real-time updates.",
+        "A productivity hub tailored for developers—organize bookmarks, manage todos, and track your productivity with an interactive dashboard—all in one centralized platform.",
+      imageUrl: "./src/assets/Projects/DevMate.png",
       technologies: [
         {
-          name: "TypeScript",
-          icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg",
-          color: "#3178c6",
-        },
-        {
-          name: "JavaScript",
+          // name: "JavaScript",
           icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
           color: "#f7df1e",
         },
+        {
+          // name: "JavaScript",
+          icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+          color: "#f7df1e",
+        },
+        {
+          // name: "JavaScript",
+          icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-original.svg",
+          color: "#f7df1e",
+        },
+        {
+          // name: "JavaScript",
+          icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg",
+          color: "#f7df1e",
+        },
+        {
+          // name: "JavaScript",
+          icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/npm/npm-original.svg",
+          color: "#f7df1e",
+        },
       ],
-      liveUrl: "https://dashboard-demo.com",
+      liveUrl: "https://dev-mate-theta.vercel.app/",
+      githubUrl: "https://github.com/believeharsh/DevMate",
     },
   ],
   socialLinks: [

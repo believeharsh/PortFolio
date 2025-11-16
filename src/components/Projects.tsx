@@ -71,8 +71,8 @@ const Projects: React.FC = () => {
                   <TechStackCard
                     technologies={project.technologies}
                     title=""
-                    badgeClassName="gap-1 px-2 py-1.5"
-                    iconWrapperClassName="w-4 h-4"
+                    badgeClassName="gap-"
+                    iconWrapperClassName="w-6 h-6"
                     nameClassName="text-xs"
                   />
                 </div>
