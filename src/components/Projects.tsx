@@ -49,7 +49,7 @@ const Projects: React.FC = () => {
                 <div className="absolute inset-0 bg-black/60 opacity-0 hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                   <button
                     onClick={() => setSelectedProject(project)}
-                    className="px-4 py-2 bg-primary-500 hover:bg-primary-600 text-white font-medium text-sm rounded-lg transition-colors"
+                    className="px-4 py-2 bg-primary-500 hover:bg-primary-600 text-white font-medium text-sm rounded-lg transition-colors cursor-pointer"
                   >
                     View Details
                   </button>

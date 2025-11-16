@@ -221,51 +221,45 @@ const ImageGallery: React.FC<ImageGalleryProps> = ({
 export const sampleGalleryImages: GalleryImage[] = [
   {
     id: '1',
-    url: './src/assets/ImageGallary/Image_gallary1.jpg',
+    url: './ImageGallary/Image_gallary1.jpg',
     caption: 'Tech conference 2024',
     date: 'March 2024'
   },
   {
     id: '2',
-    url: './src/assets/ImageGallary/Image_gallary2.jpg',
+    url: './ImageGallary/Image_gallary2.jpg',
     caption: 'Workshop presentation',
     date: 'February 2024'
   },
   {
     id: '3',
-    url: './src/assets/ImageGallary/Image_gallary3.jpg',
+    url: './ImageGallary/Image_gallary3.jpg',
     caption: 'Hackathon victory',
     date: 'January 2024'
   },
   {
     id: '4',
-    url: './src/assets/ImageGallary/Image_gallary4.jpg',
+    url: './ImageGallary/Image_gallary4.jpg',
     caption: 'Product launch event',
     date: 'December 2023'
   },
   {
     id: '5',
-    url: './src/assets/ImageGallary/Image_gallary5.jpg',
+    url: './ImageGallary/Image_gallary5.jpg',
     caption: 'Networking session',
     date: 'November 2023'
   },
   {
     id: '6',
-    url: './src/assets/ImageGallary/Image_gallary6.jpg',
+    url: './ImageGallary/Image_gallary6.jpg',
     caption: 'Team building',
     date: 'October 2023'
   },
   {
     id: '7',
-    url: './src/assets/ImageGallary/Image_gallary7.jpg',
+    url: './ImageGallary/Image_gallary7.jpg',
     caption: 'Speaking engagement',
     date: 'September 2023'
-  },
-  {
-    id: '8',
-    url: 'https://images.unsplash.com/photo-1556761175-b413da4baf72?w=400',
-    caption: 'Code review session',
-    date: 'August 2023'
   }
 ];
 

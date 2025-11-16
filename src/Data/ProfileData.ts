@@ -4,7 +4,7 @@ export const defaultData: PortfolioData = {
   personalInfo: {
     name: "Harsh Dahiya",
     avatar:
-      "https://res.cloudinary.com/dd5elqfus/image/upload/v1763193281/MypictureLogo_portfolio_qf4odm.png",
+      "./public/My_Profile_picture_one.png",
     title: "Full Stack Developer",
     bio: "Passionate developer with expertise in building scalable web applications. I love creating elegant solutions to complex problems.",
     email: "onlybelieveharsh@gmail.com",
@@ -105,7 +105,7 @@ export const defaultData: PortfolioData = {
       title: "Cravo",
       description:
         "A online food delivery platform with category and region base search, cart, wishlist, payment, order tracking features",
-      imageUrl: "./src/assets/Projects/Cravo.png",
+      imageUrl: "./Projects/Cravo.png",
       technologies: [
         {
           // name: "JavaScript",
@@ -156,7 +156,7 @@ export const defaultData: PortfolioData = {
       title: "BlogHive",
       description:
         "Bloghive, This is the application where you can write your stories, publish your ideas and interact with people.",
-      imageUrl: "./src/assets/Projects/Bloghive.png",
+      imageUrl: "./Projects/Bloghive.png",
       technologies: [
         {
           // name: "React",
@@ -207,7 +207,7 @@ export const defaultData: PortfolioData = {
       title: "DevMate",
       description:
         "A productivity hub tailored for developers—organize bookmarks, manage todos, and track your productivity with an interactive dashboard—all in one centralized platform.",
-      imageUrl: "./src/assets/Projects/DevMate.png",
+      imageUrl: "./Projects/DevMate.png",
       technologies: [
         {
           // name: "JavaScript",
